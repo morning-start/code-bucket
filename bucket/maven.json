@@ -13,9 +13,18 @@
         "MAVEN_HOME": "$dir"
     },
     "env_add_path": "bin",
+    "post_install": [
+        "$settingsFile = Join-Path $persist_dir \"conf\\setting.xml\"",
+        "$localRepoPath = \"persist_dir\\repository\"",
+        "$newLine = \"  <localRepository>$localRepoPath</localRepository>\"",
+        "$content = @\"\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<settings xmlns=\"http://maven.apache.org/SETTINGS/1.0.0\"\n          xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n          xsi:schemaLocation=\"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd\">\n  <localRepository>$localRepoPath</localRepository>\n</settings>\n\"@",
+        "Set-Content -Path $settingsFile -Value $content -Encoding UTF8",
+        "Write-Host \"Maven repository settings to $localRepoPath\""
+    ],
     "persist": [
         "conf",
-        "lib\\ext"
+        "lib\\ext",
+        "repository"
     ],
     "checkver": {
         "url": "https://maven.apache.org/docs/history.html",

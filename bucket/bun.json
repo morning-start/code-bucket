@@ -47,7 +47,7 @@
     ],
     "persist": [
         "bin",
-        "install"
+        "install\\global"
     ],
     "checkver": {
         "github": "https://github.com/oven-sh/bun",
