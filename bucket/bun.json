@@ -1,0 +1,69 @@
+{
+    "version": "1.2.17",
+    "description": "Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.",
+    "homepage": "https://bun.sh/",
+    "license": "MIT",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://github.com/oven-sh/bun/releases/download/bun-v1.2.17/bun-windows-x64.zip",
+                "https://github.com/oven-sh/bun/releases/download/bun-v1.2.17/bun-windows-x64-baseline.zip"
+            ],
+            "hash": [
+                "869a9401e119306459a4992e4b3655484c2541c93f0ae470fc8500a82d84fd4b",
+                "803e6a7d8bed9063ef7833de036aca0d1a23e5d25cd7a8cf628cba50a3199f18"
+            ]
+        }
+    },
+    "pre_install": [
+        "[Environment]::SetEnvironmentVariable('BUN_INSTALL', \"$persist_dir\\bun\", 'Process')",
+        "$avx2 = Start-Job -ScriptBlock {",
+        "    Add-Type -MemberDefinition '[DllImport(\"kernel32.dll\")] public static extern bool IsProcessorFeaturePresent(int ProcessorFeature);' -Name Kernel32 -Namespace Win32",
+        "    return [Win32.Kernel32]::IsProcessorFeaturePresent(40)",
+        "} | Receive-Job -Wait -AutoRemoveJob",
+        "$target = 'bun-windows-x64'",
+        "if (-not $avx2) {",
+        "    $target += '-baseline'",
+        "}",
+        "Move-Item \"$dir\\$target\\bun.exe\" \"$dir\\bun.exe\"",
+        "Remove-Item \"$dir\\bun-windows-*\" -Recurse"
+    ],
+    "bin": [
+        "bun.exe",
+        [
+            "bun.exe",
+            "bunx",
+            "x"
+        ]
+    ],
+    "env_set": {
+        "BUN_INSTALL": "$persist_dir"
+    },
+    "env_add_path": [
+        "bin"
+    ],
+    "persist": [
+        "bin",
+        "install"
+    ],
+    "checkver": {
+        "github": "https://github.com/oven-sh/bun",
+        "re": "bun-v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://github.com/oven-sh/bun/releases/download/bun-v$version/bun-windows-x64.zip",
+                    "https://github.com/oven-sh/bun/releases/download/bun-v$version/bun-windows-x64-baseline.zip"
+                ]
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHASUMS256.txt"
+        }
+    }
+}

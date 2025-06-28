@@ -1,0 +1,50 @@
+{
+    "version": "0.7.16",
+    "description": "An extremely fast Python package installer and resolver, written in Rust.",
+    "homepage": "https://docs.astral.sh/uv/",
+    "license": "Apache-2.0|MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/astral-sh/uv/releases/download/0.7.16/uv-x86_64-pc-windows-msvc.zip",
+            "hash": "409d19c14a9b1ce83bf7331dbda89984802efb3a2fbf9ffdf149b22ab9cf2826"
+        },
+        "32bit": {
+            "url": "https://github.com/astral-sh/uv/releases/download/0.7.16/uv-i686-pc-windows-msvc.zip",
+            "hash": "6d4c4de0cc8c88fb7d94138c05091dac6746a7bc9d94b3743e804a485546154b"
+        }
+    },
+    "pre_install": [
+        "$configContent = @\"\n[[index]]\nurl = \"https://pypi.tuna.tsinghua.edu.cn/simple\"\ndefault = true\n\"@",
+        "Set-Content -Path \"$persist_dir\\uv.toml\" -Value $configContent"
+    ],
+    "env_set": {
+        "UV_CONFIG_FILE": "$persist_dir\\uv.toml",
+        "UV_CACHE_DIR": "$persist_dir\\cache",
+        "UV_PYTHON_INSTALL_DIR": "$persist_dir\\python"
+    },
+    "bin": [
+        "uv.exe",
+        "uvx.exe",
+        "uvw.exe"
+    ],
+    "persist": [
+        "cache",
+        "python"
+    ],
+    "checkver": {
+        "github": "https://github.com/astral-sh/uv"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/astral-sh/uv/releases/download/$version/uv-x86_64-pc-windows-msvc.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/astral-sh/uv/releases/download/$version/uv-i686-pc-windows-msvc.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
