@@ -32,8 +32,7 @@
   "uninstaller": {
     "script": [
       "Start-Process \"$dir\\Uninstall-Miniconda3.exe\" -ArgumentList '/S' -Wait | Out-Null",
-      "# Create a 'dummy' to avoid error because the uninstaller removes the symlink. The does not affect persist.",
-      "if (!(Test-Path \"$dir\\envs\")) { New-Item \"$dir\\envs\" -ItemType Directory | Out-Null }"
+      "# Create a 'dummy' to avoid error because the uninstaller removes the symlink. The does not affect persist."
     ]
   },
   "bin": [
