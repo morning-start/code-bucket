@@ -14,10 +14,12 @@
     },
     "env_add_path": "bin",
     "post_install": [
-        "$settingsFile = Join-Path $persist_dir \"conf\\setting.xml\"",
+        "$settingsFile = \"$persist_dir\\conf\\settings.xml\"",
+        "$backupFile = \"$persist_dir\\conf\\settings.xml.bak\"",
         "$localRepoPath = \"persist_dir\\repository\"",
         "$newLine = \"  <localRepository>$localRepoPath</localRepository>\"",
         "$content = @\"\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<settings xmlns=\"http://maven.apache.org/SETTINGS/1.0.0\"\n          xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n          xsi:schemaLocation=\"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd\">\n  <localRepository>$localRepoPath</localRepository>\n</settings>\n\"@",
+        "Copy-Item -Path $settingsFile -Destination $backupFile",
         "Set-Content -Path $settingsFile -Value $content -Encoding UTF8",
         "Write-Host \"Maven repository settings to $localRepoPath\""
     ],
