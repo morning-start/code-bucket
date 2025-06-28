@@ -26,8 +26,7 @@
   },
   "post_install": [
     "Remove-Item \"$dir\\..\\setup.exe\" -Force | Out-Null",
-    "conda config --add pkgs_dirs $persist_dir\\pkgs",
-    "conda config --add envs_dirs $persist_dir\\envs"
+    "conda config --add pkgs_dirs $persist_dir\\pkgs"
   ],
   "uninstaller": {
     "script": [
