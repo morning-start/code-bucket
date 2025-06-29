@@ -7,7 +7,7 @@
   "hash": "44a8bbe4fc8c6225c7eabe9b7110247b7cac8a5b53b7326e61e50b443a6aa88c",
   "bin": "rig.exe",
   "innosetup": true,
-  "pre_install": [
+  "post_install": [
     "$path=\"C:\\Program Files\\R\\bin\"",
     "$target=\"$persist_dir\\bin\"",
     "New-Item -ItemType SymbolicLink -Path $path -Target $target"
