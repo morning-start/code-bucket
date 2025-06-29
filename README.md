@@ -1,42 +1,49 @@
-# Scoop Bucket Template
+# Code Bucket for Scoop
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+This is a [Scoop](https://scoop.sh/) bucket specially designed for developers, pre-configured with various development tools and runtime environments. All settings are ready out of the box, no manual configuration needed.
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+## ✅ Supported Tools
 
-## How do I use this template?
+| Tool                 | Description                                                                 |
+| -------------------- | --------------------------------------------------------------------------- |
+| **bun**        | Extremely fast JavaScript runtime, bundler, transpiler and package manager. |
+| **fnm**        | Cross-platform Node.js version switcher.                                    |
+| **fvm**        | Flutter SDK version manager.                                                |
+| **git**        | Distributed version control system (Git for Windows).                       |
+| **gradle**     | Open-source build automation tool.                                          |
+| **gvm**        | Golang version manager.                                                     |
+| **jabba**      | Java version manager.                                                       |
+| **maven**      | Java project management tool.                                               |
+| **miniconda3** | Python package manager (Miniconda).                                         |
+| **pnpm**       | Fast and disk-efficient Node.js package manager.                            |
+| **rustup**     | Rust multi-version manager.                                                 |
+| **uv**         | Blazing-fast Python installer and dependency resolver.                      |
+| **yarn**       | Node.js package manager.                                                    |
 
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Allow writing to the repository from within GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Select `Read and write permissions`.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
+## 🛠 Configuration Highlights
 
-## How do I install these manifests?
+All tools have been configured to:
 
-After manifests have been committed and pushed, run the following:
+* Automatically add binaries to `PATH`
+* Store persistent data in `scoop/persist` directory
+* Apply common configurations during post-installation (e.g., registry settings, mirror sources)
 
-```pwsh
-scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
-scoop install <bucketname>/<manifestname>
-```
+## 🧪 Usage Instructions
 
-## How do I contribute new manifests?
+1. Add this bucket to Scoop:
+    ```powershell
+   scoop bucket add code https://github.com/yourname/code-bucket.git
+   ```
+2. Install any application:
+    ```powershell
+   scoop search code/<app_name>
+   scoop install code/<app_name>
+   ```
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+## 📄 License
+
+MIT / Apache-2.0 / BSD etc. Please refer to individual tool licenses for details.
+
+---
+
+您可以将上述内容保存为 [README.md](javascript:void(0)) 文件并提交至仓库根目录，以便用户快速了解和使用您的 Scoop bucket。如果需要加入更多定制信息（如贡献指南、CI 状态、图标等），也可以进一步扩展。
