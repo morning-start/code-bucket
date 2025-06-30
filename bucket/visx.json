@@ -6,7 +6,6 @@
   "url": "https://github.com/morning-start/visx_downloader/releases/download/v3.0.0/visx-win-3.0.0.exe",
   "hash": "fd4d6aea4da00ddf6bcd06fd2a5573e5fd990a7cff4f152d90cd74aff9fed7f2",
   "bin": "visx.exe",
-  "innosetup": true,
   "env_set": {
     "VISX_EXTENSIONS": "$persist_dir\\extensions"
   },
