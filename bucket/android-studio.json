@@ -21,6 +21,11 @@
       ]
     }
   },
+  "pre_install": [
+    "$path=\"$env:USERPROFILE\\.android\"",
+    "$target=\"$persist_dir\\.android\"",
+    "new-Item -ItemType SymbolicLink -Path $path -Target $target"
+  ],
   "extract_dir": "android-studio",
   "env_set": {
     "ANDROID_HOME": "$persist_dir\\sdk",
