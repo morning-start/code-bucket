@@ -24,12 +24,14 @@
   "extract_dir": "android-studio",
   "env_set": {
     "ANDROID_HOME": "$persist_dir\\sdk",
+    "ANDROID_SDK_HOME": "$persist_dir",
+    "ANDROID_SDK_ROOT": "$persist_dir\\sdk",
     "ANDROID_USER_HOME": "$persist_dir\\.android",
     "NDK_HOME": "$persist_dir\\sdk\\ndk"
   },
   "persist": [
     "plugins",
-    "sdk",
+    "sdk\\ndk",
     ".android"
   ],
   "checkver": "android-studio-([\\d.]+)-windows\\.zip",
