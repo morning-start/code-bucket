@@ -5,15 +5,12 @@
         "使用时关闭VPN"
     ],
     "homepage": "https://www.puresys.net/10697.html",
-    "license": "MIT",
+    "license": "GNU",
     "url": "https://ecs-152-136-103-177.compute.hwclouds-dns.com/data/Olib2.4.0.exe",
     "hash": "08b6d0f919a86028b544b337812a0b0029ac99537d3a649afe13e622688d0e2a",
     "installer": {
         "script": "Rename-Item -Path $dir\\Olib$version.exe -NewName $dir\\Olib.exe"
     },
-    "bin": [
-        "Olib.exe"
-    ],
     "persist": [
         "config"
     ]
