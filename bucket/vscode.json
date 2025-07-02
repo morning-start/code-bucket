@@ -28,13 +28,17 @@
   "shortcuts": [
     [
       "code.exe",
-      "Visual Studio Code"
+      "Visual Studio Code",
+      "vscode"
     ]
   ],
-    "pre_install":[
-    "$path=\"$env:USERPROFILE\\.vscode\\extensions\"",
-    "$target=\"$persist_dir\\extensions\"",
-    "new-Item -ItemType SymbolicLink -Path $path -Target $target"
+  "pre_install": [
+    "$ext_old=\"$env:USERPROFILE\\.vscode\\extensions\"",
+    "$ext_new=\"$persist_dir\\extensions\"",
+    "new-Item -ItemType SymbolicLink -Path $ext_old -Target $ext_new",
+    "$data_old=\"$env:AppData\\Code\"",
+    "$data_new=\"$persist_dir\\user-data\"",
+    "new-Item -ItemType SymbolicLink -Path $data_old -Target $data_new"
   ],
   "post_install": [
     "$dirpath = \"$dir\".Replace('\\', '\\\\')",
@@ -49,10 +53,6 @@
     "    }",
     "    $content | Set-Content -Path \"$dir\\$_.reg\"",
     "  }",
-    "}",
-    "if (!(Test-Path \"$dir\\data\\user-data\") -and (Test-Path \"$env:AppData\\Code\")) {",
-    "    info '[Portable Mode] Copying user data...'",
-    "    Copy-Item \"$env:AppData\\Code\" \"$dir\\data\\user-data\" -Recurse",
     "}"
   ],
   "uninstaller": {
