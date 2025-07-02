@@ -9,7 +9,7 @@
       "hash": "9EFF8AD9851BDE87AD428D1D73C3903071F893FAD8C07E2642134040CA2C2D57",
       "installer": {
         "script": [
-          "Start-Process \"$dir\\flowus-windows-x64.exe\" @('/S', '/InstallationType=JustMe', '/NoRegistry=1', \"/D=$dir\") -Wait | Out-Null"
+          "Start-Process \"$dir\\flowus-windows-x64.exe\" @('/S', '/InstallationType=JustMe','/NOICONS' , '/NoRegistry=1', \"/D=$dir\") -Wait | Out-Null"
         ]
       }
     },
