@@ -14,11 +14,11 @@
         }
     },
     "pre_install": [
-        "$configContent = @\"
-[[index]]
-url = \"https://pypi.tuna.tsinghua.edu.cn/simple\"
-default = true
-\"@",
+        "$configContent = @\"",
+        "[[index]]",
+        "url = \"https://pypi.tuna.tsinghua.edu.cn/simple\"",
+        "default = true",
+        "\"@",
         "Set-Content -Path \"$persist_dir\\uv.toml\" -Value $configContent"
     ],
     "env_set": {
