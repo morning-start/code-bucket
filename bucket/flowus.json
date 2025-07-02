@@ -9,7 +9,8 @@
       "hash": "9EFF8AD9851BDE87AD428D1D73C3903071F893FAD8C07E2642134040CA2C2D57",
       "installer": {
         "script": [
-          "Start-Process \"$dir\\flowus-windows-x64.exe\" @('/S', '/InstallationType=JustMe','/NOICONS' , '/NoRegistry=1', \"/D=$dir\") -Wait | Out-Null"
+          "Start-Process \"$dir\\flowus-windows-x64.exe\" @('/S', '/InstallationType=JustMe', '/NoRegistry=1', \"/D=$dir\") -Wait | Out-Null",
+          "Remove-Item -Path \"$env:ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\FlowUs.lnk\""
         ]
       }
     },
@@ -17,7 +18,10 @@
       "url": "https://desktopdownload2.flowus.cn/production/windows/flowus-windows-ia32.zip",
       "hash": "c663fa3f0b1adf836bcb890328dbf47f76259b7095732f129d597bf816277860",
       "installer": {
-        "script": "Start-Process \"$dir\\flowus-windows-ia32.exe\" @('/S', '/InstallationType=JustMe', '/NoRegistry=1', \"/D=$dir\") -Wait | Out-Null"
+        "script": [
+          "Start-Process \"$dir\\flowus-windows-ia32.exe\" @('/S', '/InstallationType=JustMe', '/NoRegistry=1', \"/D=$dir\") -Wait | Out-Null",
+          "Remove-Item -Path \"$env:ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\FlowUs.lnk\""
+        ]
       }
     }
   },
