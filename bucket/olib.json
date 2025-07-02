@@ -7,7 +7,7 @@
     "homepage": "https://www.puresys.net/10697.html",
     "license": "MIT",
     "url": "https://ecs-152-136-103-177.compute.hwclouds-dns.com/data/Olib2.4.0.exe",
-    "hash": "468EEE9AAD35BD90C936AE48D357FD740832E4676EC71152BEB6AEA02FAE0A69",
+    "hash": "08b6d0f919a86028b544b337812a0b0029ac99537d3a649afe13e622688d0e2a",
     "bin": "olib.exe",
     "persist": [
         "config"
