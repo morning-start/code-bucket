@@ -6,8 +6,8 @@
     ],
     "homepage": "https://www.puresys.net/10697.html",
     "license": "GNU",
-    "url": "https://ecs-152-136-103-177.compute.hwclouds-dns.com/data/Olib2.4.0.exe",
-    "hash": "08b6d0f919a86028b544b337812a0b0029ac99537d3a649afe13e622688d0e2a",
+    "url": "https://i-489.wwentua.com:446/07030000241287374bb/2025/06/12/8b92a64a86c7a76c00dfaa467f964efe.exe?st=beW6u0STg4uyH-Yiyxr1AA&e=1751474356&b=CRRbNwVsAGcDZFEpAGRXfVI3CXsCZgF_aVGI_c&fi=241287374&pid=36-112-180-131&up=2&mp=0&co=0",
+    "hash": "468EEE9AAD35BD90C936AE48D357FD740832E4676EC71152BEB6AEA02FAE0A69",
     "installer": {
         "script": "Rename-Item -Path $dir\\Olib$version.exe -NewName $dir\\Olib.exe"
     },
