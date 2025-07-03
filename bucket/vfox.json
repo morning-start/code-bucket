@@ -25,9 +25,6 @@
             "extract_dir": "vfox_0.6.10_windows_aarch64"
         }
     },
-    "post_install": [
-        "vfox config storage.sdkPath = \"$persist_dir\\sdk\""
-    ],
     "persist": [
         "sdk"
     ],
