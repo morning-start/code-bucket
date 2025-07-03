@@ -28,6 +28,9 @@
     "post_install": [
         "vfox config storage.sdkPath = \"$persist_dir\\sdk\""
     ],
+    "persist": [
+        "sdk"
+    ],
     "bin": "vfox.exe",
     "checkver": {
         "github": "https://github.com/version-fox/vfox"
