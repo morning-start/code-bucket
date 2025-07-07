@@ -12,7 +12,7 @@
   },
   "env_set": {
     "JVM_ROOT":"$persist_dir",
-    "JAVA_HOME": "$dir\\current"
+    "JAVA_HOME": "$persist_dir\\current"
   },
   "persist": [
     "jdk",
