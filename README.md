@@ -6,19 +6,23 @@ This is a [Scoop](https://scoop.sh/) bucket specially designed for developers, p
 
 | Tool                 | Description                                                                 |
 | -------------------- | --------------------------------------------------------------------------- |
-| **bun**        | Extremely fast JavaScript runtime, bundler, transpiler and package manager. |
-| **fnm**        | Cross-platform Node.js version switcher.                                    |
-| **fvm**        | Flutter SDK version manager.                                                |
-| **git**        | Distributed version control system (Git for Windows).                       |
-| **gradle**     | Open-source build automation tool.                                          |
-| **gvm**        | Golang version manager.                                                     |
-| **jabba**      | Java version manager.                                                       |
-| **maven**      | Java project management tool.                                               |
-| **miniconda3** | Python package manager (Miniconda).                                         |
-| **pnpm**       | Fast and disk-efficient Node.js package manager.                            |
-| **rustup**     | Rust multi-version manager.                                                 |
-| **uv**         | Blazing-fast Python installer and dependency resolver.                      |
-| **yarn**       | Node.js package manager.                                                    |
+| **bun**              | Extremely fast JavaScript runtime, bundler, transpiler and package manager. |
+| **fnm**              | Cross-platform Node.js version switcher.                                    |
+| **fvm**              | Flutter SDK version manager.                                                |
+| **git**              | Distributed version control system (Git for Windows).                       |
+| **gradle**           | Open-source build automation tool.                                          |
+| **gvm**              | Golang version manager.                                                     |
+| **jabba**            | Java version manager.                                                       |
+| **jvms**             | JDK Version Manager (JVMS) for Windows.                                     |
+| **maven**            | Java project management tool.                                               |
+| **miniconda3**       | Python package manager (Miniconda).                                         |
+| **pnpm**             | Fast and disk-efficient Node.js package manager.                            |
+| **rig**              | R installation manager: Install, remove, configure R versions.              |
+| **rustup**           | Rust multi-version manager.                                                 |
+| **uv**               | Blazing-fast Python installer and dependency resolver.                      |
+| **yarn**             | Node.js package manager.                                                    |
+| **version-manager**  | A general version manager for 60+ SDKs.                                     |
+| **vfox**             | Manage multiple SDK versions with a single CLI tool.                        |
 
 ## 🛠 Configuration Highlights
 

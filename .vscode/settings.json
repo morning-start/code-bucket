@@ -23,5 +23,6 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/tmp": true
-    }
+    },
+    "Lingma.PreferredLanguage forCommitMessage": "English"
 }
