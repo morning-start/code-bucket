@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "description": "Java-Mocha is a Java version management tool developed based on the Foojay API.",
+  "homepage": "https://github.com/morning-start/java-mocha",
+  "license": "GNU3.0",
+  "url": "https://github.com/morning-start/java-mocha/releases/download/v1.0.0/jvm-windows-1.0.0.zip",
+  "hash": "2780c439e8647cf16a95c2f70a1555f5dc0ee4e587b9e5c2693159c34e182775",
+  "bin": "jvm.exe",
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/morning-start/java-mocha/releases/download/v$version/jvm-windows-$version.zip"
+  },
+  "env_set": {
+    "JVM_ROOT":"$persist_dir",
+    "JAVA_HOME": "$dir\\current"
+  },
+  "persist": [
+    "jdk",
+    "cache",
+    "data"
+  ]
+}
