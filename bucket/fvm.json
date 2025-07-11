@@ -18,19 +18,17 @@
     }
   },
   "extract_dir": "fvm",
-  "pre_install": [
-    "if (!(Test-Path \"$persist_dir\\versions\")) {",
-    "   New-Item \"$dir\\versions\" -ItemType Directory | Out-Null",
-    "   New-Item \"$dir\\.settings\" -ItemType File | Out-Null",
-    "}"
-  ],
   "bin": "fvm.bat",
   "env_set": {
-    "FVM_CACHE_PATH": "$dir"
+    "FVM_CACHE_PATH": "$dir",
+    "FVM_GIT_CACHE_PATH": "$persist_dir\\cache"
   },
   "persist": [
     "versions",
-    ".settings"
+    "cache"
+  ],
+  "env_add_path": [
+    "bin"
   ],
   "checkver": {
     "github": "https://github.com/leoafarias/fvm"
