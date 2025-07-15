@@ -1,0 +1,52 @@
+{
+  "version": "0.30.0",
+  "description": "A powerful chatgpt cli",
+  "homepage": "https://github.com/sigoden/aichat",
+  "license": "MIT|Apache",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip",
+      "hash": "89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f"
+    },
+    "32bit": {
+      "url": "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-i686-pc-windows-msvc.zip",
+      "hash": "d5b019fc65cff50f1e97cdd2687f9e4a2af94768c47e0cdd738b9685cfc5ccdc"
+    }
+  },
+  "env_set": {
+    "AICHAT_CONFIG_DIR": "$persist_dir"
+  },
+  "bin": "aichat.exe",
+  "post_install": [
+    "$ps1Dest = Join-Path $persist_dir 'scripts/integration.ps1'",
+    "# 如果脚本不存在，则下载",
+    "if (-not (Test-Path $ps1Dest)) {",
+    "  New-Item -ItemType Directory -Path (Split-Path $ps1Dest) -Force",
+    "  $ps1Url = 'https://github.com/sigoden/aichat/raw/main/scripts/shell-integration/integration.ps1'",
+    "  Invoke-WebRequest -Uri $ps1Url -OutFile $ps1Dest",
+    "}",
+    "# 写入 profile 加载命令",
+    "if (-not (Test-Path $PROFILE)) { New-Item -Path $PROFILE -ItemType File -Force }",
+    "$commandToWrite = \". \\\"$ps1Dest\\\"\"",
+    "if (-not (Get-Content $PROFILE -ErrorAction SilentlyContinue | Select-String [regex]::Escape($commandToWrite))) {",
+    "  Add-Content -Path $PROFILE -Value $commandToWrite",
+    "}"
+  ],
+  "post_uninstall": [
+    "# 删除写入 profile 的加载命令",
+    "$ps1Dest = Join-Path $persist_dir 'scripts/integration.ps1'",
+    "$commandToRemove = \". \\\"$ps1Dest\\\"\"",
+    "(Get-Content $PROFILE -ErrorAction SilentlyContinue) | Where-Object { $_ -ne $commandToRemove } | Set-Content $PROFILE"
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/sigoden/aichat/releases/download/v$version/aichat-v$version-x86_64-pc-windows-msvc.zip"
+      },
+      "32bit": {
+        "url": "https://github.com/sigoden/aichat/releases/download/v$version/aichat-v$version-i686-pc-windows-msvc.zip"
+      }
+    }
+  }
+}
