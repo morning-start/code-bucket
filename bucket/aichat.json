@@ -18,7 +18,7 @@
   },
   "bin": "aichat.exe",
   "post_install": [
-    "$ps1Dest = Join-Path $persist_dir 'scripts/integration.ps1'",
+    "$ps1Dest = Join-Path $persist_dir 'integration.ps1'",
     "# 如果脚本不存在，则下载",
     "if (-not (Test-Path $ps1Dest)) {",
     "  New-Item -ItemType Directory -Path (Split-Path $ps1Dest) -Force",
