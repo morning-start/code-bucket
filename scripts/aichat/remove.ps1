@@ -7,4 +7,4 @@ function rmConfig {
 }
 
 rmConfig '. ' + (Join-Path $script_dir 'integration.ps1')
-writeConfig '. ' + (Join-Path $script_dir 'aichat.ps1')
+rmConfig '. ' + (Join-Path $script_dir 'aichat.ps1')
