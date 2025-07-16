@@ -14,31 +14,27 @@
     }
   },
   "env_set": {
-    "AICHAT_CONFIG_DIR": "$persist_dir"
+    "AICHAT_CONFIG_DIR": "$persist_dir/config"
   },
-  "bin": [["aichat.exe","aichat"]],
+  "bin": [
+    [
+      "aichat.exe",
+      "aichat"
+    ]
+  ],
+  "persist": [
+    "config",
+    "scripts"
+  ],
   "post_install": [
-    "$ps1Dest = Join-Path $persist_dir 'integration.ps1'",
+    "$script_dir = Join-Path $persist_dir 'scripts'",
     "# 如果脚本不存在，则下载",
-    "if (-not (Test-Path $ps1Dest)) {",
-    "  New-Item -ItemType Directory -Path (Split-Path $ps1Dest) -Force",
-    "  $ps1Url = 'https://github.com/sigoden/aichat/raw/main/scripts/shell-integration/integration.ps1'",
-    "  Invoke-WebRequest -Uri $ps1Url -OutFile $ps1Dest",
-    "}",
-    "$command = '. ' + $ps1Dest",
-    "# 写入 profile 加载命令",
-    "if (-not (Test-Path $PROFILE)) { New-Item -Path $PROFILE -ItemType File -Force }",
-    "# 检查是否已存在，避免重复写入",
-    "if (-not (Get-Content $PROFILE -ErrorAction SilentlyContinue | Select-String ([regex]::Escape($command)))) {",
-    "  $textToAdd = '`r`n`r`n$command`r`n`r`n'",
-    "  Add-Content -Path $PROFILE -Value $textToAdd",
-    "}"
+    "./download.ps1 $script_dir",
+    "./write.ps1 $script_dir"
   ],
   "post_uninstall": [
-    "# 删除写入 profile 的加载命令",
-    "$ps1Dest = Join-Path $persist_dir 'scripts/integration.ps1'",
-    "$command = '. ' + $ps1Dest",
-    "(Get-Content $PROFILE -ErrorAction SilentlyContinue) | Where-Object { $_ -ne $command } | Set-Content $PROFILE"
+    "$script_dir = Join-Path $persist_dir 'scripts'",
+    "./remove.ps1 $script_dir"
   ],
   "checkver": "github",
   "autoupdate": {
