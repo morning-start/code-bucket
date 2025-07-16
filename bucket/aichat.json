@@ -30,13 +30,13 @@
     "$script_path = '$bucketsdir\\code\\scripts\\$app'",
     "$download_dir = Join-Path $persist_dir 'scripts'",
     "# 如果脚本不存在，则下载",
-    "$script_path/download.ps1 $download_dir",
-    "$script_path/write.ps1 $download_dir"
+    "$script_path\\download.ps1 $download_dir",
+    "$script_path\\write.ps1 $download_dir"
   ],
   "post_uninstall": [
     "$script_path = '$bucketsdir\\code\\scripts\\$app'",
     "$download_dir = Join-Path $persist_dir 'scripts'",
-    "$script_path/remove.ps1 $download_dir"
+    "$script_path\\remove.ps1 $download_dir"
   ],
   "checkver": "github",
   "autoupdate": {
