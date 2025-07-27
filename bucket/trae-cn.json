@@ -11,7 +11,7 @@
     }
   },
   "innosetup": true,
-  "pre_install": [
+  "post_install": [
     "$config_dirs = @(",
     "    '.trae',",
     "    '.trae-cn',",
