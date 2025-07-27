@@ -1,0 +1,71 @@
+{
+  "version": "1.0.16065",
+  "description": "An AI-powered IDE that makes programming more enjoyable and efficient.",
+  "homepage": "https://www.trae.com.cn",
+  "license": "Proprietary",
+  "architecture": {
+    "64bit": {
+      "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/1.0.16065/win32/Trae%20CN-Setup-x64.exe",
+      "hash": "815a63461d11a4d8dce3eb3458f250c24266040a896471c867a9ff56b89a4615",
+      "extract_dir": "{code_GetDestDir}"
+    }
+  },
+  "innosetup": true,
+  "pre_install": [
+    "$config_dirs = @(",
+    "    '.trae',",
+    "    '.trae-cn',",
+    "    '.trae-aicc'",
+    ")",
+    "foreach ($config_dir in $config_dirs) {",
+    "    $target_dir = Join-Path $env:USERPROFILE $config_dir",
+    "    $link_dir = Join-Path $persist_dir $config_dir",
+    "    if (Test-Path $target_dir) {",
+    "        if (-not (Test-Path $link_dir)) {",
+    "            Move-Item -Path $target_dir -Destination $link_dir -Force",
+    "        } else {",
+    "            $items = Get-ChildItem -Path $target_dir",
+    "            if ($items) {",
+    "                Move-Item -Path \"$target_dir\\*\" -Destination $link_dir -Force",
+    "            }",
+    "            Remove-Item $target_dir -Recurse -Force",
+    "        }",
+    "        New-Item -ItemType SymbolicLink -Path $target_dir -Target $link_dir | Out-Null",
+    "    } else {",
+    "        if (-not (Test-Path $link_dir)) {",
+    "            New-Item -ItemType Directory -Path $link_dir -Force | Out-Null",
+    "        }",
+    "        New-Item -ItemType SymbolicLink -Path $target_dir -Target $link_dir | Out-Null",
+    "    }",
+    "}"
+  ],
+  "bin": [
+    [
+      "bin/trae.cmd",
+      "traecn"
+    ]
+  ],
+  "shortcuts": [
+    [
+      "Trae CN.exe",
+      "Trae CN",
+      "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
+    ]
+  ],
+  "persist": [
+    ".trae",
+    ".trae-cn",
+    ".trae-aicc"
+  ],
+  "checkver": {
+    "url": "https://api.trae.com.cn/icube/api/v1/native/version/trae/cn/latest",
+    "jsonpath": "$.data.manifest.win32.version"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/$version/win32/Trae%20CN-Setup-x64.exe"
+      }
+    }
+  }
+}
