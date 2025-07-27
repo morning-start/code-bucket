@@ -26,24 +26,16 @@
     "config",
     "scripts"
   ],
-  "notes":[
-    "添加脚本集成",
-    "$dir\\write.ps1 '$persist_dir\\scripts'"
-  ],
-
-  "pre_install": [
-    "$script_path = \"$bucketsdir\\$bucket\\scripts\\$app\"",
-    "$sourcePattern = Join-Path -Path $script_path -ChildPath '*.ps1'",
-    "Copy-Item -Path $sourcePattern -Destination $dir -Force"
-  ],
   "post_install": [
+    "$script_path = \"$bucketsdir\\$bucket\\scripts\\$app\"",
     "$download_dir = Join-Path $persist_dir 'scripts'",
-    "& $dir\\download.ps1 $download_dir",
-    "& $dir\\write.ps1 $download_dir"
+    "& $script_path\\download.ps1 $download_dir",
+    "& $script_path\\write.ps1 $download_dir"
   ],
   "pre_uninstall": [
+    "$script_path = \"$bucketsdir\\$bucket\\scripts\\$app\"",
     "$download_dir = Join-Path $persist_dir 'scripts'",
-    "& $dir\\remove.ps1 $download_dir"
+    "& $script_path\\remove.ps1 $download_dir"
   ],
   "checkver": "github",
   "autoupdate": {
