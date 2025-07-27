@@ -1,0 +1,141 @@
+{
+  "version": "1.102.2",
+  "description": "Lightweight but powerful source code editor",
+  "homepage": "https://code.visualstudio.com/",
+  "license": {
+    "identifier": "Freeware",
+    "url": "https://code.visualstudio.com/License/"
+  },
+  "notes": [
+    "Add Visual Studio Code as a context menu option by running:",
+    "'reg import \"$dir\\install-context.reg\"'",
+    "For file associations, run:",
+    "'reg import \"$dir\\install-associations.reg\"'",
+    "For github integration, run:",
+    "'reg import \"$dir\\install-github-integration.reg\"'"
+  ],
+  "architecture": {
+    "64bit": {
+      "url": "https://update.code.visualstudio.com/1.102.2/win32-x64-archive/stable#/dl.7z",
+      "hash": "bf061c9c02ba602f46d5f924a2bd189921fc9187b72aa669551e8ed52b590c46"
+    },
+    "arm64": {
+      "url": "https://update.code.visualstudio.com/1.102.2/win32-arm64-archive/stable#/dl.7z",
+      "hash": "0e8ca379e30ad0cad82403670730f1ef6a5d4a37d6cb572f0c485419955534f9"
+    }
+  },
+  "env_add_path": "bin",
+  "shortcuts": [
+    [
+      "code.exe",
+      "Visual Studio Code"
+    ]
+  ],
+  "pre_install": [
+    "function Create-SymlinkIfNotExists($target_dir, $link_dir) {",
+    "    # 检查目标是否已经是符号链接",
+    "    if (Test-Path $target_dir) {",
+    "        $item = Get-Item $target_dir -Force",
+    "        if ($item.Attributes -match 'ReparsePoint') {",
+    "            # 如果已经是符号链接，则跳过",
+    "            return",
+    "        }",
+    "    }",
+    "",
+    "    # 确保$link_dir目录存在",
+    "    if (-not (Test-Path $link_dir)) {",
+    "        New-Item -ItemType Directory -Path $link_dir -Force | Out-Null",
+    "    }",
+    "",
+    "    if (Test-Path $target_dir) {",
+    "        if (-not (Get-ChildItem -Path $target_dir -Force)) {",
+    "            # 目标目录存在但为空，直接删除并创建符号链接",
+    "            Remove-Item $target_dir -Force",
+    "            New-Item -ItemType SymbolicLink -Path $target_dir -Target $link_dir | Out-Null",
+    "        } else {",
+    "            # 目标目录存在且包含内容，需要移动",
+    "            $items = Get-ChildItem -Path $target_dir -Force",
+    "            if ($items) {",
+    "                foreach ($item in $items) {",
+    "                    $dest = Join-Path $link_dir $item.Name",
+    "                    if (-not (Test-Path $dest)) {",
+    "                        Move-Item -Path $item.FullName -Destination $link_dir -Force",
+    "                    }",
+    "                }",
+    "            }",
+    "            Remove-Item $target_dir -Force",
+    "            New-Item -ItemType SymbolicLink -Path $target_dir -Target $link_dir | Out-Null",
+    "        }",
+    "    } else {",
+    "        New-Item -ItemType SymbolicLink -Path $target_dir -Target $link_dir | Out-Null",
+    "    }",
+    "}",
+    "",
+    "# 处理用户配置目录",
+    "$config_dirs = @(",
+    "    '.vscode',",
+    "    '.lingma'",
+    ")",
+    "foreach ($config_dir in $config_dirs) {",
+    "    $target_dir = Join-Path $env:USERPROFILE $config_dir",
+    "    $link_dir = Join-Path $persist_dir $config_dir",
+    "    Create-SymlinkIfNotExists $target_dir $link_dir",
+    "}",
+    "",
+    "# 链接 $env:APPDATA\\Code 到 persist_dir/data",
+    "$appdata_dir = Join-Path $env:APPDATA \"Code\"",
+    "$persist_data_dir = Join-Path $persist_dir data",
+    "Create-SymlinkIfNotExists $appdata_dir $persist_data_dir"
+  ],
+  "post_install": [
+    "$dirpath = \"$dir\".Replace('\\', '\\\\')",
+    "$exepath = \"$dir\\Code.exe\".Replace('\\', '\\\\')",
+    "'install-associations', 'uninstall-associations', 'install-context', 'uninstall-context', 'install-github-integration', 'uninstall-github-integration' | ForEach-Object {",
+    "  if (Test-Path \"$bucketsdir\\$bucket\\scripts\\vscode\\$_.reg\") {",
+    "    $content = Get-Content \"$bucketsdir\\$bucket\\scripts\\vscode\\$_.reg\"",
+    "    $content = $content.Replace('$codedir', $dirpath)",
+    "    $content = $content.Replace('$code', $exepath)",
+    "    if ($global) {",
+    "      $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+    "    }",
+    "    $content | Set-Content -Path \"$dir\\$_.reg\"",
+    "  }",
+    "}"
+  ],
+  "uninstaller": {
+    "script": [
+      "if ($cmd -eq 'uninstall')",
+      "{",
+      "   reg import \"$dir\\uninstall-context.reg\" ",
+      "   reg import \"$dir\\uninstall-github-integration.reg\" ",
+      "}"
+    ]
+  },
+  "persist": [
+    "data",
+    ".vscode",
+    ".lingma"
+  ],
+  "checkver": {
+    "url": "https://update.code.visualstudio.com/api/update/win32-x64-archive/stable/latest",
+    "jsonpath": "$.name"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://update.code.visualstudio.com/$version/win32-x64-archive/stable#/dl.7z",
+        "hash": {
+          "url": "https://update.code.visualstudio.com/api/update/win32-x64-archive/stable/latest",
+          "jsonpath": "$.sha256hash"
+        }
+      },
+      "arm64": {
+        "url": "https://update.code.visualstudio.com/$version/win32-arm64-archive/stable#/dl.7z",
+        "hash": {
+          "url": "https://update.code.visualstudio.com/api/update/win32-arm64-archive/stable/latest",
+          "jsonpath": "$.sha256hash"
+        }
+      }
+    }
+  }
+}
