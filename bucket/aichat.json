@@ -32,7 +32,7 @@
   ],
 
   "pre_install": [
-    "$script_path = \"$bucketsdir\\code\\scripts\\$app\"",
+    "$script_path = \"$bucketsdir\\$bucket\\scripts\\$app\"",
     "$sourcePattern = Join-Path -Path $script_path -ChildPath '*.ps1'",
     "Copy-Item -Path $sourcePattern -Destination $dir -Force"
   ],
