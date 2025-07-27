@@ -1,0 +1,52 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.trae\OpenWithProgids]
+"TraeCN"=""
+"TraeCN.trae"=""
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trae]
+@="Trae Project File"
+"AppUserModelID"="Trae.TraeCN"
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trae\DefaultIcon]
+@="\"$traedir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trae\shell\open]
+"Icon"="\"$trae\""
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trae\shell\open\command]
+@="\"$trae\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.trproj\OpenWithProgids]
+"TraeCN"=""
+"TraeCN.trproj"=""
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trproj]
+@="Trae Project File"
+"AppUserModelID"="Trae.TraeCN"
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trproj\DefaultIcon]
+@="\"$traedir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trproj\shell\open]
+"Icon"="\"$trae\""
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trproj\shell\open\command]
+@="\"$trae\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.trworkspace\OpenWithProgids]
+"TraeCN"=""
+"TraeCN.trworkspace"=""
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trworkspace]
+@="Trae Workspace File"
+"AppUserModelID"="Trae.TraeCN"
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trworkspace\DefaultIcon]
+@="\"$traedir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trworkspace\shell\open]
+"Icon"="\"$trae\""
+
+[HKEY_CURRENT_USER\Software\Classes\TraeCN.trworkspace\shell\open\command]
+@="\"$trae\" \"%1\""
