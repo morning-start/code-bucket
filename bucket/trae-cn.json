@@ -48,8 +48,7 @@
   "shortcuts": [
     [
       "Trae CN.exe",
-      "Trae CN",
-      "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
+      "Trae CN"
     ]
   ],
   "persist": [
