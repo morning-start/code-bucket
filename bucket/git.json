@@ -21,9 +21,6 @@
         }
     },
     "post_install": [
-        "$target_dir=Join-Path $env:USERPROFILE .ssh",
-        "$link_dir=Join-Path $persist_dir .ssh",
-        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $target_dir $link_dir",
         "'install-context', 'uninstall-context', 'install-file-associations', 'uninstall-file-associations' | ForEach-Object {",
         "    $reg_file_in  = \"$bucketsdir\\main\\scripts\\git\\$_.reg\"",
         "    $reg_file_out = \"$dir\\$_.reg\"",
