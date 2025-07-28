@@ -33,6 +33,7 @@
         "POETRY_CACHE_DIR": "$persist_dir\\poetry\\cache",
         "POETRY_CONFIG_DIR": "$persist_dir\\poetry\\config"
     },
+    "env_add_path": ["tools\\bin"],
     "bin": ["uv.exe", "uvx.exe", "uvw.exe"],
     "persist": [
         "cache",
