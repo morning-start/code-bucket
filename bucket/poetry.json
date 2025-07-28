@@ -9,8 +9,11 @@
     "installer": {
         "script": ["uv tool install \"$dir\\$fname\""]
     },
-    "post_install": ["poetry config virtualenvs.in-project true"],
-    "bin": ["$env:UV_TOOL_BIN_DIR\\poetry.exe", "poetry"],
+    "post_install": [
+        "poetry config virtualenvs.in-project true",
+        "Copy-Item -Path \"$env:UV_TOOL_BIN_DIR\\poetry.exe\" -Destination \"$dir\" -Force"
+    ],
+    "bin": "poetry.exe",
     "env_set": {
         "POETRY_CACHE_DIR": "$persist_dir\\cache",
         "POETRY_HOME": "$dir",
