@@ -24,16 +24,20 @@
     "env_set": {
         "UV_CONFIG_FILE": "$persist_dir\\uv.toml",
         "UV_CACHE_DIR": "$persist_dir\\cache",
-        "UV_PYTHON_INSTALL_DIR": "$persist_dir\\python"
+        "UV_TOOL_DIR": "$persist_dir\\tools",
+        "UV_TOOL_BIN_DIR": "$persist_dir\\tools\\bin",
+        "UV_PYTHON_INSTALL_DIR": "$persist_dir\\python\\install",
+        "UV_PYTHON_CACHE_DIR": "$persist_dir\\python\\cache",
+        "UV_PYTHON_BIN_DIR": "$persist_dir\\python\\bin"
     },
-    "bin": [
-        "uv.exe",
-        "uvx.exe",
-        "uvw.exe"
-    ],
+    "bin": ["uv.exe", "uvx.exe", "uvw.exe"],
     "persist": [
         "cache",
-        "python"
+        "tools",
+        "tools\\bin",
+        "python\\bin",
+        "python\\install",
+        "python\\cache"
     ],
     "checkver": {
         "github": "https://github.com/astral-sh/uv"
