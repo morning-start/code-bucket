@@ -28,16 +28,21 @@
         "UV_TOOL_BIN_DIR": "$persist_dir\\tools\\bin",
         "UV_PYTHON_INSTALL_DIR": "$persist_dir\\python\\install",
         "UV_PYTHON_CACHE_DIR": "$persist_dir\\python\\cache",
-        "UV_PYTHON_BIN_DIR": "$persist_dir\\python\\bin"
+        "UV_PYTHON_BIN_DIR": "$persist_dir\\python\\bin",
+        "POETRY_HOME": "$persist_dir\\poetry\\data",
+        "POETRY_CACHE_DIR": "$persist_dir\\poetry\\cache",
+        "POETRY_CONFIG_DIR": "$persist_dir\\poetry\\config"
     },
     "bin": ["uv.exe", "uvx.exe", "uvw.exe"],
     "persist": [
         "cache",
-        "tools",
         "tools\\bin",
         "python\\bin",
         "python\\install",
-        "python\\cache"
+        "python\\cache",
+        "poetry\\data",
+        "poetry\\cache",
+        "poetry\\config"
     ],
     "checkver": {
         "github": "https://github.com/astral-sh/uv"
