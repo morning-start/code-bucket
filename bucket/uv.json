@@ -6,7 +6,7 @@
     "notes":[
         "If you install poetry working with conda, which will use poetry in conda env.",
         "follow this guide :",
-        "1. ux tool install poetry",
+        "1. uv tool install poetry",
         "2. poetry config virtualenvs.in-project true"
     ],
     "architecture": {
