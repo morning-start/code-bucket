@@ -7,7 +7,7 @@
     "url": "https://github.com/python-poetry/poetry/releases/download/2.1.3/poetry-2.1.3-py3-none-any.whl",
     "hash": "7054d3f97ccce7f31961ead16250407c4577bfe57e2037a190ae2913fc40a20c",
     "installer": {
-        "script": ["uv tool install \"$dir\\$fname\" --version $version"]
+        "script": ["uv tool install \"$dir\\$fname\""]
     },
     "post_install": ["poetry config virtualenvs.in-project true"],
     "bin": ["$env:UV_TOOL_BIN_DIR\\poetry.exe", "poetry"],
