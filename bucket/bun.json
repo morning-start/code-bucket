@@ -19,7 +19,7 @@
         }
     },
     "pre_install": [
-        "[Environment]::SetEnvironmentVariable('BUN_INSTALL', \"$persist_dir\\bun\", 'Process')",
+        "BUN_INSTALL=\"$persist_dir\\bun\"",
         "$avx2 = Start-Job -ScriptBlock {",
         "    Add-Type -MemberDefinition '[DllImport(\"kernel32.dll\")] public static extern bool IsProcessorFeaturePresent(int ProcessorFeature);' -Name Kernel32 -Namespace Win32",
         "    return [Win32.Kernel32]::IsProcessorFeaturePresent(40)",
@@ -35,8 +35,7 @@
         "bun.exe",
         [
             "bun.exe",
-            "bunx",
-            "x"
+            "bunx"
         ]
     ],
     "env_set": {
