@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.codebuddy\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.codebuddy"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.codebuddy]
+@="CodeBuddy Project File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.codebuddy\DefaultIcon]
+@="\"$codedir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.codebuddy\shell\open]
+"Icon"="\"$code\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.codebuddy\shell\open\command]
+@="\"$code\" \"%1\""
