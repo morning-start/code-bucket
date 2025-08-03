@@ -63,7 +63,7 @@
     "bin": [
         [
             "bin/trae.cmd",
-            "traecn"
+            "trae"
         ]
     ],
     "shortcuts": [
