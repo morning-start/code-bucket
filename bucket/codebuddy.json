@@ -58,7 +58,10 @@
             "}"
         ]
     },
-    "bin": ["CodeBuddy.exe"],
+    "bin": [        [
+            "bin/buddy.cmd",
+            "buddy"
+        ]],
     "shortcuts": [["CodeBuddy.exe", "CodeBuddy"]],
     "persist": ["data", ".codebuddy"],
     "checkver": {
