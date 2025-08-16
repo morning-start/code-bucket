@@ -22,11 +22,9 @@
         }
     },
     "pre_install": [
-        "$path=\"$env:USERPROFILE\\.android\"",
+        "$appdata_home=\"$env:USERPROFILE\\.android\"",
         "$target=\"$persist_dir\\.android\"",
-        "if (!(Test-Path $path)) {",
-        "    New-Item -ItemType SymbolicLink -Path $path -Target $target",
-        "}"
+        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $appdata_home $target"
     ],
     "extract_dir": "android-studio",
     "env_set": {
