@@ -1,5 +1,5 @@
 {
-    "version": "0.1.14",
+    "version": "0.1.20",
     "description": "An AI-powered IDE that makes programming more enjoyable and efficient.",
     "homepage": "https://www.codebuddy.ai/",
     "license": "Proprietary",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/aiide/win32-x64-user/CodeBuddy-win32-x64-user-0.1.14.3184085-2d3c50ae.exe",
-            "hash": "88e8f96bf18ed512020e244ad1c0a43b7f79ae2cf14a4bfa2a723dbec7b69152",
+            "url": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/aiide/win32-x64-user/CodeBuddy-win32-x64-user-0.1.20.4381318-f0518222.exe",
+            "hash": "f2a2649701e7d4aaee1eab1216a5c183bcd5af62f5ae58c8867cedd3f35cac2e",
             "extract_dir": "{code_GetDestDir}"
         }
     },
@@ -58,15 +58,25 @@
             "}"
         ]
     },
-    "bin": [        [
+    "bin": [
+        [
             "bin/buddy.cmd",
             "buddy"
-        ]],
-    "shortcuts": [["CodeBuddy.exe", "CodeBuddy"]],
-    "persist": ["data", ".codebuddy"],
+        ]
+    ],
+    "shortcuts": [
+        [
+            "CodeBuddy.exe",
+            "CodeBuddy"
+        ]
+    ],
+    "persist": [
+        "data",
+        ".codebuddy"
+    ],
     "checkver": {
         "url": "https://www.codebuddy.ai/v2/update?platform=ide-win32-x64-user",
-        "jsonpath":"$.url",
+        "jsonpath": "$.url",
         "regex": "user-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>\\d+)-(?<test>[a-f0-9]+)\\.exe"
     },
     "autoupdate": {
@@ -77,4 +87,3 @@
         }
     }
 }
- 
