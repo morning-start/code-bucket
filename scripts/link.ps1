@@ -16,42 +16,64 @@
 .PARAMETER link_dir
     符号链接指向的目录路径
 #>
-function New-SymlinkIfNotExists($target_dir, $link_dir) {
-    # 检查目标是否已经是符号链接
-    if (Test-Path $target_dir) {
-        $item = Get-Item $target_dir -Force
-        if ($item.Attributes -match 'ReparsePoint') {
-            # 如果已经是符号链接，则跳过
+function New-SymlinkIfNotExists {
+    [CmdletBinding(SupportsShouldProcess = $true)]
+    param (
+        [Parameter(Mandatory = $true, HelpMessage = "要创建的符号链接路径")]
+        [string]$SymlinkPath,
+        
+        [Parameter(Mandatory = $true, HelpMessage = "符号链接指向的目标路径")]
+        [string]$TargetPath
+    )
+
+    # 检查目标路径是否已为符号链接
+    if (Test-Path -Path $SymlinkPath -ErrorAction SilentlyContinue) {
+        $item = Get-Item -Path $SymlinkPath -Force -ErrorAction SilentlyContinue
+        if ($item -and $item.Attributes.HasFlag([System.IO.FileAttributes]::ReparsePoint)) {
+            Write-Verbose "$SymlinkPath 已是符号链接，跳过操作"
             return
         }
     }
 
-    # 确保$link_dir目录存在
-    if (-not (Test-Path $link_dir)) {
-        New-Item -ItemType Directory -Path $link_dir -Force | Out-Null
-    }
+    try {
+        # 确保目标目录存在
+        if (-not (Test-Path -Path $TargetPath)) {
+            if ($PSCmdlet.ShouldProcess($TargetPath, "创建目标目录")) {
+                New-Item -ItemType Directory -Path $TargetPath -Force | Out-Null
+                Write-Verbose "已创建目标目录: $TargetPath"
+            }
+        }
 
-    if (Test-Path $target_dir) {
-        if (-not (Get-ChildItem -Path $target_dir -Force)) {
-            # 目标目录存在但为空，直接删除并创建符号链接
-            Remove-Item $target_dir -Force
-            New-Item -ItemType SymbolicLink -Path $target_dir -Target $link_dir | Out-Null
-        } else {
-            # 目标目录存在且包含内容，需要移动
-            $items = Get-ChildItem -Path $target_dir -Force
-            if ($items) {
-                foreach ($item in $items) {
-                    $dest = Join-Path $link_dir $item.Name
-                    if (-not (Test-Path $dest)) {
-                        Move-Item -Path $item.FullName -Destination $link_dir -Force
-                    }
+        # 处理已存在的源路径
+        if (Test-Path -Path $SymlinkPath) {
+            # 检查目录是否为空
+            $hasContent = (Get-ChildItem -Path $SymlinkPath -Force -ErrorAction SilentlyContinue | Measure-Object).Count -gt 0
+            
+            if ($hasContent) {
+                if ($PSCmdlet.ShouldProcess($SymlinkPath, "移动内容到目标目录 $TargetPath")) {
+                    # 移动目录内容而非目录本身
+                    Move-Item -Path "$SymlinkPath\*" -Destination $TargetPath -Force -ErrorAction Stop
+                    Write-Verbose "已将 $SymlinkPath 内容移动到 $TargetPath"
                 }
             }
-            Remove-Item $target_dir -Force
-            New-Item -ItemType SymbolicLink -Path $target_dir -Target $link_dir | Out-Null
+
+            # 删除原路径（无论是否为空）
+            if ($PSCmdlet.ShouldProcess($SymlinkPath, "删除原路径")) {
+                Remove-Item -Path $SymlinkPath -Recurse -Force -ErrorAction Stop
+                Write-Verbose "已删除原路径: $SymlinkPath"
+            }
         }
-    } else {
-        New-Item -ItemType SymbolicLink -Path $target_dir -Target $link_dir | Out-Null
+
+        # 创建符号链接
+        if ($PSCmdlet.ShouldProcess($SymlinkPath, "创建指向 $TargetPath 的符号链接")) {
+            New-Item -ItemType SymbolicLink -Path $SymlinkPath -Target $TargetPath -Force -ErrorAction Stop | Out-Null
+            Write-Verbose "已成功创建符号链接: $SymlinkPath -> $TargetPath"
+        }
+    }
+    catch {
+        Write-Error "操作失败: $_"
+        throw  # 重新抛出异常以便上层处理
     }
 }
+
 New-SymlinkIfNotExists $args[0] $args[1]
