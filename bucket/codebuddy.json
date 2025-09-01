@@ -1,5 +1,5 @@
 {
-    "version": "0.1.30",
+    "version": "0.1.32",
     "description": "An AI-powered IDE that makes programming more enjoyable and efficient.",
     "homepage": "https://www.codebuddy.ai/",
     "license": "Proprietary",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/aiide/win32-x64-user/CodeBuddy-win32-x64-user-0.1.30.5880794-529e0e5b.exe",
-            "hash": "0669c1f647d7a2b1144874557abbc9bcb00a068ff927e73a47ef8d6d311de8b3",
+            "url": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/aiide/win32-x64-user/CodeBuddy-win32-x64-user-0.1.32.6044592-616f430a.exe",
+            "hash": "8f711ba59ca3c8e50e883bf2a3041d21c1b3cb6ac70c07cc4ad537afdbe30a6b",
             "extract_dir": "{code_GetDestDir}"
         }
     },
