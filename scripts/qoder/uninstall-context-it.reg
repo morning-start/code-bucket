@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &Qoder]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &Qoder\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &Qoder]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &Qoder\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &Qoder]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &Qoder\command]

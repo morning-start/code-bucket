@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{QODER-GUID-HERE}_is1]
+"DisplayIcon"="\"$qoder\""
+"DisplayName"="Qoder"
+"Publisher"="Qoder Inc."
+"InstallLocation"="$qoderdir"

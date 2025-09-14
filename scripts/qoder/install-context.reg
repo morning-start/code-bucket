@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Qoder]
+@="Open with &Qoder"
+"Icon"="$qoder"
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Qoder\command]
+@="\"$qoder\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Qoder]
+@="Open with &Qoder"
+"Icon"="$qoder"
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Qoder\command]
+@="\"$qoder\" \"%V\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Qoder]
+@="Open with &Qoder"
+"Icon"="$qoder"
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Qoder\command]
+@="\"$qoder\" \"%V\""
