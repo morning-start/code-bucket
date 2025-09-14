@@ -1,8 +1,8 @@
 Windows Registry Editor Version 5.00
 
-[-HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &CodeBuddy]
-[-HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &CodeBuddy\command]
-[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &CodeBuddy]
-[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &CodeBuddy\command]
-[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &CodeBuddy]
-[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &CodeBuddy\command]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Buddy]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Buddy\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Buddy]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Buddy\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Buddy]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Buddy\command]
