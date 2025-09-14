@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.qoder.com/release/latest/QoderUserSetup-x64.exe",
-            "hash": "8515fa1502602cd4c5d499746fe1b911773d7d7053c8f207964cab5ada048acd",
+            "hash": "c44750849ed3675d7539a4917059549469ad181e3abbc1499194523cb5c752f4",
             "extract_dir": "{code_GetDestDir}"
         }
     },
