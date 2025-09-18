@@ -31,21 +31,13 @@
         "Move-Item \"$dir\\$target\\bun.exe\" \"$dir\\bun.exe\"",
         "Remove-Item \"$dir\\bun-windows-*\" -Recurse"
     ],
-    "bin": [
-        "bun.exe",
-        [
-            "bun.exe",
-            "bunx"
-        ]
+    "post_install": [
+        "$appdata_dir = Join-Path $env:USERPROFILE \".bun\"",
+        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $appdata_dir $persist_dir"
     ],
-    "env_set": {
-        "BUN_INSTALL": "$persist_dir"
-    },
+    "bin": ["bun.exe", ["bun.exe", "bunx"]],
     "env_add_path": "bin",
-    "persist": [
-        "bin",
-        "install\\global"
-    ],
+    "persist": ["bin"],
     "checkver": {
         "github": "https://github.com/oven-sh/bun",
         "re": "bun-v([\\d.]+)"
