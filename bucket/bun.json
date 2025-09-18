@@ -36,7 +36,7 @@
     "env_set": {
         "BUN_INSTALL": "$persist_dir"
     },
-    "persist": ["bin"],
+    "persist": ["bin","install"],
     "checkver": {
         "github": "https://github.com/oven-sh/bun",
         "re": "bun-v([\\d.]+)"
