@@ -1,5 +1,5 @@
 {
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Agentic Coding Platform for Real Software",
     "homepage": "https://qoder.com/",
     "license": "Proprietary",
@@ -61,7 +61,9 @@
     "bin": [["bin/qoder.cmd", "qoder"]],
     "shortcuts": [["Qoder.exe", "Qoder"]],
     "persist": ["data", ".qoder"],
-
+    "checkver": {
+        "url": "https://qoder.com/changelog"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
