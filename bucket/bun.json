@@ -6,6 +6,7 @@
     "suggest": {
         "vcredist": "extras/vcredist2022"
     },
+    "notes": ["切换国内源，推荐使用nrm进行管理"],
     "architecture": {
         "64bit": {
             "url": [

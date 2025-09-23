@@ -6,8 +6,7 @@
     "notes": [
         "查看配置信息: pnpm config list",
         "",
-        "切换国内源: ",
-        "pnpm config set registry https://registry.npmmirror.com"
+        "切换国内源，推荐使用nrm进行管理"
     ],
     "architecture": {
         "64bit": {
@@ -15,14 +14,7 @@
             "hash": "c050ab19b9fd5888d5bcaf8a3d7308fdbcb0c5d7c8065c98b4091e9dc1f3b0f0"
         }
     },
-    "bin": [
-        "pnpm.exe",
-        [
-            "pnpm.exe",
-            "pnpx",
-            "dlx"
-        ]
-    ],
+    "bin": ["pnpm.exe", ["pnpm.exe", "pnpx", "dlx"]],
     "post_install": [
         "pnpm config set global-bin-dir \"$dir\\bin\"",
         "pnpm config set store-dir \"$dir\\store\"",
@@ -31,13 +23,7 @@
         "pnpm config set cache-dir \"$dir\\cache\""
     ],
     "env_add_path": "bin",
-    "persist": [
-        "bin",
-        "store",
-        "state",
-        "global",
-        "cache"
-    ],
+    "persist": ["bin", "store", "state", "global", "cache"],
     "checkver": {
         "script": [
             "# Using checkver script to check through all release tags",
