@@ -12,9 +12,9 @@
     },
     "env_set": {
         "GDEM_ROOT": "$persist_dir",
-        "GODOT_PATH": "$dir/godot.exe"
+        "GODOT_PATH": "$dir/default/godot.exe"
     },
-    "persist": ["data", "cache", "home"],
+    "persist": ["data", "cache", "home","default"],
     "post_install": "gdem config",
-    "env_add_path": "default\\bin"
+    "env_add_path": "default"
 }
