@@ -1,8 +1,8 @@
 on:
   workflow_dispatch:
   schedule:
-    # run every 4 hours
-    - cron: '0 */4 * * *'
+    # 对应北京时间 10:00, 12:00, 15:00, 18:00, 22:00, 次日06:00
+    - cron: '0 2,4,7,10,14,22 * * *'
 name: Excavator
 jobs:
   excavate:
