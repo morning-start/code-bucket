@@ -62,8 +62,8 @@
     "shortcuts": [["Qoder.exe", "Qoder"]],
     "persist": ["data", ".qoder"],
     "checkver": {
-        "url": "https://qoder.com/changelog",
-        "regex": "<div class=\"LogItem--versionTag--gat2lwu\">([\\d.]+)</div>"
+        "url": "https://g.alicdn.com/qbase/qoder-blog/0.0.43/js/index.js",
+        "regex": "\"version\":\"(\\d+\\.\\d+\\.\\d+)\""
     },
     "autoupdate": {
         "architecture": {
