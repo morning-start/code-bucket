@@ -1,5 +1,5 @@
 {
-    "version": "0.2.2",
+    "version": "0.2.5",
     "description": "Agentic Coding Platform for Real Software",
     "homepage": "https://qoder.com/",
     "license": "Proprietary",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://download.qoder.com/release/0.2.2/QoderUserSetup-x64.exe",
-            "hash": "312e373adf4d2db707461a82de55a25e2624debae0b3d5943f22686f58ae35d6",
+            "url": "https://download.qoder.com/release/0.2.5/QoderUserSetup-x64.exe",
+            "hash": "fca828190fb80c1bcdd7aacb65beb5a48ba40e00184e713462e23a67a9283046",
             "extract_dir": "{code_GetDestDir}"
         }
     },
@@ -58,9 +58,22 @@
             "}"
         ]
     },
-    "bin": [["bin/qoder.cmd", "qoder"]],
-    "shortcuts": [["Qoder.exe", "Qoder"]],
-    "persist": ["data", ".qoder"],
+    "bin": [
+        [
+            "bin/qoder.cmd",
+            "qoder"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Qoder.exe",
+            "Qoder"
+        ]
+    ],
+    "persist": [
+        "data",
+        ".qoder"
+    ],
     "checkver": {
         "url": "https://g.alicdn.com/qbase/qoder-blog/0.0.43/js/index.js",
         "regex": "\"version\":\"(\\d+\\.\\d+\\.\\d+)\""
