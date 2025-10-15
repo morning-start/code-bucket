@@ -21,7 +21,6 @@ function New-SymlinkIfNotExists {
     param (
         [Parameter(Mandatory = $true, HelpMessage = "要创建的符号链接路径")]
         [string]$SymlinkPath,
-        
         [Parameter(Mandatory = $true, HelpMessage = "符号链接指向的目标路径")]
         [string]$TargetPath
     )
@@ -48,7 +47,6 @@ function New-SymlinkIfNotExists {
         if (Test-Path -Path $SymlinkPath) {
             # 检查目录是否为空
             $hasContent = (Get-ChildItem -Path $SymlinkPath -Force -ErrorAction SilentlyContinue | Measure-Object).Count -gt 0
-            
             if ($hasContent) {
                 if ($PSCmdlet.ShouldProcess($SymlinkPath, "移动内容到目标目录 $TargetPath")) {
                     # 移动目录内容而非目录本身
@@ -69,8 +67,7 @@ function New-SymlinkIfNotExists {
             New-Item -ItemType SymbolicLink -Path $SymlinkPath -Target $TargetPath -Force -ErrorAction Stop | Out-Null
             Write-Verbose "已成功创建符号链接: $SymlinkPath -> $TargetPath"
         }
-    }
-    catch {
+    } catch {
         Write-Error "操作失败: $_"
         throw  # 重新抛出异常以便上层处理
     }
