@@ -1,5 +1,11 @@
 name: Repo Sync to Gitee
 on:
+  # 每次手动push后
+  push:
+    branches:
+      - main
+      - master
+
   # 在 Excavator 完成后
   workflow_run:
     workflows: [Excavator]
@@ -15,7 +21,9 @@ jobs:
   mirror-to-gitee:
     name: Sync to Gitee
     runs-on: ubuntu-latest
-
+    if: |
+      (github.event_name == 'push' && github.event.pusher.name != 'github-actions[bot]') ||
+      (github.event_name == 'workflow_run')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
