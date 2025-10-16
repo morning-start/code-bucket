@@ -48,6 +48,7 @@
             }
         }
     },
+    "env_add_path": "condabin",
     "notes": [
         "此版本不会将默认虚拟环境添加到您的PATH中，除非您使用 'conda activate base' 激活它。",
         "如果您不关心python PATH污染，可以选择安装官方bucket中的版本。",
@@ -57,6 +58,9 @@
         "https://conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#specify-environment-directories-envs-dirs",
         "",
         "要启用conda自动加载的tab补全功能，您可以将以下代码添加到您的PowerShell $PROFILE中：",
-        "(& conda 'shell.powershell' 'hook') | Out-String | Invoke-Expression"
+        "(& conda 'shell.powershell' 'hook') | Out-String | Invoke-Expression",
+        "mamba shell init --shell powershell",
+        "pip 换源 (tsinghua):",
+        "pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple"
     ]
 }

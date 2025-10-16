@@ -47,6 +47,7 @@
             }
         }
     },
+    "env_add_path": "condabin",
     "notes": [
         "This variant does not add the default venv into your PATH unless you activate it with 'conda activate base'.",
         "You may choose to install the one from the official bucket if you do not care about python PATH pollution.",
