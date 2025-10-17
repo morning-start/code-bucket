@@ -15,6 +15,15 @@
             "Expand-InnoArchive -Path \"$dir\\$fname\" -ExtractDir '{code_GetInstallDir}' -Removal"
         ]
     },
+    "pre_install": [
+        "$local=Join-Path $env:LOCALAPPDATA \"Zed\"",
+        "$persist_local=Join-Path $persist_dir \"local\"",
+        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $local $persist_local",
+        "$appdata=Join-Path $env:APPDATA \"Zed\"",
+        "$persist_appdata=Join-Path $persist_dir \"appdata\"",
+        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $appdata $persist_appdata"
+    ],
+    "persist": ["local", "appdata"],
     "bin": ["bin\\zed", "bin\\zed.exe"],
     "shortcuts": [["zed.exe", "Zed"]],
     "checkver": {
