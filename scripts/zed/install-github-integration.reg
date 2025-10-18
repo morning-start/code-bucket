@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{5813BED0-7C68-4A03-8F8F-1E140FB2D88B}_is1]
+"DisplayIcon"="\"$zed\""
+"DisplayName"="Zed"
+"Publisher"="Zed Industries"
+"InstallLocation"="$zeddir"

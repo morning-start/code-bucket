@@ -1,0 +1,36 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.ascx\OpenWithProgids]
+"Zed"=""
+"Zed.ascx"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Zed.ascx]
+@="ASCX Source File"
+"AppUserModelID"="Zed.Zed"
+
+[HKEY_CURRENT_USER\Software\Classes\Zed.ascx\DefaultIcon]
+@="\"$zeddir\\resources\\app\\resources\\win32\\xml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Zed.ascx\shell\open]
+"Icon"="\"$zed\""
+
+[HKEY_CURRENT_USER\Software\Classes\Zed.ascx\shell\open\command]
+@="\"$zed\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.zsh\OpenWithProgids]
+"Zed"=""
+"Zed.zsh"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Zed.zsh]
+@="ZSH Source File"
+"AppUserModelID"="Zed.Zed"
+
+[HKEY_CURRENT_USER\Software\Classes\Zed.zsh\DefaultIcon]
+@="\"$zeddir\\resources\\app\\resources\\win32\\shell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Zed.zsh\shell\open]
+"Icon"="\"$zed\""
+
+[HKEY_CURRENT_USER\Software\Classes\Zed.zsh\shell\open\command]
+@="\"$zed\" \"%1\""
