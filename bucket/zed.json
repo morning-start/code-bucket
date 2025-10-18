@@ -51,8 +51,8 @@
         ]
     },
     "persist": ["local", "appdata"],
-    "bin": ["bin\\zed", "bin\\zed.exe"],
-    "shortcuts": [["zed.exe", "Zed"]],
+    "bin": ["bin\\zed.exe"],
+    "shortcuts": [["Zed.exe", "Zed"]],
     "checkver": {
         "github": "https://github.com/zed-industries/zed"
     },
