@@ -15,9 +15,6 @@
             "extract_dir": "zvm-windows-arm64"
         }
     },
-    "env_set": {
-        "ZVM_INSTALL": "$persist_dir"
-    },
     "persist": "bin",
     "env_add_path": "bin",
     "bin": "zvm.exe",
@@ -35,5 +32,9 @@
                 "extract_dir": "zvm-windows-arm64"
             }
         }
-    }
+    },
+    "post_install": [
+        "$appdata_dir = Join-Path $env:USERPROFILE \".zvm\"",
+        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $appdata_dir $$persist_dir"
+    ]
 }
