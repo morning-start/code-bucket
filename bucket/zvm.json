@@ -35,6 +35,6 @@
     },
     "post_install": [
         "$appdata_dir = Join-Path $env:USERPROFILE \".zvm\"",
-        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $appdata_dir $$persist_dir"
+        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $appdata_dir $persist_dir"
     ]
 }
