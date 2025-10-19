@@ -64,7 +64,7 @@ function New-SymlinkIfNotExists {
 
         # 创建符号链接
         if ($PSCmdlet.ShouldProcess($SymlinkPath, "创建指向 $TargetPath 的符号链接")) {
-            New-Item -ItemType DirectorySymbolicLink -Path $SymlinkPath -Target $TargetPath -Force -ErrorAction Stop | Out-Null
+            New-Item -ItemType SymbolicLink -Path $SymlinkPath -Target $TargetPath -Force -ErrorAction Stop | Out-Null
             Write-Verbose "已成功创建符号链接: $SymlinkPath -> $TargetPath"
         }
     } catch {
