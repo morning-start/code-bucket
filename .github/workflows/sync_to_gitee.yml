@@ -42,7 +42,7 @@ jobs:
 
           if [ "$response" = "404" ]; then
             echo "仓库不存在，正在创建新仓库..."
-            
+
             # 创建新仓库
             create_response=$(curl -s -X POST "https://gitee.com/api/v5/user/repos" \
               -H "Content-Type: application/json" \
@@ -55,7 +55,7 @@ jobs:
                 \"has_wiki\": true,
                 \"can_comment\": true
               }")
-            
+
             echo "创建仓库响应: $create_response"
             echo "✅ 仓库创建完成，准备同步..."
           elif [ "$response" = "200" ]; then
