@@ -15,6 +15,11 @@
             "extract_dir": "zvm-windows-arm64"
         }
     },
+    "env_set": {
+        "ZVM_INSTALL": "$persist_dir"
+    },
+    "persist": "bin",
+    "env_add_path": "bin",
     "bin": "zvm.exe",
     "checkver": {
         "github": "https://github.com/tristanisham/zvm"
@@ -30,27 +35,5 @@
                 "extract_dir": "zvm-windows-arm64"
             }
         }
-    },
-    "post_install": [
-        "if (Test-Path ~\\.zvm) {",
-        "   if ($null -eq (Get-Item ~\\.zvm).LinkType) {",
-        "       Rename-Item -Path ~\\.zvm -NewName ~\\.zvm.old -Force",
-        "   } else {",
-        "       Remove-Item -Path ~\\.zvm -Force",
-        "   }",
-        "}",
-        "New-Item -Path ~/.zvm -Target \"$dir\\data\" -ItemType Junction | Out-Null"
-    ],
-    "uninstaller": {
-        "script": [
-            "if ((Test-Path ~\\.zvm) -and ($null -ne (Get-Item ~\\.zvm).LinkType)) {",
-            "   Remove-Item -Path ~\\.zvm -Force",
-            "}",
-            "if (Test-Path ~\\.zvm.old) {",
-            "   Rename-Item -Path ~\\.zvm.old -NewName .zvm -Force",
-            "}"
-        ]
-    },
-    "persist": "data",
-    "env_add_path": "data\\bin"
+    }
 }
