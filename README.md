@@ -51,5 +51,6 @@ All tools have been configured to:
 ## 🧪 Usage Instructions
 
 1. Add this bucket to Scoop:
+
     ```powershell
    scoop bucket add code https://github.com/yourname/code-bucket.git
