@@ -50,7 +50,13 @@ All tools have been configured to:
 
 ## 🧪 Usage Instructions
 
-1. Add this bucket to Scoop:
+Add this bucket to Scoop:
 
-    ```powershell
-   scoop bucket add code https://github.com/yourname/code-bucket.git
+```powershell
+scoop bucket add code https://github.com/morning-start/code-bucket.git
+scoop bucket add code https://gitee.com/morning-start/code-bucket.git
+```
+
+## 📄 LICENSE
+
+MIT / Apache-2.0 / BSD etc.
