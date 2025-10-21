@@ -10,10 +10,12 @@
 | **android-studio**   | 官方Android开发IDE。                                                         |
 | **bun**              | 极速的JavaScript运行时、打包器、转译器和包管理器。                                  |
 | **codebuddy**        | AI驱动的IDE，让编程更愉快高效。                                                  |
+| **deno**             | 安全的JavaScript和TypeScript运行时。                                              |
 | **fnm**              | 跨平台Node.js版本切换工具。                                                    |
 | **fvm**              | Flutter SDK版本管理工具。                                                      |
 | **git**              | 分布式版本控制系统(Git for Windows)。                                           |
 | **git-tags**         | Git标签管理器。                                                                |
+| **gdem**             | 基于GodotHub的Godot引擎版本管理工具。                                             |
 | **gradle**           | 开源构建自动化工具。                                                           |
 | **gvm**              | Golang版本管理工具。                                                           |
 | **img2ico**          | 将图片(png/jpg)转换为ico文件的免费工具。                                          |
@@ -22,11 +24,15 @@
 | **jvms**             | Windows平台JDK版本管理工具。                                                   |
 | **maven**            | Java项目管理工具。                                                             |
 | **miniconda3**       | Python包管理器(Miniconda)。                                                    |
+| **miniforge**        | 专为conda-forge设计的最小conda发行版。                                           |
+| **miniforge-cn**     | conda-forge发行版。                                                           |
 | **pnpm**             | 快速且节省磁盘空间的Node.js包管理器。                                             |
 | **poetry**           | Python依赖管理工具。                                                           |
+| **qoder**            | 面向真实软件的智能编码平台。                                                     |
 | **rig**              | R语言安装管理器：安装、删除、配置R版本。                                           |
 | **rustup**           | Rust多版本管理器。                                                             |
 | **rustup-gnu**       | Rust多版本管理器(GCC工具链)。                                                   |
+| **shell360**         | 跨平台SSH和SFTP客户端。                                                       |
 | **trae-cn**          | AI驱动的IDE，让编程更愉快高效。                                                  |
 | **uv**               | 极速的Python安装器和依赖解析器，使用Rust编写。                                      |
 | **version-manager**  | 支持60+ SDK的通用版本管理器，界面灵感来自lazygit。                                  |
@@ -34,6 +40,7 @@
 | **visx**             | VS Code扩展下载器。                                                            |
 | **vscode**           | 轻量但功能强大的源代码编辑器。                                                    |
 | **yarn**             | Node.js依赖管理器。                                                            |
+| **zed**              | 高性能多人代码编辑器，由Atom创作者开发。                                            |
 
 ## 🛠 配置亮点
 
