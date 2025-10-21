@@ -46,10 +46,14 @@
 ## 🧪 使用说明
 
 1. 将此仓库添加到Scoop：
+
     ```powershell
-   scoop bucket add code https://github.com/yourname/code-bucket.git
+   scoop bucket add code https://github.com/morning-start/code-bucket.git
+   scoop bucket add code https://gitee.com/morning-start/code-bucket.git
    ```
+
 2. 安装任意应用程序：
+
     ```powershell
    scoop search code/<app_name>
    scoop install code/<app_name>
