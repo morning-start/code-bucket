@@ -9,7 +9,12 @@
             "hash": "sha256:71eaa93be710ab46f98a067c07345a3b6e1d627b42253f62ac0d4e7a9eae517d"
         }
     },
-    "bin": "Shell360.exe",
+    "shortcuts": [
+        [
+            "shell360.exe",
+            "Shell360"
+        ]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
