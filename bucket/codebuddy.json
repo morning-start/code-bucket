@@ -69,7 +69,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$matchLink-user-$matchVersion.$matchBuild.exe"
+                "url": "https://$matchLink-user-$matchVersion.$matchBuild.exe",
+                "hash": {
+                    "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user&version=1.0.0&x-machine-id=default",
+                    "jsonpath": "$.sha256hash",
+                    "type": "sha256"
+                }
             }
         }
     }
