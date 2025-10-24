@@ -58,31 +58,18 @@
             "}"
         ]
     },
-    "bin": [
-        [
-            "bin/buddy.cmd",
-            "buddy"
-        ]
-    ],
-    "shortcuts": [
-        [
-            "CodeBuddy.exe",
-            "CodeBuddy"
-        ]
-    ],
-    "persist": [
-        "data",
-        ".codebuddy"
-    ],
+    "bin": [["bin/buddy.cmd", "buddy"]],
+    "shortcuts": [["CodeBuddy.exe", "CodeBuddy"]],
+    "persist": ["data", ".codebuddy"],
     "checkver": {
-        "url": "https://www.codebuddy.ai/v2/update?platform=ide-win32-x64-user",
+        "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user&version=1.0.0&x-machine-id=default",
         "jsonpath": "$.url",
-        "regex": "user-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>\\d+)-(?<test>[a-f0-9]+)\\.exe"
+        "regex": "https://(?<link>)-user-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>.+)\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/aiide/win32-x64-user/CodeBuddy-win32-x64-user-$matchVersion.$matchBuild-$matchTest.exe"
+                "url": "https://$matchLink-user-$matchVersion.$matchBuild.exe"
             }
         }
     }
