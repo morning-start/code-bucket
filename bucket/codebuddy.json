@@ -62,7 +62,7 @@
     "shortcuts": [["CodeBuddy.exe", "CodeBuddy"]],
     "persist": ["data", ".codebuddy"],
     "checkver": {
-        "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user&version=1.0.0&x-machine-id=default",
+        "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user",
         "jsonpath": "$.url",
         "regex": "https://(?<link>)-user-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>.+)\\.exe"
     },
@@ -71,7 +71,7 @@
             "64bit": {
                 "url": "https://$matchLink-user-$matchVersion.$matchBuild.exe",
                 "hash": {
-                    "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user&version=1.0.0&x-machine-id=default",
+                    "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user",
                     "jsonpath": "$.sha256hash",
                     "type": "sha256"
                 }
