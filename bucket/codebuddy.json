@@ -64,12 +64,12 @@
     "checkver": {
         "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user",
         "jsonpath": "$.url",
-        "regex": "https://(?<link>)-user-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>.+)\\.exe"
+        "regex": "://(?<link>)-user-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>.+)\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$matchLink-user-$matchVersion.$matchBuild.exe",
+                "url": "https://$matchLink-user-$version.$matchBuild.exe",
                 "hash": {
                     "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user",
                     "jsonpath": "$.sha256hash",
