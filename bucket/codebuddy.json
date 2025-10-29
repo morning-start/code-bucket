@@ -60,14 +60,14 @@
     },
     "bin": [
         [
-            "bin/buddy.cmd",
-            "buddy"
+            "bin/buddycn.cmd",
+            "buddycn"
         ]
     ],
     "shortcuts": [
         [
-            "CodeBuddy.exe",
-            "CodeBuddy"
+            "CodeBuddy CN.exe",
+            "CodeBuddy CN"
         ]
     ],
     "persist": [
