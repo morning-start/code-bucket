@@ -1,5 +1,5 @@
 {
-    "version": "0.2.4",
+    "version": "1.1.2",
     "description": "An AI-powered IDE that makes programming more enjoyable and efficient.",
     "homepage": "https://www.codebuddy.ai/",
     "license": "Proprietary",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/aiide/win32-x64-user/CodeBuddy-win32-x64-user-0.2.4.7567294-9c12ed6c.exe",
-            "hash": "bef32094715da4f9830572194df2b38a1fd9a32b62c0f6ce256e80444087340b",
+            "url": "https://acc-1258344699.cos.accelerate.myqcloud.com/aiide/win32-x64-user/CodeBuddy-win32-x64-user-1.1.2.10875164-8820ab8ce-575c3cf4-cn.exe",
+            "hash": "7eefeab9c56ee1432337a3202c1db814b3f550b38da886f6ae3fbe47b00b440c",
             "extract_dir": "{code_GetDestDir}"
         }
     },
@@ -58,13 +58,26 @@
             "}"
         ]
     },
-    "bin": [["bin/buddy.cmd", "buddy"]],
-    "shortcuts": [["CodeBuddy.exe", "CodeBuddy"]],
-    "persist": ["data", ".codebuddy"],
+    "bin": [
+        [
+            "bin/buddy.cmd",
+            "buddy"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "CodeBuddy.exe",
+            "CodeBuddy"
+        ]
+    ],
+    "persist": [
+        "data",
+        ".codebuddy"
+    ],
     "checkver": {
         "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user",
         "jsonpath": "$.url",
-        "regex": ":\/\/(?<link>.*)-user-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>.+)\\.exe"
+        "regex": "://(?<link>.*)-user-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>.+)\\.exe"
     },
     "autoupdate": {
         "architecture": {
