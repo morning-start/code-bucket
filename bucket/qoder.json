@@ -75,8 +75,8 @@
         ".qoder"
     ],
     "checkver": {
-        "url": "https://g.alicdn.com/qbase/qoder-blog/0.0.43/js/index.js",
-        "regex": "\"version\":\"(\\d+\\.\\d+\\.\\d+)\""
+        "url": "https://api.github.com/repos/QoderAI/changelog/releases",
+        "jp": "$[0].tag_name"
     },
     "autoupdate": {
         "architecture": {
