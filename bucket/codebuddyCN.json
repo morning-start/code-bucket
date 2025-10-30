@@ -33,10 +33,10 @@
     ],
     "post_install": [
         "$dirpath = \"$dir\".Replace('\\', '\\\\')",
-        "$exepath = \"$dir\\CodeBuddy.exe\".Replace('\\', '\\\\')",
+        "$exepath = \"$dir\\CodeBuddy CN.exe\".Replace('\\', '\\\\')",
         "'install-associations', 'uninstall-associations', 'install-context', 'uninstall-context', 'install-github-integration', 'uninstall-github-integration' | ForEach-Object {",
-        "  if (Test-Path \"$bucketsdir\\$bucket\\scripts\\codebuddy\\$_.reg\") {",
-        "    $content = Get-Content \"$bucketsdir\\$bucket\\scripts\\codebuddy\\$_.reg\"",
+        "  if (Test-Path \"$bucketsdir\\$bucket\\scripts\\codebuddyCN\\$_.reg\") {",
+        "    $content = Get-Content \"$bucketsdir\\$bucket\\scripts\\codebuddyCN\\$_.reg\"",
         "    $content = $content.Replace('$buddydir', $dirpath)",
         "    $content = $content.Replace('$buddy', $exepath)",
         "    if ($global) {",

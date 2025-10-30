@@ -1,0 +1,954 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.js\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.js"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.js]
+@="JavaScript Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.js\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\javascript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.js\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.js\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.jsx\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.jsx"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.jsx]
+@="JSX Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.jsx\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\javascript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.jsx\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.jsx\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ts\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.ts"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ts]
+@="TypeScript Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ts\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\typescript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ts\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ts\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.tsx\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.tsx"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.tsx]
+@="TypeScript JSX Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.tsx\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\typescript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.tsx\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.tsx\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.json\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.json"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.json]
+@="JSON Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.json\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\json.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.json\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.json\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.html\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.html"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.html]
+@="HTML Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.html\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\html.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.html\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.html\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.htm\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.htm"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.htm]
+@="HTM Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.htm\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\html.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.htm\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.htm\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.css\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.css"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.css]
+@="CSS Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.css\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\css.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.css\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.css\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.scss\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.scss"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.scss]
+@="SCSS Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.scss\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\sass.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.scss\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.scss\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sass\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.sass"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sass]
+@="Sass Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sass\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\sass.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sass\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sass\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.less\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.less"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.less]
+@="Less Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.less\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\less.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.less\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.less\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.md\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.md"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.md]
+@="Markdown Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.md\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\markdown.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.md\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.md\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.markdown\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.markdown"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.markdown]
+@="Markdown Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.markdown\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\markdown.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.markdown\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.markdown\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.py\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.py"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.py]
+@="Python Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.py\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\python.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.py\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.py\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.php\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.php"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.php]
+@="PHP Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.php\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\php.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.php\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.php\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.java\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.java"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.java]
+@="Java Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.java\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\java.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.java\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.java\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.xml\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.xml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.xml]
+@="XML Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.xml\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\xml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.xml\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.xml\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.yaml\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.yaml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.yaml]
+@="YAML Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.yaml\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\yaml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.yaml\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.yaml\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.yml\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.yml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.yml]
+@="YML Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.yml\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\yaml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.yml\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.yml\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sql\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.sql"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sql]
+@="SQL Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sql\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\sql.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sql\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sql\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sh\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.sh"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sh]
+@="Shell Script File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sh\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\shell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sh\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.sh\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.bash\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.bash"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.bash]
+@="Bash Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.bash\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\shell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.bash\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.bash\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cpp\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.cpp"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cpp]
+@="C++ Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cpp\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\cpp.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cpp\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cpp\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.c\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.c"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.c]
+@="C Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.c\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\c.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.c\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.c\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cs\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.cs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cs]
+@="C# Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cs\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\csharp.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cs\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cs\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.go\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.go"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.go]
+@="Go Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.go\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\go.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.go\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.go\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.rb\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.rb"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.rb]
+@="Ruby Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.rb\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ruby.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.rb\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.rb\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.swift\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.swift"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.swift]
+@="Swift Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.swift\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\swift.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.swift\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.swift\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.vue\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.vue"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.vue]
+@="Vue Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.vue\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\vue.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.vue\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.vue\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.dart\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.dart"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.dart]
+@="Dart Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.dart\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\dart.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.dart\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.dart\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.rs\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.rs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.rs]
+@="Rust Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.rs\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\rust.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.rs\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.rs\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.lua\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.lua"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.lua]
+@="Lua Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.lua\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\lua.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.lua\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.lua\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.pl\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.pl"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.pl]
+@="Perl Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.pl\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\perl.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.pl\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.pl\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.r\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.r"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.r]
+@="R Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.r\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\r.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.r\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.r\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.kt\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.kt"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.kt]
+@="Kotlin Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.kt\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\kotlin.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.kt\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.kt\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.scala\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.scala"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.scala]
+@="Scala Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.scala\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\scala.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.scala\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.scala\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.groovy\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.groovy"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.groovy]
+@="Groovy Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.groovy\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\groovy.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.groovy\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.groovy\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.hs\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.hs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.hs]
+@="Haskell Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.hs\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\haskell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.hs\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.hs\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.coffee\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.coffee"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.coffee]
+@="CoffeeScript Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.coffee\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\coffee.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.coffee\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.coffee\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.erb\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.erb"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.erb]
+@="ERB Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.erb\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\erb.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.erb\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.erb\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ejs\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.ejs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ejs]
+@="EJS Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ejs\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ejs.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ejs\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ejs\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.pug\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.pug"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.pug]
+@="Pug Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.pug\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\pug.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.pug\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.pug\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.twig\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.twig"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.twig]
+@="Twig Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.twig\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\twig.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.twig\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.twig\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.blade.php\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.blade.php"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.blade.php]
+@="Blade Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.blade.php\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\blade.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.blade.php\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.blade.php\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.graphql\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.graphql"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.graphql]
+@="GraphQL Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.graphql\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\graphql.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.graphql\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.graphql\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.proto\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.proto"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.proto]
+@="Protocol Buffer Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.proto\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\protobuf.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.proto\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.proto\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.dockerfile\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.dockerfile"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.dockerfile]
+@="Dockerfile Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.dockerfile\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\docker.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.dockerfile\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.dockerfile\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.Dockerfile\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.Dockerfile"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.Dockerfile]
+@="Dockerfile Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.Dockerfile\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\docker.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.Dockerfile\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.Dockerfile\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.toml\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.toml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.toml]
+@="TOML Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.toml\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\toml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.toml\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.toml\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ini\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.ini"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ini]
+@="INI Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ini\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ini\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.ini\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cfg\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.cfg"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cfg]
+@="CFG Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cfg\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cfg\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.cfg\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.conf\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.conf"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.conf]
+@="CONF Source File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.conf\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.conf\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.conf\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.env\OpenWithProgids]
+"CodeBuddy"=""
+"CodeBuddy.env"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.env]
+@="Environment File"
+"AppUserModelID"="CodeBuddy.CodeBuddy"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.env\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\env.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.env\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeBuddy.env\shell\open\command]
+@="\"$buddy\" \"%1\""

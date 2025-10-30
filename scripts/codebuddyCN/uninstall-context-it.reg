@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &CodeBuddy]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &CodeBuddy\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &CodeBuddy]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &CodeBuddy\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &CodeBuddy]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &CodeBuddy\command]

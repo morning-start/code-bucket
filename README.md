@@ -9,7 +9,7 @@
 | **aichat**           | 强大的ChatGPT命令行工具。                                                     |
 | **android-studio**   | 官方Android开发IDE。                                                         |
 | **bun**              | 极速的JavaScript运行时、打包器、转译器和包管理器。                                  |
-| **codebuddy**        | AI驱动的IDE，让编程更愉快高效。                                                  |
+| **codebuddyCN**      | AI驱动的IDE，让编程更愉快高效。                                                  |
 | **deno**             | 安全的JavaScript和TypeScript运行时。                                              |
 | **fnm**              | 跨平台Node.js版本切换工具。                                                    |
 | **fvm**              | Flutter SDK版本管理工具。                                                      |
