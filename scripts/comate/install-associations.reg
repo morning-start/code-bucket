@@ -1,0 +1,954 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.js\OpenWithProgids]
+"Qoder"=""
+"Qoder.js"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.js]
+@="JavaScript Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.js\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\javascript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.js\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.js\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.jsx\OpenWithProgids]
+"Qoder"=""
+"Qoder.jsx"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.jsx]
+@="JSX Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.jsx\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\javascript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.jsx\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.jsx\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ts\OpenWithProgids]
+"Qoder"=""
+"Qoder.ts"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ts]
+@="TypeScript Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ts\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\typescript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ts\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ts\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.tsx\OpenWithProgids]
+"Qoder"=""
+"Qoder.tsx"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.tsx]
+@="TypeScript JSX Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.tsx\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\typescript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.tsx\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.tsx\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.json\OpenWithProgids]
+"Qoder"=""
+"Qoder.json"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.json]
+@="JSON Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.json\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\json.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.json\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.json\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.html\OpenWithProgids]
+"Qoder"=""
+"Qoder.html"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.html]
+@="HTML Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.html\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\html.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.html\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.html\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.htm\OpenWithProgids]
+"Qoder"=""
+"Qoder.htm"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.htm]
+@="HTM Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.htm\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\html.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.htm\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.htm\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.css\OpenWithProgids]
+"Qoder"=""
+"Qoder.css"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.css]
+@="CSS Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.css\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\css.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.css\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.css\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.scss\OpenWithProgids]
+"Qoder"=""
+"Qoder.scss"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.scss]
+@="SCSS Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.scss\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\sass.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.scss\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.scss\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sass\OpenWithProgids]
+"Qoder"=""
+"Qoder.sass"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sass]
+@="Sass Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sass\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\sass.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sass\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sass\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.less\OpenWithProgids]
+"Qoder"=""
+"Qoder.less"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.less]
+@="Less Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.less\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\less.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.less\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.less\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.md\OpenWithProgids]
+"Qoder"=""
+"Qoder.md"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.md]
+@="Markdown Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.md\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\markdown.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.md\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.md\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.markdown\OpenWithProgids]
+"Qoder"=""
+"Qoder.markdown"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.markdown]
+@="Markdown Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.markdown\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\markdown.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.markdown\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.markdown\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.py\OpenWithProgids]
+"Qoder"=""
+"Qoder.py"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.py]
+@="Python Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.py\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\python.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.py\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.py\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.php\OpenWithProgids]
+"Qoder"=""
+"Qoder.php"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.php]
+@="PHP Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.php\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\php.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.php\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.php\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.java\OpenWithProgids]
+"Qoder"=""
+"Qoder.java"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.java]
+@="Java Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.java\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\java.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.java\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.java\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.xml\OpenWithProgids]
+"Qoder"=""
+"Qoder.xml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.xml]
+@="XML Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.xml\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\xml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.xml\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.xml\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.yaml\OpenWithProgids]
+"Qoder"=""
+"Qoder.yaml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.yaml]
+@="YAML Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.yaml\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\yaml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.yaml\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.yaml\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.yml\OpenWithProgids]
+"Qoder"=""
+"Qoder.yml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.yml]
+@="YML Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.yml\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\yaml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.yml\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.yml\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sql\OpenWithProgids]
+"Qoder"=""
+"Qoder.sql"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sql]
+@="SQL Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sql\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\sql.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sql\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sql\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sh\OpenWithProgids]
+"Qoder"=""
+"Qoder.sh"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sh]
+@="Shell Script File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sh\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\shell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sh\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.sh\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.bash\OpenWithProgids]
+"Qoder"=""
+"Qoder.bash"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.bash]
+@="Bash Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.bash\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\shell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.bash\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.bash\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cpp\OpenWithProgids]
+"Qoder"=""
+"Qoder.cpp"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cpp]
+@="C++ Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cpp\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\cpp.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cpp\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cpp\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.c\OpenWithProgids]
+"Qoder"=""
+"Qoder.c"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.c]
+@="C Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.c\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\c.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.c\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.c\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cs\OpenWithProgids]
+"Qoder"=""
+"Qoder.cs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cs]
+@="C# Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cs\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\csharp.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cs\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cs\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.go\OpenWithProgids]
+"Qoder"=""
+"Qoder.go"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.go]
+@="Go Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.go\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\go.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.go\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.go\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.rb\OpenWithProgids]
+"Qoder"=""
+"Qoder.rb"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.rb]
+@="Ruby Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.rb\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\ruby.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.rb\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.rb\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.swift\OpenWithProgids]
+"Qoder"=""
+"Qoder.swift"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.swift]
+@="Swift Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.swift\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\swift.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.swift\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.swift\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.vue\OpenWithProgids]
+"Qoder"=""
+"Qoder.vue"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.vue]
+@="Vue Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.vue\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\vue.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.vue\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.vue\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.dart\OpenWithProgids]
+"Qoder"=""
+"Qoder.dart"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.dart]
+@="Dart Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.dart\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\dart.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.dart\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.dart\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.rs\OpenWithProgids]
+"Qoder"=""
+"Qoder.rs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.rs]
+@="Rust Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.rs\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\rust.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.rs\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.rs\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.lua\OpenWithProgids]
+"Qoder"=""
+"Qoder.lua"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.lua]
+@="Lua Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.lua\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\lua.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.lua\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.lua\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.pl\OpenWithProgids]
+"Qoder"=""
+"Qoder.pl"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.pl]
+@="Perl Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.pl\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\perl.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.pl\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.pl\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.r\OpenWithProgids]
+"Qoder"=""
+"Qoder.r"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.r]
+@="R Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.r\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\r.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.r\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.r\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.kt\OpenWithProgids]
+"Qoder"=""
+"Qoder.kt"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.kt]
+@="Kotlin Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.kt\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\kotlin.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.kt\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.kt\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.scala\OpenWithProgids]
+"Qoder"=""
+"Qoder.scala"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.scala]
+@="Scala Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.scala\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\scala.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.scala\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.scala\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.groovy\OpenWithProgids]
+"Qoder"=""
+"Qoder.groovy"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.groovy]
+@="Groovy Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.groovy\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\groovy.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.groovy\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.groovy\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.hs\OpenWithProgids]
+"Qoder"=""
+"Qoder.hs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.hs]
+@="Haskell Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.hs\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\haskell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.hs\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.hs\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.coffee\OpenWithProgids]
+"Qoder"=""
+"Qoder.coffee"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.coffee]
+@="CoffeeScript Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.coffee\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\coffee.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.coffee\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.coffee\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.erb\OpenWithProgids]
+"Qoder"=""
+"Qoder.erb"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.erb]
+@="ERB Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.erb\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\erb.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.erb\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.erb\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ejs\OpenWithProgids]
+"Qoder"=""
+"Qoder.ejs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ejs]
+@="EJS Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ejs\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\ejs.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ejs\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ejs\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.pug\OpenWithProgids]
+"Qoder"=""
+"Qoder.pug"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.pug]
+@="Pug Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.pug\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\pug.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.pug\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.pug\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.twig\OpenWithProgids]
+"Qoder"=""
+"Qoder.twig"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.twig]
+@="Twig Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.twig\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\twig.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.twig\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.twig\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.blade.php\OpenWithProgids]
+"Qoder"=""
+"Qoder.blade.php"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.blade.php]
+@="Blade Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.blade.php\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\blade.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.blade.php\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.blade.php\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.graphql\OpenWithProgids]
+"Qoder"=""
+"Qoder.graphql"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.graphql]
+@="GraphQL Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.graphql\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\graphql.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.graphql\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.graphql\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.proto\OpenWithProgids]
+"Qoder"=""
+"Qoder.proto"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.proto]
+@="Protocol Buffer Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.proto\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\protobuf.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.proto\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.proto\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.dockerfile\OpenWithProgids]
+"Qoder"=""
+"Qoder.dockerfile"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.dockerfile]
+@="Dockerfile Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.dockerfile\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\docker.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.dockerfile\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.dockerfile\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.Dockerfile\OpenWithProgids]
+"Qoder"=""
+"Qoder.Dockerfile"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.Dockerfile]
+@="Dockerfile Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.Dockerfile\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\docker.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.Dockerfile\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.Dockerfile\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.toml\OpenWithProgids]
+"Qoder"=""
+"Qoder.toml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.toml]
+@="TOML Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.toml\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\toml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.toml\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.toml\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ini\OpenWithProgids]
+"Qoder"=""
+"Qoder.ini"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ini]
+@="INI Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ini\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ini\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.ini\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cfg\OpenWithProgids]
+"Qoder"=""
+"Qoder.cfg"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cfg]
+@="CFG Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cfg\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cfg\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.cfg\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.conf\OpenWithProgids]
+"Qoder"=""
+"Qoder.conf"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.conf]
+@="CONF Source File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.conf\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.conf\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.conf\shell\open\command]
+@="\"$comate\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.env\OpenWithProgids]
+"Qoder"=""
+"Qoder.env"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.env]
+@="Environment File"
+"AppUserModelID"="Qoder.Qoder"
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.env\DefaultIcon]
+@="\"$comatedir\\resources\\app\\resources\\win32\\env.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.env\shell\open]
+"Icon"="\"$comate\""
+
+[HKEY_CURRENT_USER\Software\Classes\Qoder.env\shell\open\command]
+@="\"$comate\" \"%1\""
