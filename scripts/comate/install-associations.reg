@@ -1,12 +1,12 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Classes\.js\OpenWithProgids]
-"Qoder"=""
-"Qoder.js"=""
+"Comate"=""
+"Comate.js"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.js]
+[HKEY_CURRENT_USER\Software\Classes\Comate.js]
 @="JavaScript Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.js\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\javascript.ico\""
@@ -19,12 +19,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.jsx\OpenWithProgids]
-"Qoder"=""
-"Qoder.jsx"=""
+"Comate"=""
+"Comate.jsx"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.jsx]
+[HKEY_CURRENT_USER\Software\Classes\Comate.jsx]
 @="JSX Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.jsx\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\javascript.ico\""
@@ -37,12 +37,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.ts\OpenWithProgids]
-"Qoder"=""
-"Qoder.ts"=""
+"Comate"=""
+"Comate.ts"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.ts]
+[HKEY_CURRENT_USER\Software\Classes\Comate.ts]
 @="TypeScript Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.ts\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\typescript.ico\""
@@ -55,12 +55,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.tsx\OpenWithProgids]
-"Qoder"=""
-"Qoder.tsx"=""
+"Comate"=""
+"Comate.tsx"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.tsx]
+[HKEY_CURRENT_USER\Software\Classes\Comate.tsx]
 @="TypeScript JSX Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.tsx\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\typescript.ico\""
@@ -73,12 +73,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.json\OpenWithProgids]
-"Qoder"=""
-"Qoder.json"=""
+"Comate"=""
+"Comate.json"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.json]
+[HKEY_CURRENT_USER\Software\Classes\Comate.json]
 @="JSON Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.json\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\json.ico\""
@@ -91,12 +91,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.html\OpenWithProgids]
-"Qoder"=""
-"Qoder.html"=""
+"Comate"=""
+"Comate.html"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.html]
+[HKEY_CURRENT_USER\Software\Classes\Comate.html]
 @="HTML Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.html\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\html.ico\""
@@ -109,12 +109,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.htm\OpenWithProgids]
-"Qoder"=""
-"Qoder.htm"=""
+"Comate"=""
+"Comate.htm"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.htm]
+[HKEY_CURRENT_USER\Software\Classes\Comate.htm]
 @="HTM Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.htm\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\html.ico\""
@@ -127,12 +127,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.css\OpenWithProgids]
-"Qoder"=""
-"Qoder.css"=""
+"Comate"=""
+"Comate.css"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.css]
+[HKEY_CURRENT_USER\Software\Classes\Comate.css]
 @="CSS Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.css\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\css.ico\""
@@ -145,12 +145,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.scss\OpenWithProgids]
-"Qoder"=""
-"Qoder.scss"=""
+"Comate"=""
+"Comate.scss"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.scss]
+[HKEY_CURRENT_USER\Software\Classes\Comate.scss]
 @="SCSS Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.scss\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\sass.ico\""
@@ -163,12 +163,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.sass\OpenWithProgids]
-"Qoder"=""
-"Qoder.sass"=""
+"Comate"=""
+"Comate.sass"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.sass]
+[HKEY_CURRENT_USER\Software\Classes\Comate.sass]
 @="Sass Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.sass\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\sass.ico\""
@@ -181,12 +181,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.less\OpenWithProgids]
-"Qoder"=""
-"Qoder.less"=""
+"Comate"=""
+"Comate.less"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.less]
+[HKEY_CURRENT_USER\Software\Classes\Comate.less]
 @="Less Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.less\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\less.ico\""
@@ -199,12 +199,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.md\OpenWithProgids]
-"Qoder"=""
-"Qoder.md"=""
+"Comate"=""
+"Comate.md"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.md]
+[HKEY_CURRENT_USER\Software\Classes\Comate.md]
 @="Markdown Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.md\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\markdown.ico\""
@@ -217,12 +217,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.markdown\OpenWithProgids]
-"Qoder"=""
-"Qoder.markdown"=""
+"Comate"=""
+"Comate.markdown"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.markdown]
+[HKEY_CURRENT_USER\Software\Classes\Comate.markdown]
 @="Markdown Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.markdown\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\markdown.ico\""
@@ -235,12 +235,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.py\OpenWithProgids]
-"Qoder"=""
-"Qoder.py"=""
+"Comate"=""
+"Comate.py"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.py]
+[HKEY_CURRENT_USER\Software\Classes\Comate.py]
 @="Python Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.py\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\python.ico\""
@@ -253,12 +253,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.php\OpenWithProgids]
-"Qoder"=""
-"Qoder.php"=""
+"Comate"=""
+"Comate.php"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.php]
+[HKEY_CURRENT_USER\Software\Classes\Comate.php]
 @="PHP Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.php\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\php.ico\""
@@ -271,12 +271,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.java\OpenWithProgids]
-"Qoder"=""
-"Qoder.java"=""
+"Comate"=""
+"Comate.java"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.java]
+[HKEY_CURRENT_USER\Software\Classes\Comate.java]
 @="Java Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.java\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\java.ico\""
@@ -289,12 +289,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.xml\OpenWithProgids]
-"Qoder"=""
-"Qoder.xml"=""
+"Comate"=""
+"Comate.xml"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.xml]
+[HKEY_CURRENT_USER\Software\Classes\Comate.xml]
 @="XML Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.xml\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\xml.ico\""
@@ -307,12 +307,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.yaml\OpenWithProgids]
-"Qoder"=""
-"Qoder.yaml"=""
+"Comate"=""
+"Comate.yaml"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.yaml]
+[HKEY_CURRENT_USER\Software\Classes\Comate.yaml]
 @="YAML Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.yaml\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\yaml.ico\""
@@ -325,12 +325,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.yml\OpenWithProgids]
-"Qoder"=""
-"Qoder.yml"=""
+"Comate"=""
+"Comate.yml"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.yml]
+[HKEY_CURRENT_USER\Software\Classes\Comate.yml]
 @="YML Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.yml\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\yaml.ico\""
@@ -343,12 +343,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.sql\OpenWithProgids]
-"Qoder"=""
-"Qoder.sql"=""
+"Comate"=""
+"Comate.sql"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.sql]
+[HKEY_CURRENT_USER\Software\Classes\Comate.sql]
 @="SQL Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.sql\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\sql.ico\""
@@ -361,12 +361,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.sh\OpenWithProgids]
-"Qoder"=""
-"Qoder.sh"=""
+"Comate"=""
+"Comate.sh"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.sh]
+[HKEY_CURRENT_USER\Software\Classes\Comate.sh]
 @="Shell Script File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.sh\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\shell.ico\""
@@ -379,12 +379,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.bash\OpenWithProgids]
-"Qoder"=""
-"Qoder.bash"=""
+"Comate"=""
+"Comate.bash"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.bash]
+[HKEY_CURRENT_USER\Software\Classes\Comate.bash]
 @="Bash Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.bash\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\shell.ico\""
@@ -397,12 +397,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.cpp\OpenWithProgids]
-"Qoder"=""
-"Qoder.cpp"=""
+"Comate"=""
+"Comate.cpp"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.cpp]
+[HKEY_CURRENT_USER\Software\Classes\Comate.cpp]
 @="C++ Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.cpp\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\cpp.ico\""
@@ -415,12 +415,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.c\OpenWithProgids]
-"Qoder"=""
-"Qoder.c"=""
+"Comate"=""
+"Comate.c"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.c]
+[HKEY_CURRENT_USER\Software\Classes\Comate.c]
 @="C Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.c\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\c.ico\""
@@ -433,12 +433,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.cs\OpenWithProgids]
-"Qoder"=""
-"Qoder.cs"=""
+"Comate"=""
+"Comate.cs"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.cs]
+[HKEY_CURRENT_USER\Software\Classes\Comate.cs]
 @="C# Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.cs\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\csharp.ico\""
@@ -451,12 +451,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.go\OpenWithProgids]
-"Qoder"=""
-"Qoder.go"=""
+"Comate"=""
+"Comate.go"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.go]
+[HKEY_CURRENT_USER\Software\Classes\Comate.go]
 @="Go Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.go\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\go.ico\""
@@ -469,12 +469,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.rb\OpenWithProgids]
-"Qoder"=""
-"Qoder.rb"=""
+"Comate"=""
+"Comate.rb"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.rb]
+[HKEY_CURRENT_USER\Software\Classes\Comate.rb]
 @="Ruby Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.rb\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\ruby.ico\""
@@ -487,12 +487,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.swift\OpenWithProgids]
-"Qoder"=""
-"Qoder.swift"=""
+"Comate"=""
+"Comate.swift"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.swift]
+[HKEY_CURRENT_USER\Software\Classes\Comate.swift]
 @="Swift Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.swift\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\swift.ico\""
@@ -505,12 +505,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.vue\OpenWithProgids]
-"Qoder"=""
-"Qoder.vue"=""
+"Comate"=""
+"Comate.vue"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.vue]
+[HKEY_CURRENT_USER\Software\Classes\Comate.vue]
 @="Vue Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.vue\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\vue.ico\""
@@ -523,12 +523,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.dart\OpenWithProgids]
-"Qoder"=""
-"Qoder.dart"=""
+"Comate"=""
+"Comate.dart"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.dart]
+[HKEY_CURRENT_USER\Software\Classes\Comate.dart]
 @="Dart Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.dart\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\dart.ico\""
@@ -541,12 +541,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.rs\OpenWithProgids]
-"Qoder"=""
-"Qoder.rs"=""
+"Comate"=""
+"Comate.rs"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.rs]
+[HKEY_CURRENT_USER\Software\Classes\Comate.rs]
 @="Rust Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.rs\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\rust.ico\""
@@ -559,12 +559,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.lua\OpenWithProgids]
-"Qoder"=""
-"Qoder.lua"=""
+"Comate"=""
+"Comate.lua"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.lua]
+[HKEY_CURRENT_USER\Software\Classes\Comate.lua]
 @="Lua Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.lua\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\lua.ico\""
@@ -577,12 +577,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.pl\OpenWithProgids]
-"Qoder"=""
-"Qoder.pl"=""
+"Comate"=""
+"Comate.pl"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.pl]
+[HKEY_CURRENT_USER\Software\Classes\Comate.pl]
 @="Perl Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.pl\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\perl.ico\""
@@ -595,12 +595,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.r\OpenWithProgids]
-"Qoder"=""
-"Qoder.r"=""
+"Comate"=""
+"Comate.r"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.r]
+[HKEY_CURRENT_USER\Software\Classes\Comate.r]
 @="R Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.r\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\r.ico\""
@@ -613,12 +613,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.kt\OpenWithProgids]
-"Qoder"=""
-"Qoder.kt"=""
+"Comate"=""
+"Comate.kt"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.kt]
+[HKEY_CURRENT_USER\Software\Classes\Comate.kt]
 @="Kotlin Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.kt\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\kotlin.ico\""
@@ -631,12 +631,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.scala\OpenWithProgids]
-"Qoder"=""
-"Qoder.scala"=""
+"Comate"=""
+"Comate.scala"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.scala]
+[HKEY_CURRENT_USER\Software\Classes\Comate.scala]
 @="Scala Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.scala\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\scala.ico\""
@@ -649,12 +649,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.groovy\OpenWithProgids]
-"Qoder"=""
-"Qoder.groovy"=""
+"Comate"=""
+"Comate.groovy"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.groovy]
+[HKEY_CURRENT_USER\Software\Classes\Comate.groovy]
 @="Groovy Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.groovy\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\groovy.ico\""
@@ -667,12 +667,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.hs\OpenWithProgids]
-"Qoder"=""
-"Qoder.hs"=""
+"Comate"=""
+"Comate.hs"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.hs]
+[HKEY_CURRENT_USER\Software\Classes\Comate.hs]
 @="Haskell Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.hs\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\haskell.ico\""
@@ -685,12 +685,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.coffee\OpenWithProgids]
-"Qoder"=""
-"Qoder.coffee"=""
+"Comate"=""
+"Comate.coffee"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.coffee]
+[HKEY_CURRENT_USER\Software\Classes\Comate.coffee]
 @="CoffeeScript Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.coffee\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\coffee.ico\""
@@ -703,12 +703,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.erb\OpenWithProgids]
-"Qoder"=""
-"Qoder.erb"=""
+"Comate"=""
+"Comate.erb"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.erb]
+[HKEY_CURRENT_USER\Software\Classes\Comate.erb]
 @="ERB Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.erb\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\erb.ico\""
@@ -721,12 +721,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.ejs\OpenWithProgids]
-"Qoder"=""
-"Qoder.ejs"=""
+"Comate"=""
+"Comate.ejs"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.ejs]
+[HKEY_CURRENT_USER\Software\Classes\Comate.ejs]
 @="EJS Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.ejs\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\ejs.ico\""
@@ -739,12 +739,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.pug\OpenWithProgids]
-"Qoder"=""
-"Qoder.pug"=""
+"Comate"=""
+"Comate.pug"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.pug]
+[HKEY_CURRENT_USER\Software\Classes\Comate.pug]
 @="Pug Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.pug\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\pug.ico\""
@@ -757,12 +757,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.twig\OpenWithProgids]
-"Qoder"=""
-"Qoder.twig"=""
+"Comate"=""
+"Comate.twig"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.twig]
+[HKEY_CURRENT_USER\Software\Classes\Comate.twig]
 @="Twig Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.twig\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\twig.ico\""
@@ -775,12 +775,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.blade.php\OpenWithProgids]
-"Qoder"=""
-"Qoder.blade.php"=""
+"Comate"=""
+"Comate.blade.php"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.blade.php]
+[HKEY_CURRENT_USER\Software\Classes\Comate.blade.php]
 @="Blade Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.blade.php\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\blade.ico\""
@@ -793,12 +793,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.graphql\OpenWithProgids]
-"Qoder"=""
-"Qoder.graphql"=""
+"Comate"=""
+"Comate.graphql"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.graphql]
+[HKEY_CURRENT_USER\Software\Classes\Comate.graphql]
 @="GraphQL Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.graphql\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\graphql.ico\""
@@ -811,12 +811,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.proto\OpenWithProgids]
-"Qoder"=""
-"Qoder.proto"=""
+"Comate"=""
+"Comate.proto"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.proto]
+[HKEY_CURRENT_USER\Software\Classes\Comate.proto]
 @="Protocol Buffer Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.proto\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\protobuf.ico\""
@@ -829,12 +829,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.dockerfile\OpenWithProgids]
-"Qoder"=""
-"Qoder.dockerfile"=""
+"Comate"=""
+"Comate.dockerfile"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.dockerfile]
+[HKEY_CURRENT_USER\Software\Classes\Comate.dockerfile]
 @="Dockerfile Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.dockerfile\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\docker.ico\""
@@ -847,12 +847,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.Dockerfile\OpenWithProgids]
-"Qoder"=""
-"Qoder.Dockerfile"=""
+"Comate"=""
+"Comate.Dockerfile"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.Dockerfile]
+[HKEY_CURRENT_USER\Software\Classes\Comate.Dockerfile]
 @="Dockerfile Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.Dockerfile\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\docker.ico\""
@@ -865,12 +865,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.toml\OpenWithProgids]
-"Qoder"=""
-"Qoder.toml"=""
+"Comate"=""
+"Comate.toml"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.toml]
+[HKEY_CURRENT_USER\Software\Classes\Comate.toml]
 @="TOML Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.toml\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\toml.ico\""
@@ -883,12 +883,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.ini\OpenWithProgids]
-"Qoder"=""
-"Qoder.ini"=""
+"Comate"=""
+"Comate.ini"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.ini]
+[HKEY_CURRENT_USER\Software\Classes\Comate.ini]
 @="INI Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.ini\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\ini.ico\""
@@ -901,12 +901,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.cfg\OpenWithProgids]
-"Qoder"=""
-"Qoder.cfg"=""
+"Comate"=""
+"Comate.cfg"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.cfg]
+[HKEY_CURRENT_USER\Software\Classes\Comate.cfg]
 @="CFG Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.cfg\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\ini.ico\""
@@ -919,12 +919,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.conf\OpenWithProgids]
-"Qoder"=""
-"Qoder.conf"=""
+"Comate"=""
+"Comate.conf"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.conf]
+[HKEY_CURRENT_USER\Software\Classes\Comate.conf]
 @="CONF Source File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.conf\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\ini.ico\""
@@ -937,12 +937,12 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CURRENT_USER\Software\Classes\.env\OpenWithProgids]
-"Qoder"=""
-"Qoder.env"=""
+"Comate"=""
+"Comate.env"=""
 
-[HKEY_CURRENT_USER\Software\Classes\Qoder.env]
+[HKEY_CURRENT_USER\Software\Classes\Comate.env]
 @="Environment File"
-"AppUserModelID"="Qoder.Qoder"
+"AppUserModelID"="Comate.Comate"
 
 [HKEY_CURRENT_USER\Software\Classes\Qoder.env\DefaultIcon]
 @="\"$comatedir\\resources\\app\\resources\\win32\\env.ico\""
