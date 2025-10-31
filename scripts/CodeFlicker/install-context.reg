@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &CodeFlicker]
+@="Open with &CodeFlicker"
+"Icon"="$codeflicker"
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &CodeFlicker\command]
+@="\"$codeflicker\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &CodeFlicker]
+@="Open with &CodeFlicker"
+"Icon"="$codeflicker"
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &CodeFlicker\command]
+@="\"$codeflicker\" \"%V\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &CodeFlicker]
+@="Open with &CodeFlicker"
+"Icon"="$codeflicker"
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &CodeFlicker\command]
+@="\"$codeflicker\" \"%V\""

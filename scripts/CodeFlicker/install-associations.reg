@@ -1,0 +1,954 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.js\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.js"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.js]
+@="JavaScript Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.js\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\javascript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.js\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.js\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.jsx\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.jsx"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.jsx]
+@="JSX Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.jsx\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\javascript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.jsx\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.jsx\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ts\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.ts"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ts]
+@="TypeScript Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ts\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\typescript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ts\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ts\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.tsx\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.tsx"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.tsx]
+@="TypeScript JSX Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.tsx\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\typescript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.tsx\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.tsx\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.json\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.json"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.json]
+@="JSON Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.json\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\json.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.json\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.json\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.html\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.html"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.html]
+@="HTML Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.html\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\html.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.html\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.html\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.htm\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.htm"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.htm]
+@="HTM Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.htm\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\html.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.htm\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.htm\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.css\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.css"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.css]
+@="CSS Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.css\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\css.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.css\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.css\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.scss\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.scss"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.scss]
+@="SCSS Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.scss\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\sass.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.scss\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.scss\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sass\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.sass"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sass]
+@="Sass Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sass\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\sass.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sass\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sass\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.less\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.less"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.less]
+@="Less Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.less\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\less.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.less\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.less\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.md\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.md"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.md]
+@="Markdown Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.md\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\markdown.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.md\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.md\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.markdown\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.markdown"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.markdown]
+@="Markdown Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.markdown\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\markdown.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.markdown\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.markdown\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.py\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.py"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.py]
+@="Python Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.py\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\python.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.py\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.py\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.php\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.php"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.php]
+@="PHP Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.php\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\php.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.php\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.php\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.java\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.java"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.java]
+@="Java Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.java\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\java.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.java\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.java\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.xml\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.xml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.xml]
+@="XML Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.xml\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\xml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.xml\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.xml\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.yaml\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.yaml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.yaml]
+@="YAML Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.yaml\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\yaml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.yaml\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.yaml\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.yml\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.yml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.yml]
+@="YML Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.yml\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\yaml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.yml\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.yml\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sql\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.sql"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sql]
+@="SQL Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sql\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\sql.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sql\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sql\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sh\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.sh"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sh]
+@="Shell Script File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sh\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\shell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sh\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.sh\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.bash\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.bash"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.bash]
+@="Bash Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.bash\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\shell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.bash\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.bash\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cpp\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.cpp"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cpp]
+@="C++ Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cpp\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\cpp.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cpp\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cpp\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.c\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.c"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.c]
+@="C Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.c\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\c.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.c\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.c\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cs\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.cs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cs]
+@="C# Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cs\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\csharp.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cs\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cs\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.go\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.go"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.go]
+@="Go Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.go\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\go.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.go\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.go\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.rb\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.rb"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.rb]
+@="Ruby Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.rb\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\ruby.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.rb\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.rb\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.swift\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.swift"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.swift]
+@="Swift Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.swift\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\swift.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.swift\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.swift\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.vue\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.vue"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.vue]
+@="Vue Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.vue\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\vue.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.vue\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.vue\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.dart\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.dart"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.dart]
+@="Dart Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.dart\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\dart.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.dart\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.dart\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.rs\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.rs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.rs]
+@="Rust Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.rs\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\rust.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.rs\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.rs\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.lua\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.lua"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.lua]
+@="Lua Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.lua\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\lua.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.lua\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.lua\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.pl\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.pl"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.pl]
+@="Perl Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.pl\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\perl.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.pl\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.pl\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.r\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.r"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.r]
+@="R Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.r\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\r.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.r\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.r\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.kt\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.kt"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.kt]
+@="Kotlin Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.kt\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\kotlin.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.kt\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.kt\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.scala\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.scala"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.scala]
+@="Scala Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.scala\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\scala.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.scala\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.scala\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.groovy\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.groovy"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.groovy]
+@="Groovy Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.groovy\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\groovy.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.groovy\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.groovy\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.hs\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.hs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.hs]
+@="Haskell Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.hs\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\haskell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.hs\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.hs\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.coffee\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.coffee"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.coffee]
+@="CoffeeScript Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.coffee\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\coffee.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.coffee\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.coffee\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.erb\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.erb"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.erb]
+@="ERB Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.erb\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\erb.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.erb\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.erb\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ejs\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.ejs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ejs]
+@="EJS Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ejs\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\ejs.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ejs\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ejs\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.pug\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.pug"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.pug]
+@="Pug Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.pug\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\pug.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.pug\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.pug\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.twig\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.twig"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.twig]
+@="Twig Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.twig\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\twig.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.twig\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.twig\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.blade.php\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.blade.php"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.blade.php]
+@="Blade Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.blade.php\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\blade.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.blade.php\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.blade.php\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.graphql\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.graphql"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.graphql]
+@="GraphQL Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.graphql\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\graphql.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.graphql\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.graphql\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.proto\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.proto"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.proto]
+@="Protocol Buffer Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.proto\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\protobuf.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.proto\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.proto\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.dockerfile\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.dockerfile"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.dockerfile]
+@="Dockerfile Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.dockerfile\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\docker.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.dockerfile\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.dockerfile\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.Dockerfile\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.Dockerfile"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.Dockerfile]
+@="Dockerfile Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.Dockerfile\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\docker.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.Dockerfile\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.Dockerfile\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.toml\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.toml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.toml]
+@="TOML Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.toml\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\toml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.toml\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.toml\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ini\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.ini"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ini]
+@="INI Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ini\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ini\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.ini\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cfg\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.cfg"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cfg]
+@="CFG Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cfg\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cfg\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.cfg\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.conf\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.conf"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.conf]
+@="CONF Source File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.conf\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.conf\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.conf\shell\open\command]
+@="\"$codeflicker\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.env\OpenWithProgids]
+"CodeFlicker"=""
+"CodeFlicker.env"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.env]
+@="Environment File"
+"AppUserModelID"="CodeFlicker.CodeFlicker"
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.env\DefaultIcon]
+@="\"$codeflickerdir\\resources\\app\\resources\\win32\\env.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.env\shell\open]
+"Icon"="\"$codeflicker\""
+
+[HKEY_CURRENT_USER\Software\Classes\CodeFlicker.env\shell\open\command]
+@="\"$codeflicker\" \"%1\""
