@@ -38,8 +38,8 @@
         "POETRY_HOME": "$persist_dir\\poetry\\data",
         "POETRY_CACHE_DIR": "$persist_dir\\poetry\\cache",
         "POETRY_CONFIG_DIR": "$persist_dir\\poetry\\config",
-        "UV_DEFAULT_INDEX": "http://mirrors.aliyun.com/pypi/simple",
-        "POETRY_PYPI_MIRROR_URL": "http://mirrors.aliyun.com/pypi/simple"
+        "UV_DEFAULT_INDEX": "https://pypi.tuna.tsinghua.edu.cn/simple",
+        "POETRY_PYPI_MIRROR_URL": "https://pypi.tuna.tsinghua.edu.cn/simple"
     },
     "env_add_path": "tools\\bin",
     "bin": [
