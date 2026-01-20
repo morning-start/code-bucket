@@ -1,0 +1,954 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.js\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.js"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.js]
+@="JavaScript Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.js\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\javascript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.js\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.js\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.jsx\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.jsx"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.jsx]
+@="JSX Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.jsx\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\javascript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.jsx\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.jsx\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ts\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.ts"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ts]
+@="TypeScript Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ts\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\typescript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ts\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ts\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.tsx\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.tsx"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.tsx]
+@="TypeScript JSX Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.tsx\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\typescript.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.tsx\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.tsx\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.json\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.json"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.json]
+@="JSON Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.json\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\json.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.json\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.json\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.html\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.html"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.html]
+@="HTML Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.html\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\html.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.html\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.html\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.htm\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.htm"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.htm]
+@="HTM Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.htm\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\html.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.htm\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.htm\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.css\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.css"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.css]
+@="CSS Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.css\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\css.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.css\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.css\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.scss\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.scss"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.scss]
+@="SCSS Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.scss\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\sass.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.scss\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.scss\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sass\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.sass"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sass]
+@="Sass Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sass\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\sass.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sass\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sass\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.less\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.less"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.less]
+@="Less Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.less\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\less.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.less\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.less\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.md\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.md"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.md]
+@="Markdown Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.md\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\markdown.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.md\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.md\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.markdown\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.markdown"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.markdown]
+@="Markdown Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.markdown\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\markdown.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.markdown\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.markdown\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.py\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.py"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.py]
+@="Python Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.py\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\python.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.py\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.py\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.php\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.php"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.php]
+@="PHP Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.php\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\php.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.php\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.php\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.java\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.java"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.java]
+@="Java Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.java\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\java.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.java\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.java\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.xml\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.xml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.xml]
+@="XML Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.xml\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\xml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.xml\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.xml\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.yaml\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.yaml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.yaml]
+@="YAML Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.yaml\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\yaml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.yaml\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.yaml\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.yml\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.yml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.yml]
+@="YML Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.yml\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\yaml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.yml\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.yml\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sql\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.sql"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sql]
+@="SQL Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sql\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\sql.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sql\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sql\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.sh\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.sh"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sh]
+@="Shell Script File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sh\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\shell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sh\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.sh\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.bash\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.bash"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.bash]
+@="Bash Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.bash\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\shell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.bash\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.bash\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cpp\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.cpp"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cpp]
+@="C++ Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cpp\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\cpp.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cpp\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cpp\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.c\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.c"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.c]
+@="C Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.c\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\c.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.c\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.c\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cs\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.cs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cs]
+@="C# Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cs\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\csharp.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cs\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cs\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.go\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.go"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.go]
+@="Go Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.go\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\go.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.go\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.go\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.rb\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.rb"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.rb]
+@="Ruby Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.rb\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ruby.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.rb\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.rb\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.swift\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.swift"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.swift]
+@="Swift Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.swift\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\swift.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.swift\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.swift\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.vue\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.vue"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.vue]
+@="Vue Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.vue\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\vue.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.vue\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.vue\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.dart\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.dart"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.dart]
+@="Dart Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.dart\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\dart.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.dart\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.dart\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.rs\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.rs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.rs]
+@="Rust Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.rs\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\rust.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.rs\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.rs\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.lua\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.lua"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.lua]
+@="Lua Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.lua\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\lua.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.lua\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.lua\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.pl\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.pl"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.pl]
+@="Perl Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.pl\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\perl.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.pl\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.pl\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.r\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.r"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.r]
+@="R Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.r\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\r.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.r\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.r\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.kt\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.kt"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.kt]
+@="Kotlin Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.kt\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\kotlin.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.kt\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.kt\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.scala\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.scala"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.scala]
+@="Scala Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.scala\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\scala.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.scala\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.scala\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.groovy\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.groovy"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.groovy]
+@="Groovy Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.groovy\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\groovy.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.groovy\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.groovy\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.hs\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.hs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.hs]
+@="Haskell Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.hs\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\haskell.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.hs\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.hs\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.coffee\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.coffee"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.coffee]
+@="CoffeeScript Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.coffee\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\coffee.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.coffee\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.coffee\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.erb\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.erb"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.erb]
+@="ERB Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.erb\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\erb.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.erb\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.erb\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ejs\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.ejs"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ejs]
+@="EJS Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ejs\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ejs.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ejs\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ejs\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.pug\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.pug"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.pug]
+@="Pug Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.pug\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\pug.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.pug\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.pug\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.twig\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.twig"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.twig]
+@="Twig Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.twig\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\twig.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.twig\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.twig\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.blade.php\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.blade.php"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.blade.php]
+@="Blade Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.blade.php\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\blade.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.blade.php\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.blade.php\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.graphql\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.graphql"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.graphql]
+@="GraphQL Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.graphql\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\graphql.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.graphql\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.graphql\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.proto\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.proto"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.proto]
+@="Protocol Buffer Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.proto\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\protobuf.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.proto\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.proto\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.dockerfile\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.dockerfile"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.dockerfile]
+@="Dockerfile Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.dockerfile\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\docker.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.dockerfile\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.dockerfile\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.Dockerfile\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.Dockerfile"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.Dockerfile]
+@="Dockerfile Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.Dockerfile\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\docker.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.Dockerfile\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.Dockerfile\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.toml\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.toml"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.toml]
+@="TOML Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.toml\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\toml.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.toml\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.toml\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.ini\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.ini"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ini]
+@="INI Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ini\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ini\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.ini\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cfg\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.cfg"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cfg]
+@="CFG Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cfg\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cfg\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.cfg\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.conf\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.conf"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.conf]
+@="CONF Source File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.conf\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\ini.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.conf\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.conf\shell\open\command]
+@="\"$buddy\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.env\OpenWithProgids]
+"CatPawAI"=""
+"CatPawAI.env"=""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.env]
+@="Environment File"
+"AppUserModelID"="CatPawAI.CatPawAI"
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.env\DefaultIcon]
+@="\"$buddydir\\resources\\app\\resources\\win32\\env.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.env\shell\open]
+"Icon"="\"$buddy\""
+
+[HKEY_CURRENT_USER\Software\Classes\CatPawAI.env\shell\open\command]
+@="\"$buddy\" \"%1\""

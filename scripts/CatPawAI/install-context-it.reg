@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &CatPawAI]
+@="Apri con &CatPawAI"
+"Icon"="$buddy"
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &CatPawAI\command]
+@="\"$buddy\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &CatPawAI]
+@="Apri con &CatPawAI"
+"Icon"="$buddy"
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &CatPawAI\command]
+@="\"$buddy\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &CatPawAI]
+@="Apri con &CatPawAI"
+"Icon"="$buddy"
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &CatPawAI\command]
+@="\"$buddy\" \"%V\""

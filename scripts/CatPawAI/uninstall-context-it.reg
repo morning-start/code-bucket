@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &CatPawAI]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &CatPawAI\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &CatPawAI]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &CatPawAI\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &CatPawAI]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &CatPawAI\command]
