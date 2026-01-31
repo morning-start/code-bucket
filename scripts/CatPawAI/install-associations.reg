@@ -9,13 +9,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.js\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\javascript.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\javascript.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.js\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.js\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.jsx\OpenWithProgids]
@@ -27,13 +27,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.jsx\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\javascript.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\javascript.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.jsx\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.jsx\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.ts\OpenWithProgids]
@@ -45,13 +45,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.ts\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\typescript.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\typescript.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.ts\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.ts\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.tsx\OpenWithProgids]
@@ -63,13 +63,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.tsx\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\typescript.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\typescript.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.tsx\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.tsx\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.json\OpenWithProgids]
@@ -81,13 +81,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.json\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\json.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\json.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.json\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.json\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.html\OpenWithProgids]
@@ -99,13 +99,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.html\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\html.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\html.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.html\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.html\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.htm\OpenWithProgids]
@@ -117,13 +117,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.htm\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\html.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\html.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.htm\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.htm\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.css\OpenWithProgids]
@@ -135,13 +135,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.css\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\css.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\css.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.css\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.css\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.scss\OpenWithProgids]
@@ -153,13 +153,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.scss\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\sass.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\sass.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.scss\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.scss\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.sass\OpenWithProgids]
@@ -171,13 +171,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.sass\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\sass.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\sass.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.sass\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.sass\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.less\OpenWithProgids]
@@ -189,13 +189,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.less\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\less.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\less.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.less\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.less\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.md\OpenWithProgids]
@@ -207,13 +207,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.md\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\markdown.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\markdown.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.md\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.md\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.markdown\OpenWithProgids]
@@ -225,13 +225,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.markdown\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\markdown.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\markdown.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.markdown\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.markdown\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.py\OpenWithProgids]
@@ -243,13 +243,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.py\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\python.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\python.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.py\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.py\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.php\OpenWithProgids]
@@ -261,13 +261,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.php\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\php.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\php.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.php\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.php\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.java\OpenWithProgids]
@@ -279,13 +279,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.java\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\java.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\java.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.java\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.java\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.xml\OpenWithProgids]
@@ -297,13 +297,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.xml\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\xml.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\xml.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.xml\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.xml\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.yaml\OpenWithProgids]
@@ -315,13 +315,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.yaml\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\yaml.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\yaml.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.yaml\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.yaml\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.yml\OpenWithProgids]
@@ -333,13 +333,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.yml\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\yaml.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\yaml.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.yml\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.yml\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.sql\OpenWithProgids]
@@ -351,13 +351,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.sql\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\sql.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\sql.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.sql\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.sql\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.sh\OpenWithProgids]
@@ -369,13 +369,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.sh\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\shell.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\shell.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.sh\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.sh\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.bash\OpenWithProgids]
@@ -387,13 +387,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.bash\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\shell.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\shell.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.bash\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.bash\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.cpp\OpenWithProgids]
@@ -405,13 +405,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.cpp\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\cpp.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\cpp.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.cpp\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.cpp\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.c\OpenWithProgids]
@@ -423,13 +423,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.c\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\c.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\c.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.c\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.c\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.cs\OpenWithProgids]
@@ -441,13 +441,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.cs\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\csharp.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\csharp.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.cs\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.cs\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.go\OpenWithProgids]
@@ -459,13 +459,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.go\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\go.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\go.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.go\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.go\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.rb\OpenWithProgids]
@@ -477,13 +477,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.rb\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\ruby.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\ruby.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.rb\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.rb\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.swift\OpenWithProgids]
@@ -495,13 +495,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.swift\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\swift.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\swift.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.swift\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.swift\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.vue\OpenWithProgids]
@@ -513,13 +513,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.vue\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\vue.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\vue.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.vue\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.vue\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.dart\OpenWithProgids]
@@ -531,13 +531,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.dart\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\dart.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\dart.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.dart\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.dart\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.rs\OpenWithProgids]
@@ -549,13 +549,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.rs\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\rust.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\rust.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.rs\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.rs\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.lua\OpenWithProgids]
@@ -567,13 +567,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.lua\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\lua.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\lua.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.lua\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.lua\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.pl\OpenWithProgids]
@@ -585,13 +585,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.pl\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\perl.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\perl.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.pl\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.pl\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.r\OpenWithProgids]
@@ -603,13 +603,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.r\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\r.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\r.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.r\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.r\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.kt\OpenWithProgids]
@@ -621,13 +621,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.kt\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\kotlin.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\kotlin.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.kt\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.kt\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.scala\OpenWithProgids]
@@ -639,13 +639,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.scala\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\scala.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\scala.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.scala\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.scala\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.groovy\OpenWithProgids]
@@ -657,13 +657,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.groovy\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\groovy.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\groovy.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.groovy\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.groovy\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.hs\OpenWithProgids]
@@ -675,13 +675,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.hs\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\haskell.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\haskell.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.hs\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.hs\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.coffee\OpenWithProgids]
@@ -693,13 +693,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.coffee\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\coffee.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\coffee.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.coffee\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.coffee\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.erb\OpenWithProgids]
@@ -711,13 +711,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.erb\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\erb.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\erb.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.erb\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.erb\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.ejs\OpenWithProgids]
@@ -729,13 +729,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.ejs\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\ejs.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\ejs.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.ejs\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.ejs\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.pug\OpenWithProgids]
@@ -747,13 +747,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.pug\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\pug.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\pug.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.pug\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.pug\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.twig\OpenWithProgids]
@@ -765,13 +765,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.twig\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\twig.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\twig.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.twig\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.twig\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.blade.php\OpenWithProgids]
@@ -783,13 +783,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.blade.php\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\blade.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\blade.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.blade.php\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.blade.php\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.graphql\OpenWithProgids]
@@ -801,13 +801,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.graphql\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\graphql.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\graphql.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.graphql\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.graphql\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.proto\OpenWithProgids]
@@ -819,13 +819,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.proto\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\protobuf.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\protobuf.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.proto\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.proto\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.dockerfile\OpenWithProgids]
@@ -837,13 +837,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.dockerfile\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\docker.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\docker.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.dockerfile\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.dockerfile\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.Dockerfile\OpenWithProgids]
@@ -855,13 +855,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.Dockerfile\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\docker.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\docker.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.Dockerfile\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.Dockerfile\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.toml\OpenWithProgids]
@@ -873,13 +873,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.toml\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\toml.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\toml.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.toml\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.toml\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.ini\OpenWithProgids]
@@ -891,13 +891,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.ini\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\ini.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\ini.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.ini\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.ini\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.cfg\OpenWithProgids]
@@ -909,13 +909,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.cfg\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\ini.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\ini.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.cfg\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.cfg\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.conf\OpenWithProgids]
@@ -927,13 +927,13 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.conf\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\ini.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\ini.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.conf\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.conf\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 
 [HKEY_CURRENT_USER\Software\Classes\.env\OpenWithProgids]
@@ -945,10 +945,10 @@ Windows Registry Editor Version 5.00
 "AppUserModelID"="CatPawAI.CatPawAI"
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.env\DefaultIcon]
-@="\"$buddydir\\resources\\app\\resources\\win32\\env.ico\""
+@="\"$catpawaidir\\resources\\app\\resources\\win32\\env.ico\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.env\shell\open]
-"Icon"="\"$buddy\""
+"Icon"="\"$catpawai\""
 
 [HKEY_CURRENT_USER\Software\Classes\CatPawAI.env\shell\open\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""

@@ -2,18 +2,18 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &CatPawAI]
 @="Open with &CatPawAI"
-"Icon"="$buddy"
+"Icon"="$catpawai"
 [HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &CatPawAI\command]
-@="\"$buddy\" \"%1\""
+@="\"$catpawai\" \"%1\""
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &CatPawAI]
 @="Open with &CatPawAI"
-"Icon"="$buddy"
+"Icon"="$catpawai"
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &CatPawAI\command]
-@="\"$buddy\" \"%V\""
+@="\"$catpawai\" \"%1\""
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &CatPawAI]
 @="Open with &CatPawAI"
-"Icon"="$buddy"
+"Icon"="$catpawai"
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &CatPawAI\command]
-@="\"$buddy\" \"%V\""
+@="\"$catpawai\" \"%V\""

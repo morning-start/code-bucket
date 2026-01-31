@@ -1,7 +1,7 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{QODER-GUID-HERE}_is1]
-"DisplayIcon"="\"$buddy\""
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{CATPAWAI-GUID-HERE}_is1]
+"DisplayIcon"="\"$catpawai\""
 "DisplayName"="CatPawAI"
 "Publisher"="CatPawAI Inc."
-"InstallLocation"="$buddydir"
+"InstallLocation"="$catpawaidir"
