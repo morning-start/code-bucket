@@ -60,9 +60,6 @@
             "}"
         ]
     },
-    "env_set": {
-        "TRAE_HOME": "$dir"
-    },
     "bin": [
         [
             "bin/trae.cmd",
