@@ -14,7 +14,6 @@
             "extract_dir": "{code_GetDestDir}"
         }
     },
-    "innosetup": true,
     "pre_install": [
         "# 处理用户配置目录",
         "$config_dirs = @(",
