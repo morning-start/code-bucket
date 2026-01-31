@@ -10,7 +10,7 @@ Windows Registry Editor Version 5.00
 @="Open with &Trae CN"
 "Icon"="$trae"
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Trae CN\command]
-@="\"$trae\" \"%V\""
+@="\"$trae\" \"%1\""
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Trae CN]
 @="Open with &Trae CN"

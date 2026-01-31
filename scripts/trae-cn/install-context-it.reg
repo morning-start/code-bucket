@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &Trae CN]
+@="Apri con &Trae CN"
+"Icon"="$trae"
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &Trae CN\command]
+@="\"$trae\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &Trae CN]
+@="Apri con &Trae CN"
+"Icon"="$trae"
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &Trae CN\command]
+@="\"$trae\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &Trae CN]
+@="Apri con &Trae CN"
+"Icon"="$trae"
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &Trae CN\command]
+@="\"$trae\" \"%V\""
