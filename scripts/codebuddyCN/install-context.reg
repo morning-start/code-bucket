@@ -10,7 +10,7 @@ Windows Registry Editor Version 5.00
 @="Open with &CodeBuddy"
 "Icon"="$buddy"
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &CodeBuddy\command]
-@="\"$buddy\" \"%V\""
+@="\"$buddy\" \"%1\""
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &CodeBuddy]
 @="Open with &CodeBuddy"
