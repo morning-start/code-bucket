@@ -1,0 +1,103 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.R\OpenWithProgids]
+"Positron"=""
+"Positron.R"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.R]
+@="R Script File"
+"AppUserModelID"="Positron.Positron"
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.R\DefaultIcon]
+@="\"$positrondir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.R\shell\open]
+"Icon"="\"$positron\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.R\shell\open\command]
+@="\"$positron\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.py\OpenWithProgids]
+"Positron"=""
+"Positron.py"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.py]
+@="Python File"
+"AppUserModelID"="Positron.Positron"
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.py\DefaultIcon]
+@="\"$positrondir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.py\shell\open]
+"Icon"="\"$positron\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.py\shell\open\command]
+@="\"$positron\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.ipynb\OpenWithProgids]
+"Positron"=""
+"Positron.ipynb"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.ipynb]
+@="Jupyter Notebook"
+"AppUserModelID"="Positron.Positron"
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.ipynb\DefaultIcon]
+@="\"$positrondir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.ipynb\shell\open]
+"Icon"="\"$positron\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.ipynb\shell\open\command]
+@="\"$positron\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.Rproj\OpenWithProgids]
+"Positron"=""
+"Positron.Rproj"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.Rproj]
+@="R Project File"
+"AppUserModelID"="Positron.Positron"
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.Rproj\DefaultIcon]
+@="\"$positrondir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.Rproj\shell\open]
+"Icon"="\"$positron\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.Rproj\shell\open\command]
+@="\"$positron\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.rmd\OpenWithProgids]
+"Positron"=""
+"Positron.rmd"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.rmd]
+@="R Markdown File"
+"AppUserModelID"="Positron.Positron"
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.rmd\DefaultIcon]
+@="\"$positrondir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.rmd\shell\open]
+"Icon"="\"$positron\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.rmd\shell\open\command]
+@="\"$positron\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.pyproj\OpenWithProgids]
+"Positron"=""
+"Positron.pyproj"=""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.pyproj]
+@="Python Project File"
+"AppUserModelID"="Positron.Positron"
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.pyproj\DefaultIcon]
+@="\"$positrondir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.pyproj\shell\open]
+"Icon"="\"$positron\""
+
+[HKEY_CURRENT_USER\Software\Classes\Positron.pyproj\shell\open\command]
+@="\"$positron\" \"%1\""

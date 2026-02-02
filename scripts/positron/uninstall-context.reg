@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Positron]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Positron\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Positron]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Positron\command]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Positron]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Positron\command]

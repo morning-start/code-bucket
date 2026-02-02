@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Positron]
+@="Open with &Positron"
+"Icon"="$positron"
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Positron\command]
+@="\"$positron\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Positron]
+@="Open with &Positron"
+"Icon"="$positron"
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Positron\command]
+@="\"$positron\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Positron]
+@="Open with &Positron"
+"Icon"="$positron"
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Positron\command]
+@="\"$positron\" \"%V\""

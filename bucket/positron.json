@@ -1,0 +1,85 @@
+{
+    "version": "2026.01.0-147",
+    "description": "A next-generation data science IDE",
+    "homepage": "https://positron.posit.co",
+    "license": "Elastic-2.0",
+    "notes": [
+        "For github integration, run:",
+        "'reg import \"$dir\\install-github-integration.reg\"'"
+    ],
+    "suggest": {
+        "R": "r",
+        "Python": "python"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.posit.co/positron/releases/win/x86_64/Positron-2026.01.0-147-UserSetup-x64.exe",
+            "hash": "20bd4d9204eb31f6370c7abdc2f1e4e52532454c30ead8882f8b48ea03b9a8dd",
+            "extract_dir": "{code_GetDestDir}"
+        }
+    },
+    "innosetup": true,
+
+    "post_install": [
+        "$dirpath = \"$dir\".Replace('\\', '\\\\')",
+        "$exepath = \"$dir\\Positron.exe\".Replace('\\', '\\\\')",
+        "'install-associations', 'uninstall-associations', 'install-context', 'uninstall-context', 'install-context-it', 'uninstall-context-it', 'install-github-integration', 'uninstall-github-integration' | ForEach-Object {",
+        "  if (Test-Path \"$bucketsdir\\$bucket\\scripts\\positron\\$_.reg\") {",
+        "    $content = Get-Content \"$bucketsdir\\$bucket\\scripts\\positron\\$_.reg\"",
+        "    $content = $content.Replace('$positrondir', $dirpath)",
+        "    $content = $content.Replace('$positron', $exepath)",
+        "    if ($global) {",
+        "      $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "    }",
+        "    $content | Set-Content -Path \"$dir\\$_.reg\"",
+        "  }",
+        "}",
+        "# 自动导入注册表（可选）",
+        "reg import \"$dir\\install-context.reg\"",
+        "reg import \"$dir\\install-associations.reg\""
+    ],
+    "uninstaller": {
+        "script": [
+            "if ($cmd -eq 'uninstall')",
+            "{",
+            "   reg import \"$dir\\uninstall-context.reg\" ",
+            "   reg import \"$dir\\uninstall-github-integration.reg\" ",
+            "}"
+        ]
+    },
+    "bin": [
+        "bin/positron.cmd",
+        "positron"
+    ],
+    "shortcuts": [
+        [
+            "Positron.exe",
+            "Positron"
+        ]
+    ],
+    "persist": [
+        "data",
+        ".positron",
+        ".positron-config",
+        ".Positron",
+        ".Rproj.user",
+        ".Rhistory",
+        ".RData",
+        ".Ruserdata"
+    ],
+    "checkver": {
+        "url": "https://cdn.posit.co/positron/releases/win/x86_64/user-releases.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.posit.co/positron/releases/win/x86_64/Positron-$version-UserSetup-x64.exe",
+                "hash": {
+                    "url": "$baseurl/user-releases.json",
+                    "jsonpath": "$.sha256hash"
+                }
+            }
+        }
+    }
+}
