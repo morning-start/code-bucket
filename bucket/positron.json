@@ -67,8 +67,10 @@
         ]
     },
     "bin": [
-        "bin/positron.cmd",
-        "positron"
+        [
+            "bin/positron.cmd",
+            "positron"
+        ]
     ],
     "shortcuts": [
         [
