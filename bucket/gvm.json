@@ -22,6 +22,7 @@
         ]
     ],
     "env_set": {
+        "GOPROXY": "https://mirrors.aliyun.com/goproxy/,direct",
         "G_MIRROR": "https://mirrors.aliyun.com/golang",
         "G_EXPERIMENTAL": "true",
         "G_HOME": "$dir\\.g",
