@@ -14,8 +14,9 @@
         }
     },
     "installer": {
-        "script":[
-            "innounp -x -b -y -h -q -d\"$dir\" \"Trae%20CN-Setup-x64.exe\" -c\"{code_GetDestDir}\" >nul 2>&1"
+        "script": [
+            "innounp -x -b -y -h -q -d\"$dir\" \"$dir\\Trae%20CN-Setup-x64.exe\" -c\"{code_GetDestDir}\" >nul 2>&1",
+            "rm \"$dir\\Trae%20CN-Setup-x64.exe\""
         ]
     },
     "pre_install": [
