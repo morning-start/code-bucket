@@ -1,5 +1,5 @@
 {
-    "version": "0.4.1",
+    "version": "0.4.2",
     "description": "Agentic Coding Platform for Real Software",
     "homepage": "https://qoder.com/",
     "license": "Proprietary",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://download.qoder.com/release/0.4.1/QoderUserSetup-x64.exe",
-            "hash": "f636dbf12ce95fe31fde2c3808a3278f1a8eb7bf73f5a5c79ef2d7baadf8c963",
+            "url": "https://download.qoder.com/release/0.4.2/QoderUserSetup-x64.exe",
+            "hash": "ea33189f4ac2e08c07bfd20b30f4927bc15d267f7c7782d9b96ba0d124b51086",
             "extract_dir": "{code_GetDestDir}"
         }
     },
