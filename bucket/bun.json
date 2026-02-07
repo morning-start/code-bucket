@@ -20,6 +20,15 @@
         }
     },
     "pre_install": [
+        "# 处理用户配置目录",
+        "$config_dirs = @(",
+        "    '.codebuddy'",
+        ")",
+        "foreach ($config_dir in $config_dirs) {",
+        "    $target_dir = Join-Path $env:USERPROFILE $config_dir",
+        "    $link_dir = Join-Path $persist_dir $config_dir",
+        "    & \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $target_dir $link_dir",
+        "}",
         "$env:BUN_INSTALL=\"$persist_dir\\bun\"",
         "$avx2 = Start-Job -ScriptBlock {",
         "    Add-Type -MemberDefinition '[DllImport(\"kernel32.dll\")] public static extern bool IsProcessorFeaturePresent(int ProcessorFeature);' -Name Kernel32 -Namespace Win32",
