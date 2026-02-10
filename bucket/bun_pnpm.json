@@ -8,6 +8,8 @@
         "",
         "切换国内源，推荐使用nrm进行管理"
     ],
+    "depends": "bun",
+    "url": "https://example.com/placeholder.txt",
     "installer": {
         "script": [
             "bun i -g pnpm"
