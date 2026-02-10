@@ -9,7 +9,15 @@
         "切换国内源，推荐使用nrm进行管理"
     ],
     "depends": "bun",
-    "url": "https://example.com/placeholder.txt",
+    "suggest": {
+        "Node.js": [
+            "nodejs",
+            "nodejs-lts",
+            "nvm",
+            "nvs"
+        ]
+    },
+    "url": "https://raw.githubusercontent.com/morning-start/code-bucket/refs/heads/master/scripts/placeholder.txt",
     "installer": {
         "script": [
             "bun i -g pnpm"
