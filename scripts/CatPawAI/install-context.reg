@@ -10,7 +10,7 @@ Windows Registry Editor Version 5.00
 @="Open with &CatPawAI"
 "Icon"="$catpawai"
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &CatPawAI\command]
-@="\"$catpawai\" \"%1\""
+@="\"$catpawai\" \"%V\""
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &CatPawAI]
 @="Open with &CatPawAI"
