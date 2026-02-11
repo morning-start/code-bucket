@@ -1,34 +1,29 @@
 {
     "version": "0.19.1",
-    "description": "GitButler is the Git-backed change management tool for modern, AI coding workflows. Parallel and stacked branches, unlimited undo, agent integrations, and more. It's Git, refined.",
+    "description": "A Git client for simultaneous branches on top of your existing workflow.",
     "homepage": "https://gitbutler.com/",
-    "license": "MIT",
+    "license": "FSL-1.1-MIT",
     "architecture": {
         "64bit": {
-            "url": "https://releases.gitbutler.com/releases/release/0.19.1-2847/windows/x86_64/GitButler_0.19.1_x64_en-US.msi#/setup.msi_"
+            "url": "https://releases.gitbutler.com/releases/release/0.19.1-2847/windows/x86_64/GitButler_0.19.1_x64_en-US.msi",
+            "hash": "ebacddcf5086811ff4510a0fc4ee4b997a1a5441a90ae29c2d0e72efd89243a3",
+            "extract_dir": "PFiles/GitButler"
         }
     },
     "shortcuts": [
         [
-            "GitButler.exe",
+            "gitbutler-tauri.exe",
             "GitButler"
         ]
     ],
-    "installer": {
-        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /qn INSTALLFOLDER=`\"$dir`\"\" -Verb RunAs"
-    },
-    "uninstaller": {
-        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /qn\" -Verb RunAs"
-    },
     "checkver": {
-        "url": "https://app.gitbutler.com/api/downloads?limit=1&channel=release",
-        "jsonpath": "$.[0]",
-        "regex": "\"version\": \"([\\d.]+)\".*?\"build_version\": \"([\\d.]+)-(?<build>[\\d]+)\""
+        "url": "https://app.gitbutler.com/downloads",
+        "regex": "releases/release/([\\d.-]+)-(?<Build>[\\d]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://releases.gitbutler.com/releases/release/$version-$matchBuild/windows/x86_64/GitButler_$version_x64_en-US.msi#/setup.msi_"
+                "url": "https://releases.gitbutler.com/releases/release/$version-$matchBuild/windows/x86_64/GitButler_$version_x64_en-US.msi"
             }
         }
     }
