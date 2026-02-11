@@ -30,7 +30,8 @@
         "# 链接 $env:APPDATA\\Trae CN 到 persist_dir/data",
         "$appdata_dir = Join-Path $env:APPDATA \"Trae CN\"",
         "$persist_data_dir = Join-Path $persist_dir data",
-        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $appdata_dir $persist_data_dir"
+        "& \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $appdata_dir $persist_data_dir",
+        "$env:TRAE_HOME=$dir"
     ],
     "post_install": [
         "$dirpath = \"$dir\".Replace('\\', '\\\\')",
@@ -58,9 +59,6 @@
             "   reg import \"$dir\\uninstall-github-integration.reg\" ",
             "}"
         ]
-    },
-    "env_set": {
-        "TRAE_HOME": "$dir"
     },
     "bin": [
         [
