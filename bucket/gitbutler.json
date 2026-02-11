@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://releases.gitbutler.com/releases/release/0.19.1-2847/windows/x86_64/GitButler_0.19.1_x64_en-US.msi"
+            "url": "https://releases.gitbutler.com/releases/release/0.19.1-2847/windows/x86_64/GitButler_0.19.1_x64_en-US.msi#/setup.msi_"
         }
     },
     "shortcuts": [
@@ -14,6 +14,12 @@
             "GitButler"
         ]
     ],
+    "installer": {
+        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /qn INSTALLFOLDER=`\"$dir`\"\" -Verb RunAs"
+    },
+    "uninstaller": {
+        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /qn\" -Verb RunAs"
+    },
     "checkver": {
         "url": "https://app.gitbutler.com/api/downloads?limit=1&channel=release",
         "jsonpath": "$.[0]",
@@ -22,7 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://releases.gitbutler.com/releases/release/$version-$matchBuild/windows/x86_64/GitButler_$version_x64_en-US.msi"
+                "url": "https://releases.gitbutler.com/releases/release/$version-$matchBuild/windows/x86_64/GitButler_$version_x64_en-US.msi#/setup.msi_"
             }
         }
     }
