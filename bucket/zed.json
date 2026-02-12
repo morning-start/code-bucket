@@ -38,8 +38,8 @@
         "  }",
         "}",
         "# 自动导入注册表（可选）",
-        "reg import \"$dir\\install-context.reg\"",
-        "reg import \"$dir\\install-associations.reg\""
+        "reg.exe import \"$dir\\install-context.reg\"",
+        "reg.exe import \"$dir\\install-associations.reg\""
     ],
     "uninstaller": {
         "script": [
