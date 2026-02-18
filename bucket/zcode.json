@@ -5,15 +5,10 @@
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.zcode-ai.com/zcode/releases/0.20.4/z-code_0.20.4_x64-setup.exe#/dl.7z"
+            "url": "https://cdn.zcode-ai.com/zcode/releases/0.20.4/z-code_0.20.4_x64-setup.exe"
         }
     },
-    "installer": {
-        "script": [
-            "Expand-InnoArchive -Path \"$dir\\$fname\" -ExtractDir '{app}'",
-            "Expand-InnoArchive -Path \"$dir\\$fname\" -ExtractDir '{code_GetInstallDir}' -Removal"
-        ]
-    },
+    "innosetup": true,
     "shortcuts": [
         [
             "Zed.exe",
