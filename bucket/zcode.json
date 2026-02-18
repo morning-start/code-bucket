@@ -1,0 +1,34 @@
+{
+    "version": "0.20.4",
+    "description": "Z Code is an AI-powered code editor for developers",
+    "homepage": "https://zcode-ai.com/",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.zcode-ai.com/zcode/releases/0.20.4/z-code_0.20.4_x64-setup.exe#/dl.7z"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-InnoArchive -Path \"$dir\\$fname\" -ExtractDir '{app}'",
+            "Expand-InnoArchive -Path \"$dir\\$fname\" -ExtractDir '{code_GetInstallDir}' -Removal"
+        ]
+    },
+    "shortcuts": [
+        [
+            "Zed.exe",
+            "Z Code"
+        ]
+    ],
+    "checkver": {
+        "url": "https://zcode-ai.com/releases",
+        "regex": "\"version\":\"([\\d.]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.zcode-ai.com/zcode/releases/$version/z-code_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
