@@ -22,7 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cdn.zcode-ai.com/zcode/releases/$version/z-code_$version_x64-setup.exe#/dl.7z"
+                "url": "https://cdn.zcode-ai.com/zcode/releases/$version/z-code_$version_x64-setup.exe"
             }
         }
     }
