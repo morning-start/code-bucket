@@ -30,7 +30,7 @@
         "versions",
         "cache"
     ],
-    "env_add_path": "bin",
+    "env_add_path": "default/bin",
     "checkver": {
         "github": "https://github.com/leoafarias/fvm"
     },
