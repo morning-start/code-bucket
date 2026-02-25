@@ -20,7 +20,7 @@
     "extract_dir": "fvm",
     "bin": "fvm.bat",
     "env_set": {
-        "FVM_CACHE_PATH": "$dir",
+        "FVM_CACHE_PATH": "$persist_dir\\versions",
         "FVM_GIT_CACHE_PATH": "$persist_dir\\cache",
         "FVM_FLUTTER_URL": "https://mirrors.tuna.tsinghua.edu.cn/git/flutter-sdk.git",
         "PUB_HOSTED_URL": "https://mirrors.tuna.tsinghua.edu.cn/dart-pub",
