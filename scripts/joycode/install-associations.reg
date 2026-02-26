@@ -50,3 +50,4 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Classes\JoyCode.joyworkspace\shell\open\command]
 @="\"$joycode\" \"%1\""
+
