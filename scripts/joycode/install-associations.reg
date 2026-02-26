@@ -1,0 +1,52 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.joy\OpenWithProgids]
+"JoyCode"=""
+"JoyCode.joy"=""
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joy]
+@="JoyCode Project File"
+"AppUserModelID"="JoyCode.JoyCode"
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joy\DefaultIcon]
+@="\"$joycodedir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joy\shell\open]
+"Icon"="\"$joycode\""
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joy\shell\open\command]
+@="\"$joycode\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.joyproj\OpenWithProgids]
+"JoyCode"=""
+"JoyCode.joyproj"=""
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joyproj]
+@="JoyCode Project File"
+"AppUserModelID"="JoyCode.JoyCode"
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joyproj\DefaultIcon]
+@="\"$joycodedir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joyproj\shell\open]
+"Icon"="\"$joycode\""
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joyproj\shell\open\command]
+@="\"$joycode\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\.joyworkspace\OpenWithProgids]
+"JoyCode"=""
+"JoyCode.joyworkspace"=""
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joyworkspace]
+@="JoyCode Workspace File"
+"AppUserModelID"="JoyCode.JoyCode"
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joyworkspace\DefaultIcon]
+@="\"$joycodedir\\resources\\app\\resources\\win32\\code.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joyworkspace\shell\open]
+"Icon"="\"$joycode\""
+
+[HKEY_CURRENT_USER\Software\Classes\JoyCode.joyworkspace\shell\open\command]
+@="\"$joycode\" \"%1\""

@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &JoyCode]
+@="Apri con &JoyCode"
+"Icon"="$joycode"
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Apri con &JoyCode\command]
+@="\"$joycode\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &JoyCode]
+@="Apri con &JoyCode"
+"Icon"="$joycode"
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Apri con &JoyCode\command]
+@="\"$joycode\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &JoyCode]
+@="Apri con &JoyCode"
+"Icon"="$joycode"
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Apri con &JoyCode\command]
+@="\"$joycode\" \"%V\""

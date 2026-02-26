@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.joy\OpenWithProgids]
+"JoyCode"=-
+"JoyCode.joy"=-
+
+[-HKEY_CURRENT_USER\Software\Classes\JoyCode.joy]
+
+[HKEY_CURRENT_USER\Software\Classes\.joyproj\OpenWithProgids]
+"JoyCode"=-
+"JoyCode.joyproj"=-
+
+[-HKEY_CURRENT_USER\Software\Classes\JoyCode.joyproj]
+
+[HKEY_CURRENT_USER\Software\Classes\.joyworkspace\OpenWithProgids]
+"JoyCode"=-
+"JoyCode.joyworkspace"=-
+
+[-HKEY_CURRENT_USER\Software\Classes\JoyCode.joyworkspace]
