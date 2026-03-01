@@ -9,13 +9,7 @@
             "hash": "20b2429a5253e35f4a050cd0f437f2205011c88a049b85a38bb0cacd083611ac"
         }
     },
-    "bin": "openfang-desktop.exe",
-    "shortcuts": [
-        [
-            "openfang-desktop.exe",
-            "OpenFang"
-        ]
-    ],
+    "bin": [["openfang-desktop.exe","openfang"]],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
