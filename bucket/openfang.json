@@ -6,8 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/RightNow-AI/openfang/releases/download/v0.2.3/OpenFang_0.1.0_x64-setup.exe#/dl.7z",
-            "hash": "20b2429a5253e35f4a050cd0f437f2205011c88a049b85a38bb0cacd083611ac",
-            "extract_dir": "$PLUGINSDIR"
+            "hash": "20b2429a5253e35f4a050cd0f437f2205011c88a049b85a38bb0cacd083611ac"
         }
     },
     "bin": "openfang-desktop.exe",
@@ -21,8 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/RightNow-AI/openfang/releases/download/v$version/OpenFang_0.1.0_x64-setup.exe#/dl.7z",
-                "extract_dir": "$PLUGINSDIR"
+                "url": "https://github.com/RightNow-AI/openfang/releases/download/v$version/OpenFang_0.1.0_x64-setup.exe#/dl.7z"
             }
         }
     }
