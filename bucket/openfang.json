@@ -1,12 +1,12 @@
 {
-    "version": "0.3.10",
+    "version": "0.3.12",
     "description": "OpenFang - An open source AI assistant",
     "homepage": "https://github.com/RightNow-AI/openfang",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/RightNow-AI/openfang/releases/download/v0.3.10/openfang-x86_64-pc-windows-msvc.zip",
-            "hash": "a8c8f2a570bb7d8b6f7a2c40e5e6b684ca39284aabe44ed7f820af7f7a5f6d16"
+            "url": "https://github.com/RightNow-AI/openfang/releases/download/v0.3.12/openfang-x86_64-pc-windows-msvc.zip",
+            "hash": "b26536f9fc4eb1e6939e61228e708f165393285c7e2a29d4ff60d20607faae8e"
         }
     },
     "bin": "openfang.exe",
