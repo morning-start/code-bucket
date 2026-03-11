@@ -14,7 +14,8 @@
     "env_set": {
         "FNM_DIR": "$persist_dir"
     },
-    "env_add_path": "$persist_dir\\aliases\\default",
+    "persist":["aliases","node-versions"],
+    "env_add_path": "aliases\\default",
     "bin": "fnm.exe",
     "checkver": "github",
     "autoupdate": {
