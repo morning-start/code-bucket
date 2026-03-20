@@ -78,12 +78,12 @@
     "checkver": {
         "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-archive",
         "jsonpath": "$.url",
-        "regex": "://(?<link>.*)CodeBuddy-win32-x64-archive-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>.+)\\.exe"
+        "regex": "CodeBuddy-win32-x64-archive-([\\d.]+)-([\\w-]+)\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$matchLink-user-$version.$matchBuild.exe"
+                "url": "https://acc-1258344699.cos.accelerate.myqcloud.com/aiide/win32-x64-archive/CodeBuddy-win32-x64-archive-$version-$match1.exe"
             }
         }
     }
