@@ -78,7 +78,7 @@
     "checkver": {
         "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-archive",
         "jsonpath": "$.url",
-        "regex": "CodeBuddy-win32-x64-archive-([\\d.]+)-([\\w-]+)\\.exe"
+        "regex": "CodeBuddy-win32-x64-archive-([\\d\\.]+)-([\\w-]+).exe"
     },
     "autoupdate": {
         "architecture": {
