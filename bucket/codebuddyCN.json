@@ -76,7 +76,7 @@
         ".codebuddycn"
     ],
     "checkver": {
-        "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-user",
+        "url": "https://copilot.tencent.com/v2/update?platform=ide-win32-x64-archive",
         "jsonpath": "$.url",
         "regex": "://(?<link>.*)-user-(?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>.+)\\.exe"
     },
