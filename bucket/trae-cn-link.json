@@ -3,10 +3,6 @@
     "description": "An AI-powered IDE that makes programming more enjoyable and efficient.",
     "homepage": "https://www.trae.com.cn",
     "license": "Proprietary",
-    "notes": [
-        "For github integration, run:",
-        "'reg import \"$dir\\install-github-integration.reg\"'"
-    ],
     "architecture": {
         "64bit": {
             "url": "https://raw.githubusercontent.com/morning-start/code-bucket/refs/heads/master/scripts/placeholder.txt"
@@ -41,18 +37,6 @@
         "",
         "$appdata_dir = Join-Path $env:APPDATA \"Trae CN\"",
         "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $appdata_dir"
-    ],
-    "bin": [
-        [
-            "bin/trae.cmd",
-            "trae"
-        ]
-    ],
-    "shortcuts": [
-        [
-            "Trae CN.exe",
-            "Trae CN"
-        ]
     ],
     "persist": [
         "data",
