@@ -43,11 +43,9 @@
     ],
     "post_uninstall": [
         "$local=Join-Path $env:LOCALAPPDATA \"Zed\"",
-        "$persist_local=Join-Path $persist_dir \"local\"",
-        "& \"$bucketsdir\\$bucket\\scripts\\unlink.ps1\" $local $persist_local",
+        "& \"$bucketsdir\\$bucket\\scripts\\unlink.ps1\" $local",
         "$appdata=Join-Path $env:APPDATA \"Zed\"",
-        "$persist_appdata=Join-Path $persist_dir \"appdata\"",
-        "& \"$bucketsdir\\$bucket\\scripts\\unlink.ps1\" $appdata $persist_appdata"
+        "& \"$bucketsdir\\$bucket\\scripts\\unlink.ps1\" $appdata"
     ],
     "uninstaller": {
         "script": [
