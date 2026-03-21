@@ -41,6 +41,16 @@
         "Move-Item \"$dir\\$target\\bun.exe\" \"$dir\\bun.exe\"",
         "Remove-Item \"$dir\\bun-windows-*\" -Recurse"
     ],
+    "post_uninstall": [
+        "$config_dirs = @(",
+        "    '.codebuddy'",
+        ")",
+        "foreach ($config_dir in $config_dirs) {",
+        "    $target_dir = Join-Path $env:USERPROFILE $config_dir",
+        "    $link_dir = Join-Path $persist_dir $config_dir",
+        "    & \"$bucketsdir\\$bucket\\scripts\\unlink.ps1\" $target_dir $link_dir",
+        "}"
+    ],
     "bin": [
         "bun.exe",
         [
