@@ -61,7 +61,9 @@
     "post_uninstall": [
         "# 处理用户配置目录",
         "$config_dirs = @(",
-        "    '.codebuddycn'",
+        "    '.codebuddycn',",
+        "    'CodeBuddy',",
+        "    '.codebuddy'",
         ")",
         "foreach ($config_dir in $config_dirs) {",
         "    $target_dir = Join-Path $env:USERPROFILE $config_dir",
