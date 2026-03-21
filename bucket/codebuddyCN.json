@@ -58,7 +58,7 @@
             "}"
         ]
     },
-    "post_uninstall": [
+    "pre_uninstall": [
         "# 处理用户配置目录",
         "$config_dirs = @(",
         "    '.codebuddycn'",

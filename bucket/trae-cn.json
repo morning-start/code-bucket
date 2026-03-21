@@ -49,7 +49,7 @@
         "reg import \"$dir\\install-context.reg\"",
         "reg import \"$dir\\install-associations.reg\""
     ],
-    "post_uninstall": [
+    "pre_uninstall": [
         "$config_dirs = @(",
         "    '.trae-cn',",
         "    '.trae-aicc'",

@@ -41,7 +41,7 @@
         "reg.exe import \"$dir\\install-context.reg\"",
         "reg.exe import \"$dir\\install-associations.reg\""
     ],
-    "post_uninstall": [
+    "pre_uninstall": [
         "$local=Join-Path $env:LOCALAPPDATA \"Zed\"",
         "& \"$bucketsdir\\$bucket\\scripts\\unlink.ps1\" $local",
         "$appdata=Join-Path $env:APPDATA \"Zed\"",
