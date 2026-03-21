@@ -32,7 +32,7 @@
     "& $script_path\\download.ps1 $download_dir",
     "& $script_path\\write.ps1 $download_dir"
   ],
-  "pre_uninstall": [
+  "post_uninstall": [
     "$script_path = \"$bucketsdir\\$bucket\\scripts\\$app\"",
     "$download_dir = Join-Path $persist_dir 'scripts'",
     "& $script_path\\remove.ps1 $download_dir"

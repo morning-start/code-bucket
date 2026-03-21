@@ -28,7 +28,7 @@
         "    $target_dir = Join-Path $env:USERPROFILE $config_dir",
         "    $link_dir = Join-Path $persist_dir $config_dir",
         "    if (Test-Path $target_dir) {",
-        "        & \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $target_dir $link_dir",
+        "        & \"$bucketsdir\\code\\scripts\\link.ps1\" $target_dir $link_dir",
         "    }",
         "}",
         "",
@@ -36,7 +36,7 @@
         "$appdata_dir = Join-Path $env:APPDATA \"Positron\"",
         "$persist_data_dir = Join-Path $persist_dir data",
         "if (Test-Path $appdata_dir) {",
-        "    & \"$bucketsdir\\$bucket\\scripts\\link.ps1\" $appdata_dir $persist_data_dir",
+        "    & \"$bucketsdir\\code\\scripts\\link.ps1\" $appdata_dir $persist_data_dir",
         "}"
     ],
     "post_install": [
@@ -57,7 +57,7 @@
         "reg import \"$dir\\install-context.reg\"",
         "reg import \"$dir\\install-associations.reg\""
     ],
-    "pre_uninstall": [
+    "post_uninstall": [
         "$config_dirs = @(",
         "    '.positron'",
         ")",
