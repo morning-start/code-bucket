@@ -23,6 +23,7 @@
         "data"
     ],
     "post_install": [
+        "$env:JVM_ROOT=\"$persist_dir\"",
         "jvm config"
     ],
     "env_add_path": "default\\bin"
