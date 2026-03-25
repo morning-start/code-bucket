@@ -30,7 +30,6 @@
         "NDK_HOME": "$persist_dir\\sdk\\ndk"
     },
     "persist": [
-        "plugins",
         "sdk\\ndk",
         ".android"
     ],
