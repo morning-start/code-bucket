@@ -1,17 +1,17 @@
 {
-    "version": "0.8.4+4d98d95d4",
+    "version": "0.9.0+9f1423bcb",
     "description": "MoonBit is an end-to-end programming language toolchain for cloud and edge computing using WebAssembly.",
     "homepage": "https://www.moonbitlang.com/",
     "license": "Unknown",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/chawyehsu/moonbit-binaries/releases/download/v0.8.4+4d98d95d4/moonbit-core-v0.8.4+4d98d95d4-universal.zip",
-                "https://github.com/chawyehsu/moonbit-binaries/releases/download/v0.8.4+4d98d95d4/moonbit-v0.8.4+4d98d95d4-x86_64-pc-windows.zip"
+                "https://github.com/chawyehsu/moonbit-binaries/releases/download/v0.9.0+9f1423bcb/moonbit-core-v0.9.0+9f1423bcb-universal.zip",
+                "https://github.com/chawyehsu/moonbit-binaries/releases/download/v0.9.0+9f1423bcb/moonbit-v0.9.0+9f1423bcb-x86_64-pc-windows.zip"
             ],
             "hash": [
-                "3906dfe2f4bd0fbc832e3e117d655b471f041ca90d8704ad06136657dcba34fa",
-                "97fef11fadd07264897ac687580234cfa621484a377a5b0784510df59d13ad5d"
+                "fc026595d95e15ace5e39e56d09bfacaef599d7e94ca53bdc10c4a703ac4101f",
+                "68f118dd03b8bdd8d32fc45dc93e01cb8a70c907a772164aeb42e2be45a8177d"
             ]
         }
     },
