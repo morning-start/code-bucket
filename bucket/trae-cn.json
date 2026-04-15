@@ -73,8 +73,8 @@
     },
     "bin": [
         [
-            "bin/trae.cmd",
-            "trae"
+            "bin/trae-cn.cmd",
+            "trae-cn"
         ]
     ],
     "shortcuts": [
