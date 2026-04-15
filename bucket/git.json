@@ -68,7 +68,7 @@
         ]
     ],
     "env_add_path":[
-        "bin"
+        "cmd"
     ],
     "env_set": {
         "GIT_INSTALL_ROOT": "$dir"
