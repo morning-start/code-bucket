@@ -1,5 +1,5 @@
 {
-    "version": "2.3.10745",
+    "version": "2.3.19582",
     "description": "An AI-powered IDE that makes programming more enjoyable and efficient.",
     "homepage": "https://www.trae.com.cn",
     "license": "Proprietary",
@@ -9,7 +9,7 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.10745/win32/Trae%20CN-Setup-x64.exe",
+            "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.19582/win32/Trae%20CN-Setup-x64.exe",
             "extract_dir": "{code_GetDestDir}"
         }
     },
@@ -90,7 +90,7 @@
         ".trae-aicc"
     ],
     "checkver": {
-        "url": "https://api.trae.com.cn/icube/api/v1/package/check_update?mid=7&packageType=stable_cn&platform=Win&tenant=marscode&appVersion=1.0.0&iid=1&branch=release_desktop_yoma_win32_cn",
+        "url": "https://api.trae.com.cn/icube/api/v1/package/check_update?mid=7&packageType=stable_cn&platform=Win&appVersion=1.0.0&branch=release_desktop_yoma_win32_cn",
         "jsonpath": "$.data.manifest.win32.version"
     },
     "autoupdate": {
