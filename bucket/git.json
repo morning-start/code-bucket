@@ -67,6 +67,9 @@
             "Git GUI"
         ]
     ],
+    "env_add_path":[
+        "bin"
+    ],
     "env_set": {
         "GIT_INSTALL_ROOT": "$dir"
     },
