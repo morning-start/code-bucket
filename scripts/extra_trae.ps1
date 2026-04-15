@@ -32,7 +32,7 @@ try {
     # Write-Host ""
 
     # 构建目标目录：D:\scoop\apps\trae-cn\<version>
-    $destDir = "D:\scoop\apps\trae-cn\$version"
+    $destDir = "E:\scoop\apps\trae-cn\$version"
 
     # 确保目标目录存在
     if (-not (Test-Path $destDir)) {
