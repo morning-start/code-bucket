@@ -1,5 +1,5 @@
 {
-    "version": "2026.04.0-269",
+    "version": "2026.04.1-10",
     "description": "A next-generation data science IDE",
     "homepage": "https://positron.posit.co",
     "license": "Elastic-2.0",
@@ -13,8 +13,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://cdn.posit.co/positron/releases/win/x86_64/Positron-2026.04.0-269-UserSetup-x64.exe",
-            "hash": "6e80d8072d256acda27e2f4d472f0e81f4cb8681cba035e75628c59c379ce15d",
+            "url": "https://cdn.posit.co/positron/releases/win/x86_64/Positron-2026.04.1-10-UserSetup-x64.exe",
+            "hash": "000baba96b1d7b2b07a1856c5ea33de6b9d4a257b0c1f2d9abcbfc25d49b2207",
             "extract_dir": "{code_GetDestDir}"
         }
     },
