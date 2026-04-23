@@ -11,13 +11,18 @@
     },
     "bin": [
         "x86_64-windows-zvm.exe",
-        "zvm"
+        [
+            "zvm"
+        ]
     ],
     "env_set": {
-        "XDG_DATA_HOME":"$persist_dir/data"
+        "XDG_DATA_HOME": "$persist_dir"
     },
+    "env_add_path": [
+        ".zm/bin"
+    ],
     "persist": [
-        "data"
+        ".zm"
     ],
     "checkver": "github",
     "autoupdate": {
