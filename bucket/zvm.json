@@ -11,7 +11,7 @@
     },
     "bin": [
         [
-            "x86_64-windows-zvm.exe",
+            "x86-windows-zvm.exe",
             "zvm"
         ]
     ],
