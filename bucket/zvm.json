@@ -10,7 +10,10 @@
         }
     },
     "bin": [
-        "x86_64-windows-zvm.exe"
+        [
+            "x86_64-windows-zvm.exe",
+            "zvm"
+        ]
     ],
     "env_set": {
         "XDG_DATA_HOME": "$persist_dir"
