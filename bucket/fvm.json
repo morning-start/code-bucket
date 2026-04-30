@@ -25,7 +25,8 @@
         "FVM_FLUTTER_URL": "https://mirrors.tuna.tsinghua.edu.cn/git/flutter-sdk.git",
         "PUB_HOSTED_URL": "https://mirrors.tuna.tsinghua.edu.cn/dart-pub",
         "FLUTTER_STORAGE_BASE_URL": "https://mirrors.tuna.tsinghua.edu.cn/flutter",
-        "FLUTTER_GIT_URL":"https://mirrors.tuna.tsinghua.edu.cn/git/flutter-sdk.git"
+        "FLUTTER_GIT_URL":"https://mirrors.tuna.tsinghua.edu.cn/git/flutter-sdk.git",
+        "PUB_ALLOW_LEGACY_ADVISORIES":true
     },
     "persist": [
         "versions",
