@@ -8,6 +8,6 @@
     "bin": "link-disk.exe",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/morning-start/link-disk/releases/download/v$version/link-disk-windows-v$version.zip"
+        "url": "https://github.com/morning-start/link-disk/releases/download/v$version/link-disk-x86_64-pc-windows-msvc.zip"
     }
 }
