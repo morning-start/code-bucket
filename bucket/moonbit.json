@@ -37,8 +37,7 @@
         "MOON_HOME": "$dir"
     },
     "persist": [
-        "registry",
-        "credentials.json"
+        "registry"
     ],
     "checkver": {
         "github": "https://github.com/chawyehsu/moonbit-binaries",
