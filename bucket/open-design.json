@@ -1,0 +1,26 @@
+{
+    "version": "0.9.0",
+    "description": "The open-source Claude Design alternative",
+    "homepage": "https://github.com/nexu-io/open-design",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nexu-io/open-design/releases/download/open-design-v0.9.0/open-design-0.9.0-win-x64-setup.exe",
+            "hash": "sha256:ac08df5b442c73e2847bfe94c843c3691afa631cda00d1407e008dc95e651235"
+        }
+    },
+    "shortcuts": [
+        [
+            "open-design.exe",
+            "Open Design"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/nexu-io/open-design/releases/download/open-design-v$version/open-design-$version-win-x64-setup.exe"
+            }
+        }
+    }
+}
