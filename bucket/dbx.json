@@ -18,10 +18,14 @@
     "post_install": [
         "$appdata_dir = Join-Path $env:LOCALAPPDATA \"com.dbx.app\"",
         "$persist_data_dir = Join-Path $persist_dir local",
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $appdata_dir $persist_data_dir",
+        "$appdata_dir = Join-Path $env:APPDATA \"com.dbx.app\"",
+        "$persist_data_dir = Join-Path $persist_dir data",
         "& \"$bucketsdir\\code\\scripts\\link.ps1\" $appdata_dir $persist_data_dir"
     ],
     "persist": [
-        "local"
+        "local",
+        "data"
     ],
     "checkver": "github",
     "autoupdate": {
