@@ -19,14 +19,9 @@
     },
     "url": "https://raw.githubusercontent.com/morning-start/code-bucket/refs/heads/master/scripts/placeholder.txt",
     "pre_install": [
-        "# pnpm 在 Windows 上的默认数据目录：",
-        "#   store-dir: %LOCALAPPDATA%\\pnpm\\store",
-        "#   state-dir: %LOCALAPPDATA%\\pnpm\\state",
-        "#   global-dir: %LOCALAPPDATA%\\pnpm\\global",
-        "#   cache-dir: %LOCALAPPDATA%\\pnpm-cache",
-        "# 软链接子目录到 persist 目录，避免升级 scoop 时丢失数据",
         "$pnpm_data_dirs = @(",
         "    @{ Source = 'pnpm\\store'; Name = 'store' },",
+        "    @{ Source = 'pnpm\\bin'; Name = 'bin' },",
         "    @{ Source = 'pnpm\\state'; Name = 'state' },",
         "    @{ Source = 'pnpm\\global'; Name = 'global' },",
         "    @{ Source = 'pnpm-cache'; Name = 'pnpm-cache' }",
@@ -37,8 +32,8 @@
         "    & \"$bucketsdir\\code\\scripts\\link.ps1\" $source $target",
         "}"
     ],
-    "env_add_path": "bin",
     "persist": [
+        "bin",
         "store",
         "state",
         "global",
