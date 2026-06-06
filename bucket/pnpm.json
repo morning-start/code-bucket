@@ -32,6 +32,9 @@
         "    & \"$bucketsdir\\code\\scripts\\link.ps1\" $source $target",
         "}"
     ],
+    "env_add_path": [
+        "bin"
+    ],
     "persist": [
         "bin",
         "store",
