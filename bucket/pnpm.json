@@ -26,6 +26,9 @@
         "pnpm config set cache-dir \"$dir\\cache\""
     ],
     "env_add_path": "bin",
+    "env_set": {
+        "PNPM_HOME": "$dir/bin"
+    },
     "persist": [
         "bin",
         "store",
