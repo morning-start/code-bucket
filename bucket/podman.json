@@ -1,0 +1,82 @@
+{
+    "version": "5.8.2",
+    "description": "A tool for managing OCI containers and pods.",
+    "homepage": "https://podman.io/",
+    "license": "Apache-2.0",
+    "notes": [
+        "首次使用前需要确保 scoop install podman 以管理员身份运行（创建跨盘符 Junction 需要管理员权限）",
+        "如需更换 persist 存储位置（例如从 E 盘换到 D 盘），请先手动将旧 persist\\podman\\* 迁移到新位置，然后以管理员身份重装 scoop 会自动修复 Junction"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/containers/podman/releases/download/v5.8.2/podman-installer-windows-amd64.msi",
+            "hash": "eda54f26f9695d198d9a679fa45ae24ba35b78444f432b5fe0c122c5a3624c57"
+        },
+        "arm64": {
+            "url": "https://github.com/containers/podman/releases/download/v5.8.2/podman-installer-windows-arm64.msi",
+            "hash": "77e9810e7598ef588b1fe7a850bf6baf572b30545dde82879a31638708c97bcd"
+        }
+    },
+    "bin": "podman.exe",
+    "extract_dir": "PFiles64\\Podman",
+    "pre_install": [
+        "# 守护：如果 podman 虚拟机还在运行，安装直接报错退出",
+        "if (Get-Command -ErrorAction SilentlyContinue podman) {",
+        "    if ((podman machine info --format '{{.Host.MachineState}}') -like '*ing') {",
+        "        error 'Podman virtual machine is still running. Stop it and try again.'; break",
+        "    }",
+        "}",
+        "",
+        "# 兼容旧版：把 %AppData%\\containers\\podman-connections 旧连接迁移到安装目录的 connections\\",
+        "if ((Test-Path \"$Env:AppData\\containers\\podman-connections*\") -and !(Test-Path \"$dir\\connections\\podman-connections*\")) {",
+        "    Move-Item \"$Env:AppData\\containers\\podman-connections*\" \"$dir\\connections\"",
+        "}",
+        "",
+        "# 使用 Junction（NTFS 目录连接点）将 podman 默认数据目录重定向到 persist 目录",
+        "# 与 SymbolicLink 不同，Junction 被 WSL 接受，容器/虚拟磁盘可正常读写",
+        "# 跨盘符 Junction 需要管理员权限，请以管理员身份运行 scoop install",
+        "# Junction 重定向后，podman/WSL 始终读写同一份真实数据（persist_dir），",
+        "# 因此不需要 pre_uninstall 也不需要拷贝恢复逻辑",
+        "$user_profile = $env:USERPROFILE",
+        "$junction_items = @(",
+        "    @{ Junction = (Join-Path $user_profile '.config\\containers');                   Target = (Join-Path $persist_dir 'config') },",
+        "    @{ Junction = (Join-Path $user_profile '.local\\share\\containers\\cache');     Target = (Join-Path $persist_dir 'data\\cache') },",
+        "    @{ Junction = (Join-Path $user_profile '.local\\share\\containers\\storage');   Target = (Join-Path $persist_dir 'data\\storage') },",
+        "    @{ Junction = (Join-Path $user_profile '.local\\share\\containers\\podman');     Target = (Join-Path $persist_dir 'data\\podman') }",
+        ")",
+        "foreach ($item in $junction_items) {",
+        "    & \"$bucketsdir\\code\\scripts\\junction.ps1\" $item.Junction $item.Target -Force",
+        "}",
+        "",
+        "# 预创建 $dir\\data\\podman\\machine\\wsl\\wsldist 的父目录（仅占位，实际数据在 persist）",
+        "# 这样 podman machine init 时无需再次创建父目录链",
+        "$wsl_parent = Join-Path $user_profile '.local\\share\\containers\\podman\\machine\\wsl'",
+        "if (-not (Test-Path $wsl_parent)) {",
+        "    New-Item -ItemType Directory -Path $wsl_parent -Force | Out-Null",
+        "}"
+    ],
+    "env_set": {
+        "PODMAN_CONNECTIONS_CONF": "$dir\\connections\\podman-connections.json"
+    },
+    "persist": [
+        "data",
+        "config",
+        "connections"
+    ],
+    "checkver": {
+        "github": "https://github.com/containers/podman"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/containers/podman/releases/download/v$version/podman-installer-windows-amd64.msi"
+            },
+            "arm64": {
+                "url": "https://github.com/containers/podman/releases/download/v$version/podman-installer-windows-arm64.msi"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/shasums"
+        }
+    }
+}
