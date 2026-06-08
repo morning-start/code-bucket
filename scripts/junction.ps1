@@ -39,12 +39,14 @@ function New-JunctionIfNotExists {
     )
 
     # 规范化路径（去除末尾分隔符以便比较）
+    # PowerShell 单引号字符串里 \\ 不会被转义为 \，所以用 [char]92 直接用反斜杠的 ASCII 码
     function Get-NormalizedPath {
         param([string]$Path)
+        $backslash = [char]92  # 92 = '\'
         try {
-            return ([System.IO.Path]::GetFullPath($Path)).TrimEnd([char]'\\').ToLowerInvariant()
+            return ([System.IO.Path]::GetFullPath($Path)).TrimEnd($backslash, '/').ToLowerInvariant()
         } catch {
-            return $Path.TrimEnd([char]'\\').ToLowerInvariant()
+            return $Path.TrimEnd($backslash, '/').ToLowerInvariant()
         }
     }
 
