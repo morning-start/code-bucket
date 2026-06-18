@@ -13,7 +13,7 @@
             "hash": "49d0993e1f005ca364b60bb31401743bf6d379fda9be7839db7938d1ce6cd8aa"
         }
     },
-    "bin": "mimocode.exe",
+    "bin": "mimo.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
