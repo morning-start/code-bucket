@@ -13,7 +13,7 @@
             "hash": "56d1bb8d15471ddc496f513f0638316fcdb78b1fe01052e6d264afe735c93e8e"
         }
     },
-    "bin": "codex.exe",
+    "bin": "bin/codex.exe",
     "checkver": {
         "github": "https://github.com/openai/codex",
         "regex": "rust-v([\\d.]+)"
