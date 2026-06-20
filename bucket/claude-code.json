@@ -17,6 +17,18 @@
         ["claude.exe", "claude"],
         ["claude.exe", "cc"]
     ],
+    "pre_install": [
+        "# 将 ~/.claude 软链接到 persist/data，升级时数据不丢失",
+        "$claude_dir = Join-Path $env:USERPROFILE \".claude\"",
+        "$persist_data = Join-Path $persist_dir \"data\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\link.ps1\" $claude_dir $persist_data"
+    ],
+    "post_uninstall": [
+        "## 卸载时清理符号链接（数据保留在 persist 中）",
+        "$claude_dir = Join-Path $env:USERPROFILE \".claude\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $claude_dir"
+    ],
+    "persist": ["data"],
     "checkver": {
         "url": "https://downloads.claude.ai/claude-code-releases/latest",
         "regex": "^([\\d.]+)$"

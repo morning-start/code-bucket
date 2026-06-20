@@ -14,6 +14,17 @@
         }
     },
     "bin": "mimo.exe",
+    "pre_install": [
+        "# 将 ~/.config/mimocode 软链接到 persist/config，升级时数据不丢失",
+        "$mimo_dir = Join-Path $env:USERPROFILE \".config\\mimocode\"",
+        "$persist_config = Join-Path $persist_dir \"config\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\link.ps1\" $mimo_dir $persist_config"
+    ],
+    "post_uninstall": [
+        "$mimo_dir = Join-Path $env:USERPROFILE \".config\\mimocode\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $mimo_dir"
+    ],
+    "persist": ["config"],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
