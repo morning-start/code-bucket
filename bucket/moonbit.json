@@ -1,17 +1,19 @@
 {
-    "version": "0.10.0+e66899a54",
-    "description": "MoonBit is an end-to-end programming language toolchain for cloud and edge computing using WebAssembly.",
+    "version": "0.1.20260427+e66899a54",
+    "description": "MoonBit 语言的官方 CLI 工具链（moon 编译器、构建系统、包管理器及 MoonPilot 等）",
     "homepage": "https://www.moonbitlang.com/",
-    "license": "Unknown",
+    "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/chawyehsu/moonbit-binaries/releases/download/v0.10.0+e66899a54/moonbit-core-v0.10.0+e66899a54-universal.zip",
-                "https://github.com/chawyehsu/moonbit-binaries/releases/download/v0.10.0+e66899a54/moonbit-v0.10.0+e66899a54-x86_64-pc-windows.zip"
-            ],
-            "hash": [
-                "3003c46a6f1c5a1f2d4c014cc5473edbac19c167fd01b138cf2fd386d3b7bdc9",
-                "b627a879c28c5c3a7a2d33dd7276bf34eb3ca870065e43477d5f38ef8e7226d7"
+                "https://cli.moonbitlang.com/cores/core-latest.zip",
+                "https://cli.moonbitlang.com/binaries/latest/moonbit-windows-x86_64.zip"
+            ]
+        },
+        "arm64": {
+            "url": [
+                "https://cli.moonbitlang.com/cores/core-latest.zip",
+                "https://cli.moonbitlang.com/binaries/latest/moonbit-windows-arm64.zip"
             ]
         }
     },
@@ -20,16 +22,31 @@
         "New-Item -ItemType Directory -Force -Path \"$dir\\lib\" | Out-Null"
     ],
     "post_install": [
+        "# 初始化 persist 文件（仅首次创建）",
         "function CreateFile([String] $file, [String] $content = $null) {",
         "    if (!(Test-Path \"$persist_dir\\$file\")) {",
         "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
         "    }",
         "}",
         "CreateFile 'credentials.json'",
-        "Move-Item -Path \"$dir\\*.exe\" -Destination \"$dir\\bin\"",
-        "Move-Item -Path \"$dir\\core\" -Destination \"$dir\\lib\"",
+        "# 整理目录结构：exe → bin/, core → lib/",
+        "Get-ChildItem \"$dir\\*.exe\" -ErrorAction SilentlyContinue | Move-Item -Destination \"$dir\\bin\"",
+        "if (Test-Path \"$dir\\core\") { Move-Item -Path \"$dir\\core\" -Destination \"$dir\\lib\" }",
+        "# 创建 AGENTS.md 硬链接（MoonPilot 提示词）",
+        "$agentsSource = Join-Path $dir 'bin\\internal\\moon-pilot\\lib\\prompt\\moonbitlang.mbt.md'",
+        "if (Test-Path $agentsSource) {",
+        "    $agentsTarget = Join-Path $dir 'AGENTS.md'",
+        "    if (Test-Path $agentsTarget) { Remove-Item -Force -Path $agentsTarget -ErrorAction SilentlyContinue }",
+        "    New-Item -ItemType HardLink -Path $agentsTarget -Value $agentsSource | Out-Null",
+        "}",
+        "# 编译核心库（双目标：native + wasm-gc）",
+        "Write-Host 'Bundling MoonBit core ...'",
         "Push-Location \"$dir\\lib\\core\"",
-        "& moon bundle --all",
+        "$oldPath = $env:PATH",
+        "$env:PATH = \"$dir\\bin;$env:PATH\"",
+        "& \"$dir\\bin\\moon.exe\" bundle --warn-list -a --all --quiet",
+        "& \"$dir\\bin\\moon.exe\" bundle --warn-list -a --target wasm-gc --quiet",
+        "$env:PATH = $oldPath",
         "Pop-Location"
     ],
     "env_add_path": "bin",
@@ -38,21 +55,36 @@
     },
     "persist": "registry",
     "checkver": {
-        "github": "https://github.com/chawyehsu/moonbit-binaries",
-        "regex": "v([\\d.]+\\+[a-z0-9]+)"
+        "script": [
+            "$tmpDir = Join-Path $env:TEMP 'moonbit-checkver'",
+            "if (Test-Path $tmpDir) { Remove-Item -Recurse -Force $tmpDir -ErrorAction SilentlyContinue }",
+            "New-Item -ItemType Directory -Path $tmpDir -Force | Out-Null",
+            "$zipPath = Join-Path $tmpDir 'moonbit-x64.zip'",
+            "Invoke-WebRequest -Uri 'https://cli.moonbitlang.com/binaries/latest/moonbit-windows-x86_64.zip' -OutFile $zipPath -UseBasicParsing",
+            "Expand-Archive $zipPath -DestinationPath $tmpDir -Force",
+            "$moonExe = Join-Path $tmpDir 'bin\\moon.exe'",
+            "$versionOutput = & $moonExe version | Out-String",
+            "$versionMatch = [regex]::Match($versionOutput, 'moon ([^ ]+) ')",
+            "if ($versionMatch.Success) { Write-Output $versionMatch.Groups[1].Value }",
+            "else { throw \"Failed to parse version from 'moon version': $versionOutput\" }",
+            "Remove-Item -Recurse -Force $tmpDir -ErrorAction SilentlyContinue"
+        ],
+        "regex": "([\\d.]+\\+[a-z0-9]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": [
-                    "https://github.com/chawyehsu/moonbit-binaries/releases/download/v$version/moonbit-core-v$version-universal.zip",
-                    "https://github.com/chawyehsu/moonbit-binaries/releases/download/v$version/moonbit-v$version-x86_64-pc-windows.zip"
+                    "https://cli.moonbitlang.com/cores/core-latest.zip",
+                    "https://cli.moonbitlang.com/binaries/latest/moonbit-windows-x86_64.zip"
+                ]
+            },
+            "arm64": {
+                "url": [
+                    "https://cli.moonbitlang.com/cores/core-latest.zip",
+                    "https://cli.moonbitlang.com/binaries/latest/moonbit-windows-arm64.zip"
                 ]
             }
-        },
-        "hash": {
-            "url": "$url.sha256",
-            "regex": "([a-f0-9]{64})"
         }
     }
 }
