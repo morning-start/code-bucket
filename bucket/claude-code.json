@@ -27,12 +27,31 @@
         "# 将 ~/.claude 软链接到 persist/data，升级时数据不丢失",
         "$claude_dir = Join-Path $env:USERPROFILE \".claude\"",
         "$persist_data = Join-Path $persist_dir \"data\"",
-        "& \"$bucketsdir\\\\code\\\\scripts\\\\link.ps1\" $claude_dir $persist_data"
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\link.ps1\" $claude_dir $persist_data",
+        "# 确保 .local/bin 存在（Claude Code 自检依赖此路径）",
+        "$localBin = Join-Path $env:USERPROFILE \".local\\bin\"",
+        "if (-not (Test-Path $localBin)) { New-Item -ItemType Directory -Path $localBin -Force | Out-Null }"
+    ],
+    "post_install": [
+        "# 复制 scoop shim（合法 PE exe，136KB）+ .shim 配置到 ~/.local/bin（Claude Code 自检需要）",
+        "$localBin = Join-Path $env:USERPROFILE \".local\\bin\"",
+        "$realExe = Join-Path (scoop prefix claude-code) \"claude.exe\"",
+        "$targetExe = Join-Path $localBin \"claude.exe\"",
+        "$targetShim = Join-Path $localBin \"claude.shim\"",
+        "# 复制 scoop shim（通用 PE launcher，通过 .shim 配置定位实际二进制）",
+        "$shimExe = Join-Path (scoop prefix scoop) \"..\\supporting\\shimexe\\bin\\shim.exe\"",
+        "$shimExe = (Resolve-Path $shimExe).Path",
+        "Copy-Item $shimExe $targetExe -Force",
+        "# 生成配套 .shim 配置指向实际 claude.exe",
+        "@(\"path = `\"$realExe`\"\") | Set-Content -Path $targetShim -Encoding ASCII"
     ],
     "post_uninstall": [
-        "## 卸载时清理符号链接（数据保留在 persist 中）",
+        "## 卸载时清理",
         "$claude_dir = Join-Path $env:USERPROFILE \".claude\"",
-        "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $claude_dir"
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $claude_dir",
+        "# 清理 .local/bin 中的硬链接",
+        "$targetExe = Join-Path $env:USERPROFILE \".local\\bin\\claude.exe\"",
+        "if (Test-Path $targetExe) { Remove-Item -Force $targetExe -ErrorAction SilentlyContinue }"
     ],
     "persist": "data",
     "checkver": {
