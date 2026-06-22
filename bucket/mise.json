@@ -45,6 +45,7 @@
     "checkver": {
         "github": "https://github.com/jdx/mise"
     },
+    "env_add_path":["data/shims"],
     "autoupdate": {
         "architecture": {
             "64bit": {
