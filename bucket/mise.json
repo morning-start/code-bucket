@@ -23,6 +23,25 @@
     },
     "extract_dir": "mise",
     "bin": "bin/mise.exe",
+    "pre_install": [
+        "# 链接配置目录 ~/.config/mise 到 persist/config，升级时配置不丢失",
+        "$mise_config = Join-Path $env:USERPROFILE \".config\\mise\"",
+        "$persist_config = Join-Path $persist_dir \"config\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\link.ps1\" $mise_config $persist_config",
+        "",
+        "# 链接数据目录 $env:LOCALAPPDATA/mise 到 persist/data",
+        "$mise_data = Join-Path $env:LOCALAPPDATA \"mise\"",
+        "$persist_data = Join-Path $persist_dir \"data\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\link.ps1\" $mise_data $persist_data"
+    ],
+    "post_uninstall": [
+        "$mise_config = Join-Path $env:USERPROFILE \".config\\mise\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $mise_config",
+        "",
+        "$mise_data = Join-Path $env:LOCALAPPDATA \"mise\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $mise_data"
+    ],
+    "persist": ["config", "data"],
     "checkver": {
         "github": "https://github.com/jdx/mise"
     },
