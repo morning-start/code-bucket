@@ -1,0 +1,39 @@
+{
+    "version": "16.1.16",
+    "description": "AI coding agent for the terminal - sessions, subagents, slash commands, extensions",
+    "homepage": "https://omp.sh/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v16.1.16/omp-windows-x64.exe#/omp.exe",
+            "hash": "9a44980fe3455fd8a2a79743c51565b30197653e512a46d5edd2a058ec0f5fb2"
+        }
+    },
+    "bin": [
+        "omp.exe",
+        "omp"
+    ],
+    "pre_install": [
+        "# 链接 ~/.config/omp 到 persist/config，升级时配置不丢失",
+        "$omp_config = Join-Path $env:USERPROFILE \".config\\omp\"",
+        "$persist_config = Join-Path $persist_dir \"config\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\link.ps1\" $omp_config $persist_config"
+    ],
+    "post_uninstall": [
+        "$omp_config = Join-Path $env:USERPROFILE \".config\\omp\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $omp_config"
+    ],
+    "persist": [
+        "config"
+    ],
+    "checkver": {
+        "github": "https://github.com/can1357/oh-my-pi"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/can1357/oh-my-pi/releases/download/v$version/omp-windows-x64.exe#/omp.exe"
+            }
+        }
+    }
+}
