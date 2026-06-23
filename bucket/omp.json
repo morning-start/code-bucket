@@ -9,22 +9,19 @@
             "hash": "9a44980fe3455fd8a2a79743c51565b30197653e512a46d5edd2a058ec0f5fb2"
         }
     },
-    "bin": [
-        "omp.exe",
-        "omp"
-    ],
+    "bin": "omp.exe",
     "pre_install": [
-        "# 链接 ~/.config/omp 到 persist/config，升级时配置不丢失",
-        "$omp_config = Join-Path $env:USERPROFILE \".config\\omp\"",
-        "$persist_config = Join-Path $persist_dir \"config\"",
-        "& \"$bucketsdir\\\\code\\\\scripts\\\\link.ps1\" $omp_config $persist_config"
+        "# 链接 ~/.omp 到 persist/data，升级时数据不丢失",
+        "$omp_dir = Join-Path $env:USERPROFILE \".omp\"",
+        "$persist_data = Join-Path $persist_dir \"data\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\link.ps1\" $omp_dir $persist_data"
     ],
     "post_uninstall": [
-        "$omp_config = Join-Path $env:USERPROFILE \".config\\omp\"",
-        "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $omp_config"
+        "$omp_dir = Join-Path $env:USERPROFILE \".omp\"",
+        "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $omp_dir"
     ],
     "persist": [
-        "config"
+        "data"
     ],
     "checkver": {
         "github": "https://github.com/can1357/oh-my-pi"
