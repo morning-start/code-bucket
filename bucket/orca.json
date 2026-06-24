@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/stablyai/orca/releases/download/v1.4.93/orca-windows-setup.exe#/dl.7z",
-            "hash":"sha256:dee208f11bb37fb801a0880239032a33ca07365075292847cff6b69f5d183974"
+            "hash":"sha256:0cc2b0f13ae8c1d835adce56a10602f1dd52d7d33b4ebfdc80bedf525070ec71"
         }
     },
     "shortcuts": [["orca.exe", "Orca"]],
