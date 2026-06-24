@@ -6,17 +6,15 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/stablyai/orca/releases/download/v1.4.93/orca-windows-setup.exe#/dl.7z",
-            "hash":"sha256:0cc2b0f13ae8c1d835adce56a10602f1dd52d7d33b4ebfdc80bedf525070ec71"
+            "hash":"sha256:0cc2b0f13ae8c1d835adce56a10602f1dd52d7d33b4ebfdc80bedf525070ec71",
+            "installer": {
+                "script": [
+                    "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\" -Force -Recurse"
+                ]
+            }
         }
     },
-    "pre_install": [
-        "# 从 $PLUGINSDIR 中提取内嵌的 app-64.7z（真正的应用程序）",
-        "$inner7z = Join-Path $dir '$PLUGINSDIR\\app-64.7z'",
-        "if (Test-Path $inner7z) {",
-        "    Expand-Archive7Zip $inner7z $dir -Removal",
-        "    Remove-Item \"$dir\\$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue",
-        "}"
-    ],
     "bin": "orca.exe",
     "shortcuts": [["orca.exe", "Orca"]],
     "checkver": {
