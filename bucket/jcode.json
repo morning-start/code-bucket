@@ -1,0 +1,38 @@
+{
+    "version": "0.32.0",
+    "description": "A fast, secure, and intelligent code snippet manager",
+    "homepage": "https://github.com/1jehuang/jcode",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/1jehuang/jcode/releases/download/v0.32.0/jcode-windows-x86_64.exe#/jcode.exe",
+            "hash": "e902a7d6688b02d5bb2bf1b3c0795c0667dea03d0efb1f460f16b877132bf8a1"
+        },
+        "arm64": {
+            "url": "https://github.com/1jehuang/jcode/releases/download/v0.32.0/jcode-windows-aarch64.exe#/jcode.exe",
+            "hash": "e5fdf4b8702be8ee6c38bf79856ab32769a9b8eae129be87445526deab5f81a3"
+        }
+    },
+    "bin": "jcode.exe",
+    "checkver": {
+        "github": "https://github.com/1jehuang/jcode"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/1jehuang/jcode/releases/download/v$version/jcode-windows-x86_64.exe#/jcode.exe",
+                "hash": {
+                    "url": "https://github.com/1jehuang/jcode/releases/download/v$version/SHA256SUMS",
+                    "regex": "$sha256\\s+jcode-windows-x86_64.exe"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/1jehuang/jcode/releases/download/v$version/jcode-windows-aarch64.exe#/jcode.exe",
+                "hash": {
+                    "url": "https://github.com/1jehuang/jcode/releases/download/v$version/SHA256SUMS",
+                    "regex": "$sha256\\s+jcode-windows-aarch64.exe"
+                }
+            }
+        }
+    }
+}
