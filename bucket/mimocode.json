@@ -25,7 +25,9 @@
         "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $mimo_dir"
     ],
     "persist": ["config"],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/XiaomiMiMo/MiMo-Code"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
