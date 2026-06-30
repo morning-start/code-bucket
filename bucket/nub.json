@@ -16,6 +16,18 @@
     "checkver": {
         "github": "https://github.com/nubjs/nub"
     },
+    "pre_install": [
+        "# 将 ~/.cache/nub 软链接到 persist/cache，升级时数据不丢失",
+        "$nub_cache = Join-Path $env:USERPROFILE \".cache\\nub\"",
+        "$persist_cache = Join-Path $persist_dir \"cache\"",
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $nub_cache $persist_cache"
+    ],
+    "post_uninstall": [
+        "## 卸载时清理链接",
+        "$nub_cache = Join-Path $env:USERPROFILE \".cache\\nub\"",
+        "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $nub_cache"
+    ],
+    "persist": "cache",
     "autoupdate": {
         "architecture": {
             "64bit": {
