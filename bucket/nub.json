@@ -16,18 +16,25 @@
     "checkver": {
         "github": "https://github.com/nubjs/nub"
     },
+    "env_add_path":["shims"],
     "pre_install": [
         "# 将 ~/.cache/nub 软链接到 persist/cache，升级时数据不丢失",
         "$nub_cache = Join-Path $env:USERPROFILE \".cache\\nub\"",
         "$persist_cache = Join-Path $persist_dir \"cache\"",
-        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $nub_cache $persist_cache"
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $nub_cache $persist_cache",
+        "# 将 ~/.nub/shims 软链接到 persist/shims，升级时数据不丢失",
+        "$nub_shims = Join-Path $env:USERPROFILE \".nub\\shims\"",
+        "$persist_shims = Join-Path $persist_dir \"shims\"",
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $nub_shims $persist_shims"
     ],
     "post_uninstall": [
         "## 卸载时清理链接",
         "$nub_cache = Join-Path $env:USERPROFILE \".cache\\nub\"",
-        "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $nub_cache"
+        "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $nub_cache",
+        "$nub_shims = Join-Path $env:USERPROFILE \".nub\\shims\"",
+        "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $nub_shims"
     ],
-    "persist": "cache",
+    "persist": ["cache","shims"],
     "autoupdate": {
         "architecture": {
             "64bit": {
