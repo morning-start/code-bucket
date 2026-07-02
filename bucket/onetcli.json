@@ -12,7 +12,12 @@
             "hash": "sha256:9accb3a2a1d5e9dd54ed3e26dc921c9a786022c9a134685ca634dac5b9eb706c"
         }
     },
-    "bin": "onetcli.exe",
+    "shortcuts": [
+        [
+            "OnetCli",
+            "onetcli.exe"
+        ]
+    ],
     "autoupdate": {
         "architecture": {
             "64bit": {
