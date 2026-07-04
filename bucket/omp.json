@@ -1,11 +1,11 @@
 {
-    "version": "16.3.4",
+    "version": "16.3.5",
     "description": "AI coding agent for the terminal - sessions, subagents, slash commands, extensions",
     "homepage": "https://omp.sh/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/can1357/oh-my-pi/releases/download/v16.3.4/omp-windows-x64.exe#/omp.exe"
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v16.3.5/omp-windows-x64.exe#/omp.exe"
         }
     },
     "bin": "omp.exe",
