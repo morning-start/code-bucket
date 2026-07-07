@@ -1,5 +1,5 @@
 {
-    "version": "2026.6.12",
+    "version": "2026.7.0",
     "description": "Polyglot tool version manager and task runner",
     "homepage": "https://mise.jdx.dev/",
     "license": "MIT",
@@ -13,12 +13,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jdx/mise/releases/download/v2026.6.12/mise-v2026.6.12-windows-x64.zip",
-            "hash": "020b5715d2169bd63eef693eae9b6783dd9581d894d795ab0d7e10dfb174c7db"
+            "url": "https://github.com/jdx/mise/releases/download/v2026.7.0/mise-v2026.7.0-windows-x64.zip",
+            "hash": "8f41559c246424922956fe6bd7622882c336e553613aa07eb912e5199bf0b4de"
         },
         "arm64": {
-            "url": "https://github.com/jdx/mise/releases/download/v2026.6.12/mise-v2026.6.12-windows-arm64.zip",
-            "hash": "15584e0211cd2982512521399140e3139f6367a6857d01ed649ab901a45a44c8"
+            "url": "https://github.com/jdx/mise/releases/download/v2026.7.0/mise-v2026.7.0-windows-arm64.zip",
+            "hash": "b74fbcba31159e7c4e5f8a117fefedaf837b8c35071b440910f67b05cb81c9a2"
         }
     },
     "extract_dir": "mise",
@@ -41,11 +41,14 @@
         "$mise_data = Join-Path $env:LOCALAPPDATA \"mise\"",
         "& \"$bucketsdir\\\\code\\\\scripts\\\\unlink.ps1\" $mise_data"
     ],
-    "persist": ["config", "data"],
+    "persist": [
+        "config",
+        "data"
+    ],
     "checkver": {
         "github": "https://github.com/jdx/mise"
     },
-    "env_add_path":["data/shims"],
+    "env_add_path": "data/shims",
     "autoupdate": {
         "architecture": {
             "64bit": {
