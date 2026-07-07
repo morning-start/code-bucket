@@ -6,41 +6,44 @@
 
 | 工具                 | 描述                                                                 |
 | -------------------- | --------------------------------------------------------------------------- |
-| **aichat**           | 强大的ChatGPT命令行工具。                                                     |
-| **android-studio**   | 官方Android开发IDE。                                                         |
-| **bun**              | 极速的JavaScript运行时、打包器、转译器和包管理器。                                  |
-| **codebuddyCN**      | AI驱动的IDE，让编程更愉快高效。                                                  |
-| **deno**             | 安全的JavaScript和TypeScript运行时。                                              |
-| **fnm**              | 跨平台Node.js版本切换工具。                                                    |
-| **fvm**              | Flutter SDK版本管理工具。                                                      |
-| **git**              | 分布式版本控制系统(Git for Windows)。                                           |
-| **git-tags**         | Git标签管理器。                                                                |
-| **gdem**             | 基于GodotHub的Godot引擎版本管理工具。                                             |
-| **gradle**           | 开源构建自动化工具。                                                           |
-| **gvm**              | Golang版本管理工具。                                                           |
-| **img2ico**          | 将图片(png/jpg)转换为ico文件的免费工具。                                          |
-| **jabba**            | Java版本管理工具。                                                             |
-| **jvm**              | Java-Mocha Java版本管理工具。                                                  |
-| **jvms**             | Windows平台JDK版本管理工具。                                                   |
-| **maven**            | Java项目管理工具。                                                             |
-| **miniconda3**       | Python包管理器(Miniconda)。                                                    |
-| **miniforge**        | 专为conda-forge设计的最小conda发行版。                                           |
-| **miniforge-cn**     | conda-forge发行版。                                                           |
-| **pnpm**             | 快速且节省磁盘空间的Node.js包管理器。                                             |
-| **poetry**           | Python依赖管理工具。                                                           |
-| **qoder**            | 面向真实软件的智能编码平台。                                                     |
-| **rig**              | R语言安装管理器：安装、删除、配置R版本。                                           |
-| **rustup**           | Rust多版本管理器。                                                             |
-| **rustup-gnu**       | Rust多版本管理器(GCC工具链)。                                                   |
-| **shell360**         | 跨平台SSH和SFTP客户端。                                                       |
-| **trae-cn**          | AI驱动的IDE，让编程更愉快高效。                                                  |
-| **uv**               | 极速的Python安装器和依赖解析器，使用Rust编写。                                      |
-| **version-manager**  | 支持60+ SDK的通用版本管理器，界面灵感来自lazygit。                                  |
-| **vfox**             | 使用单一CLI工具管理多个SDK版本，可通过插件扩展。                                     |
-| **visx**             | VS Code扩展下载器。                                                            |
-| **vscode**           | 轻量但功能强大的源代码编辑器。                                                    |
-| **yarn**             | Node.js依赖管理器。                                                            |
-| **zed**              | 高性能多人代码编辑器，由Atom创作者开发。                                            |
+| **agy**              | Antigravity CLI - AI agent runtime manager                                    |
+| **aichat**           | 强大的 ChatGPT 命令行工具。                                                    |
+| **android-studio**   | 官方 Android 开发 IDE。                                                       |
+| **atomcode**         | 开源的终端 AI 编码 Agent（Claude Code / Cursor Agent 替代品）。                  |
+| **bun**              | 极速的 JavaScript 运行时、打包器、转译器和包管理器。                             |
+| **claude-code**      | Anthropic 推出的 Agentic 编码助手，在终端中编写、调试并探索代码库。              |
+| **codex-cli**        | OpenAI Codex CLI - 终端中的 AI 编码助手。                                       |
+| **codux**            | 面向 React 的可视化 IDE，内置 AI 编码 Agent。                                  |
+| **DbPaw**            | 连接 PostgreSQL/MySQL/SQLite/SQL Server/ClickHouse 的桌面 SQL 客户端。         |
+| **dbx**              | 开源轻量级跨平台数据库客户端，支持 MySQL/PostgreSQL/SQLite/Redis/MongoDB 等。    |
+| **deno**             | 安全的 JavaScript 和 TypeScript 运行时。                                        |
+| **dory**             | 面向人类与 Agent 的 AI 原生 SQL 客户端。                                         |
+| **flutter-gradle-tool** | 通过管理 Gradle wrapper 与 Maven 镜像加速 Flutter Android 构建的 CLI。       |
+| **gdem**             | 基于 GodotHub 的 Godot 引擎版本管理工具。                                        |
+| **git-tags**         | Git 标签管理器。                                                              |
+| **jcode**            | 快速、安全、智能的代码片段管理器。                                              |
+| **kilocode**         | 一体化的 Agentic 工程平台，借助 AI 编码 Agent 更快构建、交付、迭代。              |
+| **lazygit**          | 简单的 Git 命令终端 UI。                                                       |
+| **link-disk**        | 通过硬链接/软链接将软件配置与数据从 C 盘转移到其他分区。                           |
+| **miniconda3**       | Python 包管理器 (Miniconda)。                                                 |
+| **miniforge**        | 专为 conda-forge 设计的最小 conda 发行版。                                       |
+| **miniforge-cn**     | conda-forge 发行版（国内镜像）。                                               |
+| **mimocode**         | MiMo Code：终端原生 AI 编码助手，具备持久化记忆。                                |
+| **mise**             | 多语言工具版本管理器与任务运行器。                                              |
+| **moonbit**          | MoonBit 语言的官方 CLI 工具链（moon 编译器、构建系统、包管理器及 MoonPilot）。     |
+| **nub**              | 增强而非取代 Node.js 的一体化快速工具集。                                         |
+| **omp**              | 终端 AI 编码 Agent，支持会话、子 Agent、斜杠命令与扩展。                          |
+| **opencode**         | 开源的 AI 编码 Agent。                                                         |
+| **openfang**         | OpenFang - 开源的 AI 助手。                                                    |
+| **orca**             | 最强大的 Agent 开发环境（ADE），可并排运行 Claude Code、Codex、OpenCode 等。      |
+| **oxideterm**        | 面向开发者的现代终端模拟器。                                                    |
+| **reasonix**         | DeepSeek 原生的终端 AI 编码 Agent，围绕前缀缓存稳定性构建。                       |
+| **rmux**             | 具备 tmux 风格 CLI、守护进程与原生 Windows 支持的终端复用器。                      |
+| **rustup**           | Rust 多版本管理器。                                                           |
+| **rustup-gnu**       | Rust 多版本管理器（GCC 工具链）。                                               |
+| **shell360**         | 跨平台 SSH 与 SFTP 客户端。                                                    |
+| **terax-ai**         | 轻量级（7MB）终端优先的 AI 原生开发工作区（Tauri 2 + Rust + React 19）。          |
+| **uv**               | 极速的 Python 安装器与依赖解析器，使用 Rust 编写。                                |
 
 ## 🛠 配置亮点
 
