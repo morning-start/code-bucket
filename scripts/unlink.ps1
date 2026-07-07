@@ -1,36 +1,36 @@
 <#
 .SYNOPSIS
-    删除符号链接
+    Remove a symbolic link.
 
 .DESCRIPTION
-    此函数用于删除指定的符号链接。
-    它会检查路径是否为符号链接，如果是则删除，否则跳过操作。
+    Removes the specified symbolic link. It checks whether the path is a
+    symlink first; if so it removes it, otherwise it skips the operation.
 
 .PARAMETER SymlinkPath
-    要删除的符号链接路径
+    The symlink path to remove.
 #>
 function Remove-Symlink {
     [CmdletBinding(SupportsShouldProcess = $true)]
     param (
-        [Parameter(Mandatory = $true, HelpMessage = "要删除的符号链接路径")]
+        [Parameter(Mandatory = $true, HelpMessage = "The symlink path to remove")]
         [string]$SymlinkPath
     )
 
-    # 检查路径是否为符号链接
+    # Check whether the path is a symlink
     $item = Get-Item -Path $SymlinkPath -Force -ErrorAction SilentlyContinue
     if (-not $item -or -not $item.Attributes.HasFlag([System.IO.FileAttributes]::ReparsePoint)) {
-        Write-Verbose "$SymlinkPath 不是符号链接，跳过操作"
+        Write-Verbose "$SymlinkPath is not a symlink, skipping"
         return
     }
 
     try {
-        # 仅删除符号链接
-        if ($PSCmdlet.ShouldProcess($SymlinkPath, "删除符号链接")) {
+        # Remove only the symlink itself
+        if ($PSCmdlet.ShouldProcess($SymlinkPath, "Remove symlink")) {
             Remove-Item -Path $SymlinkPath -Force -ErrorAction Stop
-            Write-Verbose "已删除符号链接: $SymlinkPath"
+            Write-Verbose "Removed symlink: $SymlinkPath"
         }
     } catch {
-        Write-Error "删除符号链接失败: $_"
+        Write-Error "Failed to remove symlink: $_"
         throw
     }
 }

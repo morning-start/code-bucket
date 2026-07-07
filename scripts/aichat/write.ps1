@@ -16,7 +16,7 @@ function GenerateConfig {
         [string]$script_dir,
         [string]$cmd_path
     )
-    # 返回多行字符串
+    # Return a multi-line string (appended to $PROFILE)
     return "if (Test-Path (Join-Path $script_dir $cmd_path)){. (Join-Path $script_dir $cmd_path)}"
 }
 

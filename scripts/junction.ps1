@@ -1,45 +1,48 @@
 <#
 .SYNOPSIS
-    创建目录连接点（Junction），智能处理已存在的情况
+    Create a directory junction, handling existing paths intelligently.
 
 .DESCRIPTION
-    此函数用于创建 NTFS 目录连接点（Junction），智能处理各种边界情况：
+    Creates an NTFS directory junction and handles various edge cases:
 
-    1. 路径不存在              → 直接创建 Junction
-    2. 路径是空目录            → 删除后创建 Junction
-    3. 路径是普通目录且有内容   → 移动内容到 Target，再创建 Junction
-    4. 路径是 Junction/Symlink → 检查 Target：
-       4a. Target 正确            → 跳过（已是预期状态）
-       4b. Target 不存在（死链接）→ 删除旧链接，重建 Junction
-       4c. Target 存在但路径错误  → 拒绝执行（保护用户数据），除非设置 -Force
-       4d. 类型错误（Symlink 需变 Junction）→ 删除后重建
+    1. Path does not exist           -> create the junction directly
+    2. Path is an empty directory     -> delete then create the junction
+    3. Path is a normal directory with content -> move content to Target, then create junction
+    4. Path is a junction/symlink     -> check the target:
+       4a. Target is correct          -> skip (already desired state)
+       4b. Target missing (dead link) -> delete and recreate the junction
+       4c. Target exists but wrong     -> refuse (protect user data) unless -Force
+       4d. Wrong type (symlink vs junction) -> delete and recreate
 
-    与 SymbolicLink 的区别：
-    - Junction 仅适用于目录，可跨 NTFS 卷；跨盘符创建需管理员权限
-    - Junction 对 WSL、容器存储更兼容（WSL 拒绝 Symlink 但接受 Junction）
+    Difference from SymbolicLink:
+    - Junction works for directories only, can span NTFS volumes; cross-drive
+      creation needs administrator privileges.
+    - Junction is more compatible with WSL and container storage (WSL rejects
+      symlinks but accepts junctions).
 
 .PARAMETER JunctionPath
-    要创建的 Junction 路径（应用/用户实际访问的位置）
+    The junction path to create (where the app/user accesses).
 
 .PARAMETER TargetPath
-    Junction 指向的目标路径（真实数据存储位置）
+    The real data location the junction points to.
 
 .PARAMETER Force
-    强制重建：当已存在的 Junction 指向错误 Target 时，不询问直接删除重建
+    Force recreation when an existing junction points to the wrong target.
 #>
 function New-JunctionIfNotExists {
     [CmdletBinding(SupportsShouldProcess = $true)]
     param (
-        [Parameter(Mandatory = $true, HelpMessage = "要创建的 Junction 路径")]
+        [Parameter(Mandatory = $true, HelpMessage = "The junction path to create")]
         [string]$JunctionPath,
-        [Parameter(Mandatory = $true, HelpMessage = "Junction 指向的目标路径")]
+        [Parameter(Mandatory = $true, HelpMessage = "The target path the junction points to")]
         [string]$TargetPath,
-        [Parameter(Mandatory = $false, HelpMessage = "强制重建")]
+        [Parameter(Mandatory = $false, HelpMessage = "Force recreation")]
         [switch]$Force
     )
 
-    # 规范化路径（去除末尾分隔符以便比较）
-    # PowerShell 单引号字符串里 \\ 不会被转义为 \，所以用 [char]92 直接用反斜杠的 ASCII 码
+    # Normalize path (strip trailing separators for comparison).
+    # In a single-quoted PowerShell string \\ is not an escape, so use [char]92
+    # which is the ASCII code for the backslash.
     function Get-NormalizedPath {
         param([string]$Path)
         $backslash = [char]92  # 92 = '\'
@@ -50,10 +53,10 @@ function New-JunctionIfNotExists {
         }
     }
 
-    # 解析现有重解析点（Junction/Symlink）的真实目标
+    # Resolve the real target of an existing reparse point (junction/symlink)
     function Get-ReparsePointTarget {
         param([string]$Path)
-        # 优先使用 fsutil，输出第二行的 "Sub Directory: ..." 或 "Print Name: ..."
+        # Prefer fsutil; its output has "Sub Directory: ..." or "Print Name: ..."
         try {
             $output = & fsutil.exe reparsepoint query "$Path" 2>&1
             if ($LASTEXITCODE -eq 0) {
@@ -70,30 +73,30 @@ function New-JunctionIfNotExists {
     try {
         $normalizedTarget = Get-NormalizedPath $TargetPath
 
-        # ===== 情况 1/2/3/4：检查现有路径 =====
+        # ===== cases 1/2/3/4: inspect the existing path =====
         if (Test-Path -Path $JunctionPath -ErrorAction SilentlyContinue) {
             $item = Get-Item -Path $JunctionPath -Force -ErrorAction SilentlyContinue
             $isReparsePoint = $item -and $item.Attributes.HasFlag([System.IO.FileAttributes]::ReparsePoint)
 
             if ($isReparsePoint) {
-                # 4. 已是 Junction/Symlink，检查目标
+                # 4. Already a junction/symlink, check the target
                 $existingTarget = Get-ReparsePointTarget $JunctionPath
                 $normalizedExisting = if ($existingTarget) { Get-NormalizedPath $existingTarget } else { '' }
 
                 if ($normalizedExisting -eq $normalizedTarget) {
-                    # 4a. 目标正确
-                    Write-Verbose "$JunctionPath 已指向正确目标 $TargetPath，跳过"
+                    # 4a. Target is correct
+                    Write-Verbose "$JunctionPath already points to correct target $TargetPath, skipping"
                     return
                 }
 
                 if ([string]::IsNullOrEmpty($existingTarget) -or -not (Test-Path $existingTarget)) {
-                    # 4b. 死链接（Junction 存在但 Target 不存在）→ 静默删除重建
-                    Write-Verbose "$JunctionPath 是死链接（指向不存在的 $existingTarget），将删除并重建"
+                    # 4b. Dead link (junction exists but target missing) -> delete and recreate
+                    Write-Verbose "$JunctionPath is a dead link (points to missing $existingTarget), will delete and recreate"
                     Remove-Item -Path $JunctionPath -Force -ErrorAction Stop
                 } else {
-                    # 4c/4d. 目标存在但路径错误（可能是 Symlink 而非 Junction，或指向别处）
+                    # 4c/4d. Target exists but wrong (maybe symlink not junction, or points elsewhere)
                     $itemType = if ($item.Attributes.HasFlag([System.IO.FileAttributes]::ReparsePoint) -and $existingTarget) {
-                        # 进一步区分：Junction 是 "Sub Directory"，Symlink 是 "Print Name"
+                        # Distinguish further: Junction is "Sub Directory", Symlink is "Print Name"
                         try {
                             $output = & fsutil.exe reparsepoint query "$JunctionPath" 2>&1
                             if ($output -match 'Sub Directory') { 'Junction' } else { 'SymbolicLink' }
@@ -101,69 +104,69 @@ function New-JunctionIfNotExists {
                     } else { 'Unknown' }
 
                     if ($Force) {
-                        Write-Verbose "$JunctionPath ($itemType) 指向 $existingTarget，与期望的 $TargetPath 不匹配；-Force 已指定，将删除并重建"
+                        Write-Verbose "$JunctionPath ($itemType) points to $existingTarget, expected $TargetPath; -Force set, will delete and recreate"
                         Remove-Item -Path $JunctionPath -Force -ErrorAction Stop
                     } else {
-                        throw "路径已存在且不是预期的 Junction：`n  路径: $JunctionPath`n  类型: $itemType`n  当前指向: $existingTarget`n  期望指向: $TargetPath`n请手动处理（删除/迁移后重试），或使用 -Force 参数强制重建。"
+                        throw "Path already exists and is not the expected junction:`n  Path: $JunctionPath`n  Type: $itemType`n  Current target: $existingTarget`n  Expected target: $TargetPath`nHandle it manually (delete/migrate then retry), or use -Force to recreate."
                     }
                 }
             } else {
-                # 2/3. 普通目录：处理内容后删除
+                # 2/3. Normal directory: move content then delete
                 $hasContent = (Get-ChildItem -Path $JunctionPath -Force -ErrorAction SilentlyContinue | Measure-Object).Count -gt 0
                 if ($hasContent) {
-                    if ($PSCmdlet.ShouldProcess($JunctionPath, "移动内容到目标目录 $TargetPath")) {
+                    if ($PSCmdlet.ShouldProcess($JunctionPath, "Move content to target $TargetPath")) {
                         Move-Item -Path "$JunctionPath\*" -Destination $TargetPath -Force -ErrorAction Stop
-                        Write-Verbose "已将 $JunctionPath 内容移动到 $TargetPath"
+                        Write-Verbose "Moved $JunctionPath content to $TargetPath"
                     }
                 }
-                if ($PSCmdlet.ShouldProcess($JunctionPath, "删除原目录")) {
+                if ($PSCmdlet.ShouldProcess($JunctionPath, "Delete original directory")) {
                     Remove-Item -Path $JunctionPath -Recurse -Force -ErrorAction Stop
-                    Write-Verbose "已删除原目录: $JunctionPath"
+                    Write-Verbose "Deleted original directory: $JunctionPath"
                 }
             }
         }
 
-        # ===== 创建前的准备工作 =====
+        # ===== preparation before creation =====
         if (-not (Test-Path -Path $TargetPath)) {
-            if ($PSCmdlet.ShouldProcess($TargetPath, "创建目标目录")) {
+            if ($PSCmdlet.ShouldProcess($TargetPath, "Create target directory")) {
                 New-Item -ItemType Directory -Path $TargetPath -Force | Out-Null
-                Write-Verbose "已创建目标目录: $TargetPath"
+                Write-Verbose "Created target directory: $TargetPath"
             }
         }
 
         $junctionParent = Split-Path -Parent $JunctionPath
         if (-not (Test-Path -Path $junctionParent)) {
-            if ($PSCmdlet.ShouldProcess($junctionParent, "创建父目录")) {
+            if ($PSCmdlet.ShouldProcess($junctionParent, "Create parent directory")) {
                 New-Item -ItemType Directory -Path $junctionParent -Force | Out-Null
-                Write-Verbose "已创建父目录: $junctionParent"
+                Write-Verbose "Created parent directory: $junctionParent"
             }
         }
 
-        # ===== 创建 Junction =====
-        if ($PSCmdlet.ShouldProcess($JunctionPath, "创建指向 $TargetPath 的 Junction")) {
+        # ===== create the junction =====
+        if ($PSCmdlet.ShouldProcess($JunctionPath, "Create junction to $TargetPath")) {
             $proc = Start-Process -FilePath "cmd.exe" -ArgumentList "/c", "mklink", "/J", "`"$JunctionPath`"", "`"$TargetPath`"" -Wait -PassThru -NoNewWindow -ErrorAction Stop
             if ($proc.ExitCode -ne 0) {
-                throw "mklink /J 失败，退出码: $($proc.ExitCode)。跨盘符创建 Junction 需要管理员权限，请以管理员身份重试。"
+                throw "mklink /J failed, exit code: $($proc.ExitCode). Cross-drive junction creation needs administrator privileges; retry as admin."
             }
-            Write-Verbose "已成功创建 Junction: $JunctionPath -> $TargetPath"
+            Write-Verbose "Created junction: $JunctionPath -> $TargetPath"
         }
     } catch {
-        Write-Error "操作失败: $_"
+        Write-Error "Operation failed: $_"
         throw
     }
 }
 
-# 入口：支持 -Force 透传（通过 $args 简单实现不直观，这里使用参数化绑定）
+# Entry point: pass -Force through (simple $args binding is not intuitive, so parameterize)
 if ($args.Count -ge 2) {
     $force = $args | Select-String -Pattern '^-Force$' -Quiet
     if ($force) {
-        # 移除 -Force 参数
+        # Strip the -Force argument
         $filtered = $args | Where-Object { $_ -ne '-Force' }
         New-JunctionIfNotExists -JunctionPath $filtered[0] -TargetPath $filtered[1] -Force
     } else {
         New-JunctionIfNotExists -JunctionPath $args[0] -TargetPath $args[1]
     }
 } else {
-    Write-Error "用法: junction.ps1 <JunctionPath> <TargetPath> [-Force]"
+    Write-Error "Usage: junction.ps1 <JunctionPath> <TargetPath> [-Force]"
     exit 1
 }
