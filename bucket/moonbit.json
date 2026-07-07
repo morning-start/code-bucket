@@ -63,6 +63,7 @@
             "Invoke-WebRequest -Uri 'https://cli.moonbitlang.com/binaries/latest/moonbit-windows-x86_64.zip' -OutFile $zipPath -UseBasicParsing",
             "Expand-Archive $zipPath -DestinationPath $tmpDir -Force",
             "$moonExe = Join-Path $tmpDir 'bin\\moon.exe'",
+            "$env:MOON_HOME = $tmpDir",
             "$versionOutput = & $moonExe --version | Out-String",
             "$versionMatch = [regex]::Match($versionOutput, 'moon\\s+([^\\s]+)')",
             "if ($versionMatch.Success) { Write-Output $versionMatch.Groups[1].Value }",
