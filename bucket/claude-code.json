@@ -13,10 +13,6 @@
         [
             "claude.exe",
             "claude"
-        ],
-        [
-            "claude.exe",
-            "cc"
         ]
     ],
     "pre_install": [
