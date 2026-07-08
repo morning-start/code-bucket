@@ -6,11 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/1jehuang/jcode/releases/download/v0.37.0/jcode-windows-x86_64.exe#/jcode.exe",
-            "hash": "bacbeefd22e9060b1a1738bf63e644307681a1edca8e3699628be390f8e7e2c7"
-        },
-        "arm64": {
-            "url": "https://github.com/1jehuang/jcode/releases/download/v0.37.0/jcode-windows-aarch64.exe#/jcode.exe",
-            "hash": "c404b0d75e0d6ab89d8c7a9721e17fdecc2a25ecc409d65d84f7d3e420398543"
+            "hash": "sha256:bacbeefd22e9060b1a1738bf63e644307681a1edca8e3699628be390f8e7e2c7"
         }
     },
     "bin": "jcode.exe",
@@ -22,15 +18,8 @@
             "64bit": {
                 "url": "https://github.com/1jehuang/jcode/releases/download/v$version/jcode-windows-x86_64.exe#/jcode.exe",
                 "hash": {
-                    "url": "https://github.com/1jehuang/jcode/releases/download/v$version/SHA256SUMS",
-                    "regex": "$sha256\\s+jcode-windows-x86_64.exe"
-                }
-            },
-            "arm64": {
-                "url": "https://github.com/1jehuang/jcode/releases/download/v$version/jcode-windows-aarch64.exe#/jcode.exe",
-                "hash": {
-                    "url": "https://github.com/1jehuang/jcode/releases/download/v$version/SHA256SUMS",
-                    "regex": "$sha256\\s+jcode-windows-aarch64.exe"
+                    "url": "https://api.github.com/repos/1jehuang/jcode/releases/tags/v$version",
+                    "jp": "$.assets[?(@.name=='jcode-windows-x86_64.exe')].digest"
                 }
             }
         }
