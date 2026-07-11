@@ -1,12 +1,12 @@
 {
-    "version": "2.0.0-rc.4",
+    "version": "2.0.0-rc.9",
     "description": "Visual IDE for React with AI-powered coding agents",
     "homepage": "https://www.codux.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/duxweb/codux/releases/download/v2.0.0-rc.4/codux-2.0.0-rc.4-windows-x86_64-setup.exe#/dl.7z",
-                "hash": "sha256:6950f3e855dc4536e937faf4491137621a720073eace2ed9936442086489ffa5"
+            "url": "https://github.com/duxweb/codux/releases/download/v2.0.0-rc.9/codux-windows-x86_64-setup.exe#/dl.7z",
+            "hash": "sha256:aeded91c75b4b6a243b29c2c20fcd2e579597159ef44f81525faa2a2d402b9bb"
         }
     },
     "shortcuts": [
@@ -21,7 +21,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/duxweb/codux/releases/download/v$version/codux-$version-windows-x86_64-setup.exe#/dl.7z"
+                "url": "https://github.com/duxweb/codux/releases/download/v$version/codux-windows-x86_64-setup.exe#/dl.7z"
             }
         }
     }
