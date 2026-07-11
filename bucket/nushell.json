@@ -13,7 +13,7 @@
             "hash": "sha256:3a29534481b99b33dadcea6f36bc28dd77c15e843339b34900622a415cfacaae"
         }
     },
-    "persist":["data"],
+    "persist":["data","modules"],
     "pre_install": [
         "# 将 $env:APPDATA\\nushell 软链接到 persist/data，升级时配置不丢失",
         "$nushell_data = Join-Path $env:APPDATA \"nushell\"",
