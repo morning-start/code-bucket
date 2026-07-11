@@ -14,7 +14,9 @@
         }
     },
     "bin": "reasonix.exe",
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/esengine/DeepSeek-Reasonix"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {

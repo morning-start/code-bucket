@@ -1,5 +1,5 @@
 {
-    "version": "2025.2.3.9",
+    "version": "2026.1.1.10",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
     "homepage": "https://developer.android.com/studio/",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2025.2.3.9/android-studio-2025.2.3.9-windows.zip",
-            "hash": "23b46808caaf81eac207d7c9a81d012b32788f65b51de43e061e27f08024960b",
+            "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2026.1.1.10/android-studio-quail1-patch2-windows.zip",
+            "hash": "9c186428dfe24ca41e170b81f3379d25cb9a456f7e1f4ff54b3ec378e7d88991",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
@@ -33,11 +33,11 @@
         "sdk\\ndk",
         ".android"
     ],
-    "checkver": "android-studio-([\\d.]+)-windows\\.zip",
+    "checkver": "ide-zips/([\\d.]+)/android-studio-([\\w.-]+)-windows\\.zip",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/$version/android-studio-$version-windows.zip",
+                "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/$version/android-studio-$match2-windows.zip",
                 "hash": {
                     "url": "https://developer.android.com/studio/",
                     "regex": "(?sm)$basename.*?$sha256"
