@@ -25,6 +25,12 @@
         "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $nushell_data"
     ],
     "bin": "nu.exe",
+    "shortcuts": [
+        [
+            "nu.exe",
+            "NuShell"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/nushell/nushell"
     },
