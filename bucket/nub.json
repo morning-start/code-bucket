@@ -22,10 +22,10 @@
         "$persist_cache = Join-Path $persist_dir \"cache\"",
         "& \"$bucketsdir\\code\\scripts\\link.ps1\" $nub_cache $persist_cache",
         "",
-        "# 将 $env:LOCALAPPDATA\\pnpm 软链接到 persist/bin，pnpm 全局包升级时保留",
+        "# 将 $env:LOCALAPPDATA\\pnpm 软链接到 persist/pnpm，pnpm 全局包升级时保留",
         "$pnpm_data = Join-Path $env:LOCALAPPDATA \"pnpm\"",
-        "$persist_bin = Join-Path $persist_dir \"bin\"",
-        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $pnpm_data $persist_bin"
+        "$persist_pnpm = Join-Path $persist_dir \"pnpm\"",
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $pnpm_data $persist_pnpm"
     ],
     "post_uninstall": [
         "## 卸载时清理链接",
@@ -34,7 +34,8 @@
         "$pnpm_data = Join-Path $env:LOCALAPPDATA \"pnpm\"",
         "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $pnpm_data"
     ],
-    "persist": ["cache","bin"],
+    "persist": ["cache","pnpm"],
+    "env_add_path": ["pnpm"],
     "autoupdate": {
         "architecture": {
             "64bit": {
