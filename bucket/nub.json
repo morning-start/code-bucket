@@ -35,6 +35,7 @@
         "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $nub_data"
     ],
     "persist": ["cache","data"],
+    "env_add_path": ["bin"],
     "autoupdate": {
         "architecture": {
             "64bit": {
