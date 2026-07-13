@@ -34,8 +34,7 @@
         "$pnpm_data = Join-Path $env:LOCALAPPDATA \"pnpm\"",
         "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $pnpm_data"
     ],
-    "persist": ["cache","pnpm"],
-    "env_add_path": ["pnpm"],
+    "persist": ["cache"],
     "autoupdate": {
         "architecture": {
             "64bit": {
