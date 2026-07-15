@@ -10,14 +10,7 @@
         }
     },
     "bin": [
-        [
-            "claude.exe",
-            "claude"
-        ],
-        [
-            "claude.exe",
-            "cc"
-        ]
+        "claude.exe"
     ],
     "pre_install": [
         "# 将 ~/.claude 软链接到 persist/data，升级时数据不丢失",
