@@ -12,10 +12,10 @@
     "url": "https://github.com/alacritty/alacritty/releases/download/v0.17.0/Alacritty-v0.17.0-portable.exe#/alacritty.exe",
     "hash": "5ad70ddc5c2a2bfe84084a2c4c73558e9360914f035a902d7a69277be7249f1f",
     "pre_install": [
-        "# 将 ~/.config/alacritty 软链接到 persist/config，升级时配置不丢失",
-        "$alacritty_config = Join-Path $env:USERPROFILE \".config\\alacritty\"",
-        "$persist_config = Join-Path $persist_dir \"config\"",
-        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $alacritty_config $persist_config"
+        "# 将 %APPDATA%\\alacritty 软链接到 persist/data，升级时配置不丢失",
+        "$alacritty_config = Join-Path $env:APPDATA \"alacritty\"",
+        "$persist_data = Join-Path $persist_dir \"data\"",
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $alacritty_config $persist_data"
     ],
     "post_install": [
         "$alacrittyPath = \"$dir\\alacritty.exe\".Replace('\\', '\\\\')",
@@ -29,7 +29,7 @@
         "}",
         "reg import \"$dir\\install-context.reg\""
     ],
-    "persist":["config"],
+    "persist":["data"],
     "bin": "alacritty.exe",
     "shortcuts": [
         [
@@ -40,7 +40,7 @@
     ],
     "pre_uninstall": "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" *> $null }",
     "post_uninstall": [
-        "$alacritty_config = Join-Path $env:USERPROFILE \".config\\alacritty\"",
+        "$alacritty_config = Join-Path $env:APPDATA \"alacritty\"",
         "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $alacritty_config"
     ],
     "checkver": "github",

@@ -1,35 +1,37 @@
 <#
 .SYNOPSIS
-    Create a symbolic link, handling cases where the target already exists.
+    Create a directory junction, handling cases where the target already exists.
 
 .DESCRIPTION
-    Creates a symbolic link. It checks whether the target path already exists
-    and whether it is already a symlink, then acts accordingly:
-    1. Already a symlink         -> do nothing
-    2. Does not exist            -> create the symlink directly
-    3. Exists as empty directory -> remove then create the symlink
-    4. Exists with content       -> move content into the link target, then create symlink
+    Creates a directory junction (reparse point). Unlike symbolic links, junctions
+    do NOT require administrator privileges, so they work for normal Scoop installs.
+    It checks whether the target path already exists and whether it is already a
+    reparse point, then acts accordingly:
+    1. Already a reparse point    -> do nothing
+    2. Does not exist            -> create the junction directly
+    3. Exists as empty directory -> remove then create the junction
+    4. Exists with content       -> move content into the link target, then create junction
 
-.PARAMETER target_dir
-    The path the symlink points to (real data location).
+.PARAMETER SymlinkPath
+    The junction path to create (where the app/user actually accesses).
 
-.PARAMETER link_dir
-    The symlink path (where the app/user actually accesses).
+.PARAMETER TargetPath
+    The path the junction points to (real data location, e.g. persist dir).
 #>
 function New-SymlinkIfNotExists {
     [CmdletBinding(SupportsShouldProcess = $true)]
     param (
-        [Parameter(Mandatory = $true, HelpMessage = "The symlink path to create")]
+        [Parameter(Mandatory = $true, HelpMessage = "The junction path to create")]
         [string]$SymlinkPath,
-        [Parameter(Mandatory = $true, HelpMessage = "The target path the symlink points to")]
+        [Parameter(Mandatory = $true, HelpMessage = "The target path the junction points to")]
         [string]$TargetPath
     )
 
-    # Check whether the target path is already a symlink
+    # Check whether the target path is already a reparse point (symlink or junction)
     if (Test-Path -Path $SymlinkPath -ErrorAction SilentlyContinue) {
         $item = Get-Item -Path $SymlinkPath -Force -ErrorAction SilentlyContinue
         if ($item -and $item.Attributes.HasFlag([System.IO.FileAttributes]::ReparsePoint)) {
-            Write-Verbose "$SymlinkPath is already a symlink, skipping"
+            Write-Verbose "$SymlinkPath is already a link, skipping"
             return
         }
     }
@@ -63,10 +65,10 @@ function New-SymlinkIfNotExists {
             }
         }
 
-        # Create the symlink
-        if ($PSCmdlet.ShouldProcess($SymlinkPath, "Create symlink to $TargetPath")) {
-            New-Item -ItemType SymbolicLink -Path $SymlinkPath -Target $TargetPath -Force -ErrorAction Stop | Out-Null
-            Write-Verbose "Created symlink: $SymlinkPath -> $TargetPath"
+        # Create the junction (does not require admin/elevation)
+        if ($PSCmdlet.ShouldProcess($SymlinkPath, "Create junction to $TargetPath")) {
+            New-Item -ItemType Junction -Path $SymlinkPath -Target $TargetPath -Force -ErrorAction Stop | Out-Null
+            Write-Verbose "Created junction: $SymlinkPath -> $TargetPath"
         }
     } catch {
         Write-Error "Operation failed: $_"
