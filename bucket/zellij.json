@@ -1,0 +1,34 @@
+{
+    "version": "0.44.3",
+    "description": "A terminal workspace with batteries included",
+    "homepage": "https://zellij.dev/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zellij-org/zellij/releases/download/v0.44.3/zellij-x86_64-pc-windows-msvc.zip",
+            "hash": "45f25febb588d36f499232b3ba80a9edcde3b3a2a85bebb105a82457b0ca6aef"
+        }
+    },
+    "bin": "zellij.exe",
+    "persist": ["config"],
+    "pre_install": [
+        "# 将 %APPDATA%\\Zellij 软链接到 persist/config，升级时配置不丢失",
+        "$zellij_config = Join-Path $env:APPDATA \"Zellij\"",
+        "$persist_config = Join-Path $persist_dir \"config\"",
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $zellij_config $persist_config"
+    ],
+    "post_uninstall": [
+        "$zellij_config = Join-Path $env:APPDATA \"Zellij\"",
+        "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $zellij_config"
+    ],
+    "checkver": {
+        "github": "https://github.com/zellij-org/zellij"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zellij-org/zellij/releases/download/v$version/zellij-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
