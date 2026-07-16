@@ -15,7 +15,12 @@
         "# 将 %APPDATA%\\alacritty 软链接到 persist/data，升级时配置不丢失",
         "$alacritty_config = Join-Path $env:APPDATA \"alacritty\"",
         "$persist_data = Join-Path $persist_dir \"data\"",
-        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $alacritty_config $persist_data"
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $alacritty_config $persist_data",
+        "",
+        "# 将 %APPDATA%\\Zellij 软链接到 persist/zellij，升级时配置不丢失",
+        "$zellij_config = Join-Path $env:APPDATA \"Zellij\"",
+        "$persist_zellij = Join-Path $persist_dir \"zellij\"",
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $zellij_config $persist_zellij"
     ],
     "post_install": [
         "$alacrittyPath = \"$dir\\alacritty.exe\".Replace('\\', '\\\\')",
@@ -29,7 +34,7 @@
         "}",
         "reg import \"$dir\\install-context.reg\""
     ],
-    "persist":["data"],
+    "persist":["data","zellij"],
     "bin": "alacritty.exe",
     "shortcuts": [
         [
@@ -41,7 +46,9 @@
     "pre_uninstall": "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" *> $null }",
     "post_uninstall": [
         "$alacritty_config = Join-Path $env:APPDATA \"alacritty\"",
-        "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $alacritty_config"
+        "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $alacritty_config",
+        "$zellij_config = Join-Path $env:APPDATA \"Zellij\"",
+        "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $zellij_config"
     ],
     "checkver": "github",
     "autoupdate": {
