@@ -1,12 +1,12 @@
 {
-    "version": "1.4.149",
+    "version": "1.4.150",
     "description": "The most powerful Agent Development Environment (ADE) for running Claude Code, Codex, OpenCode, and more side by side.",
     "homepage": "https://www.onorca.dev/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stablyai/orca/releases/download/v1.4.149/orca-windows-setup.exe#/dl.7z",
-            "hash": "fee44374b2badb75bdd9a4c37d42c25860dfd3e2c148670b34d8846e59144177",
+            "url": "https://github.com/stablyai/orca/releases/download/v1.4.150/orca-windows-setup.exe#/dl.7z",
+            "hash": "6f675c87eed33fe1d32ac0e9ae781dc5a110b9ad00e9e7950d1d10edc3725ae5",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
