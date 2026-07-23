@@ -9,8 +9,16 @@
             "hash": "45f25febb588d36f499232b3ba80a9edcde3b3a2a85bebb105a82457b0ca6aef"
         }
     },
-    "bin": "zellij.exe",
-    "persist": ["config"],
+    "bin": [
+        "zellij.exe",
+        [
+            "zellij.exe",
+            "zl"
+        ]
+    ],
+    "persist": [
+        "config"
+    ],
     "pre_install": [
         "# 将 %APPDATA%\\Zellij 软链接到 persist/config，升级时配置不丢失",
         "$zellij_config = Join-Path $env:APPDATA \"Zellij\"",
