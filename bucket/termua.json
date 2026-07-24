@@ -13,7 +13,12 @@
             "hash": "433f9f04689f2678033e810234bfc5edee58d8b51a114006032d4706b86b5260"
         }
     },
-    "bin": "termua.exe",
+    "shortcuts": [
+        [
+            "termua.exe",
+            "Termua"
+        ]
+    ],
     "pre_install": [
         "# Termua MSI 解包到 PFiles\\termua\\bin，将 bin 内文件移回根目录，使 bin 生效",
         "Get-ChildItem \"$dir\\PFiles\\termua\\bin\" | Move-Item -Destination \"$dir\" -Force",
