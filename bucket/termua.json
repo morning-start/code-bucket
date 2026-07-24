@@ -14,6 +14,11 @@
         }
     },
     "bin": "termua.exe",
+    "pre_install": [
+        "# Termua MSI 解包到 PFiles\\termua\\bin，将 bin 内文件移回根目录，使 bin 生效",
+        "Get-ChildItem \"$dir\\PFiles\\termua\\bin\" | Move-Item -Destination \"$dir\" -Force",
+        "Remove-Item \"$dir\\PFiles\" -Recurse -Force -ErrorAction SilentlyContinue"
+    ],
     "checkver": {
         "github": "https://github.com/iamazy/termua"
     },
