@@ -1,0 +1,32 @@
+{
+    "version": "0.2.111",
+    "description": "Grok CLI - AI agent runtime (x.ai)",
+    "homepage": "https://github.com/xai-org/grok-cli",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://x.ai/cli/grok-0.2.111-windows-x86_64.exe#/grok.exe"
+        },
+        "arm64": {
+            "url": "https://x.ai/cli/grok-0.2.111-windows-aarch64.exe#/grok.exe"
+        }
+    },
+    "bin": [
+        "grok.exe",
+        "agent.exe"
+    ],
+    "checkver": {
+        "url": "https://x.ai/cli/stable",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://x.ai/cli/grok-$version-windows-x86_64.exe#/grok.exe"
+            },
+            "arm64": {
+                "url": "https://x.ai/cli/grok-$version-windows-aarch64.exe#/grok.exe"
+            }
+        }
+    }
+}
