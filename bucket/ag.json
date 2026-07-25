@@ -1,0 +1,30 @@
+{
+    "version": "0.6.0",
+    "description": "AtomGit CLI (ag) - command line tool for the AtomGit platform",
+    "homepage": "https://atomgit.com/hust-open-atom-club/atomgit-cli",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://atomgit.com/hust-open-atom-club/atomgit-cli/releases/download/v0.6.0/ag_windows_amd64.zip"
+        },
+        "arm64": {
+            "url": "https://atomgit.com/hust-open-atom-club/atomgit-cli/releases/download/v0.6.0/ag_windows_arm64.zip"
+        }
+    },
+    "bin": "ag.exe",
+    "checkver": {
+        "url": "https://api.atomgit.com/api/v5/repos/hust-open-atom-club/atomgit-cli/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://atomgit.com/hust-open-atom-club/atomgit-cli/releases/download/v$version/ag_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://atomgit.com/hust-open-atom-club/atomgit-cli/releases/download/v$version/ag_windows_arm64.zip"
+            }
+        }
+    }
+}
