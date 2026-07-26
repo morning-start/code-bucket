@@ -14,6 +14,12 @@
         }
     },
     "extract_dir": "WezTerm-windows-20240203-110809-5046fc22",
+    "pre_install": [
+        "# 链接配置目录 ~/.config/wezterm 到 persist/config，升级时配置不丢失",
+        "$weztermConfig = Join-Path $env:USERPROFILE \".config\\wezterm\"",
+        "$persistConfig = Join-Path $persist_dir \"config\"",
+        "& \"$bucketsdir\\scripts\\link.ps1\" $weztermConfig $persistConfig"
+    ],
     "post_install": [
         "$weztermPath = \"$dir\\wezterm-gui.exe\".Replace('\\', '\\\\')",
         "'install-context', 'uninstall-context' | ForEach-Object {",
@@ -25,6 +31,11 @@
         "    }",
         "}"
     ],
+    "pre_uninstall": [
+        "# 卸载前移除 profile 处的 junction（配置已持久化在 persist 目录）",
+        "$weztermConfig = Join-Path $env:USERPROFILE \".config\\wezterm\"",
+        "& \"$bucketsdir\\scripts\\unlink.ps1\" $weztermConfig"
+    ],
     "bin": [
         "wezterm.exe",
         "wezterm-gui.exe"
@@ -34,6 +45,9 @@
             "wezterm-gui.exe",
             "Wezterm"
         ]
+    ],
+    "persist": [
+        "config"
     ],
     "checkver": {
         "github": "https://github.com/wez/wezterm",
