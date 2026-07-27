@@ -18,7 +18,7 @@
         "# 链接配置目录 ~/.config/wezterm 到 persist/config，升级时配置不丢失",
         "$weztermConfig = Join-Path $env:USERPROFILE \".config\\wezterm\"",
         "$persistConfig = Join-Path $persist_dir \"config\"",
-        "& \"$bucketsdir\\scripts\\link.ps1\" $weztermConfig $persistConfig"
+        "& \"$bucketsdir\\code\\scripts\\link.ps1\" $weztermConfig $persistConfig"
     ],
     "post_install": [
         "$weztermPath = \"$dir\\wezterm-gui.exe\".Replace('\\', '\\\\')",
@@ -29,12 +29,13 @@
         "        if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
         "        Set-Content \"$dir\\$_.reg\" $content -Encoding Ascii -Force",
         "    }",
-        "}"
+        "}",
+        "reg import \"$dir\\install-context.reg\""
     ],
-    "pre_uninstall": [
-        "# 卸载前移除 profile 处的 junction（配置已持久化在 persist 目录）",
+    "pre_uninstall": "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" *> $null }",
+    "post_uninstall": [
         "$weztermConfig = Join-Path $env:USERPROFILE \".config\\wezterm\"",
-        "& \"$bucketsdir\\scripts\\unlink.ps1\" $weztermConfig"
+        "& \"$bucketsdir\\code\\scripts\\unlink.ps1\" $weztermConfig"
     ],
     "bin": [
         "wezterm.exe",
