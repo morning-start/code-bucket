@@ -1,12 +1,12 @@
 {
-    "version": "0.63.0",
+    "version": "0.64.1",
     "description": "A fast, secure, and intelligent code snippet manager",
     "homepage": "https://github.com/1jehuang/jcode",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/1jehuang/jcode/releases/download/v0.63.0/jcode-windows-x86_64.exe#/jcode.exe",
-            "hash": "323d8dff939f66f883f54d1bed6b748735fd6c0f7bc7e6a69e6914c337937cf8"
+            "url": "https://github.com/1jehuang/jcode/releases/download/v0.64.1/jcode-windows-x86_64.exe#/jcode.exe",
+            "hash": "ed5014df9ede72fd0f3f4f69dcc48c2a12ee9df47c4d3adee183c43bec638241"
         }
     },
     "bin": "jcode.exe",
