@@ -1,12 +1,12 @@
 {
-    "version": "2.0.24",
+    "version": "2.0.25",
     "description": "A modern terminal emulator for developers",
     "homepage": "https://oxideterm.app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.24/OxideTerm_2.0.24_windows_x64-setup.exe#/dl.7z",
-            "hash": "9bf567e55751562843413e8f0cc7b3e00562648a28e96a211337ac9d8833ac3d"
+            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.25/OxideTerm_2.0.25_windows_x64-setup.exe#/dl.7z",
+            "hash": "565d5391df2435456ec6197791321f3f960a075d2c425362486ce0e15a11cde6"
         }
     },
     "shortcuts": [
