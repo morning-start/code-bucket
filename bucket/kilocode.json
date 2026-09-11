@@ -1,12 +1,12 @@
 {
-    "version": "7.6.1",
+    "version": "7.6.2",
     "description": "All-in-one agentic engineering platform — build, ship, and iterate faster with AI coding agents",
     "homepage": "https://kilo.ai",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kilo-Org/kilocode/releases/download/v7.6.1/kilo-windows-x64.zip#/kilo.zip",
-            "hash": "baa8687ee8cf1aa7ef330b4f74386c957569ab37192fbb02f8681b039eec670c"
+            "url": "https://github.com/Kilo-Org/kilocode/releases/download/v7.6.2/kilo-windows-x64.zip#/kilo.zip",
+            "hash": "bfc2daae05ef7e44584928aab87b53d5cedd9e19d32af4a01903e08d36900dcf"
         }
     },
     "bin": "kilo.exe",
