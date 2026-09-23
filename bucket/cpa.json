@@ -5,7 +5,12 @@
     "license": "MIT",
     "url": "https://github.com/router-for-me/CLIProxyAPI/releases/download/v7.3.15/CLIProxyAPI_7.3.15_windows_amd64.zip",
     "hash": "2722eccdabdbca935cfbd41e99b00a8017e91e45296e34b30004932c176b01b2",
-    "bin": "cli-proxy-api.exe",
+    "bin": [
+        [
+            "cli-proxy-api.exe",
+            "cpa"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/router-for-me/CLIProxyAPI",
         "regex": "v([\\d.]+)"
