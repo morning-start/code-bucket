@@ -1,12 +1,12 @@
 {
-    "version": "2.1.289",
+    "version": "2.1.291",
     "description": "Agentic coding assistant by Anthropic — write, edit, debug, and explore your codebase in your terminal",
     "homepage": "https://code.claude.com",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.claude.ai/claude-code-releases/2.1.289/win32-x64/claude.exe#/claude.exe",
-            "hash": "bcc6d9117aec30ad9414490302a25414359c871f5647e32e49b055c92bf84e0b"
+            "url": "https://downloads.claude.ai/claude-code-releases/2.1.291/win32-x64/claude.exe#/claude.exe",
+            "hash": "70052a17e06561a4563597f79570e81ccc0772474c3c6ac522aa5ccc71773013"
         }
     },
     "bin": "claude.exe",
