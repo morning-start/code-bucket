@@ -1,12 +1,12 @@
 {
-    "version": "18.8.2",
+    "version": "18.8.4",
     "description": "AI coding agent for the terminal - sessions, subagents, slash commands, extensions",
     "homepage": "https://omp.sh/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.8.2/omp-windows-x64.exe#/omp.exe",
-            "hash": "1d5f34b2e97ed6db577ee557f7cc3c7d83234db987252b0a2f5203f1fba91c4b"
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.8.4/omp-windows-x64.exe#/omp.exe",
+            "hash": "e1be1c0ee152f7d7e7728329d7799c3cba48510585baf295c2e220fd3ddaf710"
         }
     },
     "bin": "omp.exe",
