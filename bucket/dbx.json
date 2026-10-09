@@ -1,12 +1,12 @@
 {
-    "version": "0.6.37",
+    "version": "0.6.38",
     "description": "Open-source, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server",
     "homepage": "https://github.com/t8y2/dbx",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.37/DBX_0.6.37_x64-setup.exe#/dl.7z",
-            "hash": "4aedc6598c7806abed1e50caf4ff0ffda3ae949ef33b86756be2b8de9ab2c371"
+            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.38/DBX_0.6.38_x64-setup.exe#/dl.7z",
+            "hash": "7d062393c97fa5b8e84b8d42392783f46bde4d1f1d1f0184c50dc55fe9364199"
         }
     },
     "shortcuts": [
