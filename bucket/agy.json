@@ -1,5 +1,5 @@
 {
-    "version": "1.4.4",
+    "version": "1.4.5",
     "description": "Antigravity CLI - AI agent runtime manager",
     "homepage": "https://github.com/google-antigravity/antigravity-cli",
     "license": "MIT",
@@ -10,11 +10,11 @@
     "architecture": {
         "64bit": {
             "url": "https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/windows_amd64.json",
-            "hash": "d38478df9ed7d31dcbf5aa54554c8ccf43b40c2143f62c50172b2288db2af16d"
+            "hash": "cfab949ba715832407d1db2eb4bc1e33d607a3326bf4e4f2329266d9e70cd1d2"
         },
         "arm64": {
             "url": "https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/windows_arm64.json",
-            "hash": "ba09ea853666ea72e6963096dd4a6cef8854c1b2e916e397960a82552118f664"
+            "hash": "6c41e8288076de4f32e03719b2849720ca1de4e1921833b8e587568a9009a8c3"
         }
     },
     "pre_install": [
