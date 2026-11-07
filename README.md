@@ -22,6 +22,7 @@
 | **gdem**             | 基于 GodotHub 的 Godot 引擎版本管理工具。                                        |
 | **git-tags**         | Git 标签管理器。                                                              |
 | **jcode**            | 快速、安全、智能的代码片段管理器。                                              |
+| **keep-mirrors**     | 终端镜像源管理器，一键切换 pip/npm/cargo/go/flutter 等国内镜像源。               |
 | **kilocode**         | 一体化的 Agentic 工程平台，借助 AI 编码 Agent 更快构建、交付、迭代。              |
 | **lazygit**          | 简单的 Git 命令终端 UI。                                                       |
 | **link-disk**        | 通过硬链接/软链接将软件配置与数据从 C 盘转移到其他分区。                           |
