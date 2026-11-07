@@ -14,6 +14,10 @@
             "hash": "d8f92e9f39bbfa569239933f3a7068c574ef7b6072aa677809ef35eb2267fcb6"
         }
     },
+    "pre_install": [
+        "Get-ChildItem \"$dir\" -Directory | ForEach-Object { Move-Item \"$($_.FullName)\\*\" \"$dir\" -Force }",
+        "Get-ChildItem \"$dir\" -Directory | Remove-Item -Recurse -Force"
+    ],
     "bin": "km.exe",
     "checkver": {
         "github": "https://github.com/morning-start/keep-mirrors",
