@@ -1,12 +1,12 @@
 {
-    "version": "0.1.17",
+    "version": "0.1.18",
     "description": "MiMo Code: Where Models and Agents Co-Evolve. A terminal-native AI coding assistant with persistent memory.",
     "homepage": "https://github.com/XiaomiMiMo/MiMo-Code",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/XiaomiMiMo/MiMo-Code/releases/download/v0.1.17/mimocode-windows-x64.zip",
-            "hash": "0592e55bd48b1441227a00a8bbf5f5a967023d3e01960b799c59ca50abfcda4d"
+            "url": "https://github.com/XiaomiMiMo/MiMo-Code/releases/download/v0.1.18/mimocode-windows-x64.zip",
+            "hash": "db9929005ddb919dc74af52878b8387e15f94d703500931d2f93a385a3c1a7df"
         }
     },
     "bin": "mimo.exe",
